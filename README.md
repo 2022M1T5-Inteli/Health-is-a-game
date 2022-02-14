@@ -10,7 +10,7 @@
 
 ## Before Symptoms
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/pedro-gattai-096678227/">Pedro Gattai</a>, <a href="https://www.linkedin.com/in/gabrio-lina-17ba60205/">Gabrio Lina</a>, <a href="https://www.linkedin.com/in/emanuel-de-oliveira-costa-45b637185/">Emanuel Costa</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
 
 ## Descrição
 
