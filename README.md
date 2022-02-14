@@ -1,5 +1,5 @@
 # Projeto1
-Projeto 1
+Before Symptoms (USP-a)
 # Inteli - Instituto de Tecnologia e Liderança 
 
 <p align="center">
@@ -7,9 +7,9 @@ Projeto 1
 </p>
 
 # Nome do Projeto
-
+Health is a game
 ## Nome do Grupo
-
+Before Symptoms
 ## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
 
 ## Descrição
