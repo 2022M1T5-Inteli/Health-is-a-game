@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bensound-buddy.mp3-8ac6cbacbbed0e10dcb5ac0ed2cd65ac.mp3str"
+
+[deps]
+
+source_file="res://bensound-buddy.mp3"
+dest_files=[ "res://.import/bensound-buddy.mp3-8ac6cbacbbed0e10dcb5ac0ed2cd65ac.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

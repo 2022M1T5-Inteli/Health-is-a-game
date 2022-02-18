@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://BackgroundLivingRoom.png" type="Texture" id=2]
+[ext_resource path="res://bensound-buddy.mp3" type="AudioStream" id=3]
 
 [node name="Node2D" type="Node2D"]
 
@@ -18,3 +19,8 @@ scale = Vector2( 0.375312, 0.375312 )
 position = Vector2( 53.289, -567.528 )
 scale = Vector2( 2.66445, 2.66445 )
 current = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Player/Camera2D"]
+stream = ExtResource( 3 )
+volume_db = 1.689
+autoplay = true

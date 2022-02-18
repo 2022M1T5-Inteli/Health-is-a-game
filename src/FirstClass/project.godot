@@ -13,6 +13,10 @@ config_version=4
 config/name="BSYM"
 run/main_scene="res://BabyHouse.tscn"
 
+[layer_names]
+
+3d_physics/layer_1="player"
+
 [physics]
 
 common/enable_pause_aware_picking=true
