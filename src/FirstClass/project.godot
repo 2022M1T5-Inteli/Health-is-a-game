@@ -13,6 +13,25 @@ config_version=4
 config/name="BSYM"
 run/main_scene="res://BabyHouse.tscn"
 
+[input]
+
+jump={
+"deadzone": 0.5,
+"events": [  ]
+}
+move_left={
+"deadzone": 0.52,
+"events": [  ]
+}
+key={
+"deadzone": 0.5,
+"events": [  ]
+}
+move_lef={
+"deadzone": 0.5,
+"events": [  ]
+}
+
 [layer_names]
 
 3d_physics/layer_1="player"
