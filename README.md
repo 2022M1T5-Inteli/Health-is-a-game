@@ -10,7 +10,7 @@
 
 ## Before Symptoms
 
-## Integrantes: <a href="https://www.linkedin.com/in/antonio-angelo-teixeira-a70b781a7/">Antonio Teixeira</a> <a href="https://www.linkedin.com/in/carolina-favaro-fricks-1a0423231/">Carolina Fricks</a>, <a href="https://www.linkedin.com/in/emanuel-de-oliveira-costa-45b637185/">Emanuel Costa</a>, <a href="https://www.linkedin.com/in/gabrio-lina-17ba60205/">Gabrio Lina</a>, <a href="https://www.linkedin.com/in/joao-marques-1b64b2232/">João Marques</a>, <a href="https://www.linkedin.com/in/maria-lu%C3%ADsa-maia-14384a212/">Maria Maia</a>, <a href="https://www.linkedin.com/in/pedro-gattai-096678227/">Pedro Gattai</a>,  <a href="http://linkedin.com/in/sophia-tosar-ba3538223">Sophia Tosar</a>
+## Integrantes: <a href="https://www.linkedin.com/in/antonio-angelo-teixeira-a70b781a7/">Antonio Teixeira</a>, <a href="https://www.linkedin.com/in/carolina-favaro-fricks-1a0423231/">Carolina Fricks</a>, <a href="https://www.linkedin.com/in/emanuel-de-oliveira-costa-45b637185/">Emanuel Costa</a>, <a href="https://www.linkedin.com/in/gabrio-lina-17ba60205/">Gabrio Lina</a>, <a href="https://www.linkedin.com/in/joao-marques-1b64b2232/">João Marques</a>, <a href="https://www.linkedin.com/in/maria-lu%C3%ADsa-maia-14384a212/">Maria Maia</a>, <a href="https://www.linkedin.com/in/pedro-gattai-096678227/">Pedro Gattai</a>,  <a href="http://linkedin.com/in/sophia-tosar-ba3538223">Sophia Tosar</a>.
 
 ## Descrição
 
