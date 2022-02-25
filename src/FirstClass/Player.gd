@@ -1,23 +1,21 @@
 extends KinematicBody2D
 
 # Player speed amount
-var speed = 4.7
+var SPEED = 4.7
+var velocity = Vector2.ZERO
+var move_speed = 480
+var gravity = 1200
+var jump_force = -720
 
 # References the AnimationPlayer element from the player node
 onready var _animation_player = $AnimationPlayer
+onready var _camera = $Camera2D
 
-func _process(_delta):
-	# if right is pressed, the player moves to the right
-	if Input.is_action_pressed("ui_right"):
-		get_node("Sprite").set_flip_h(false)
-		_animation_player.play("crawl")
-		position.x += speed
-	# if left is pressed, the player moves to the left
-	# also, it flips the sprite
-	elif Input.is_action_pressed("ui_left"):
-		get_node("Sprite").set_flip_h(true)
-		_animation_player.play("crawl")
-		position.x -= speed	
-	else:
-		_animation_player.stop()
-		
+func _physics_process(delta: float) -> void:
+	velocity.y += gravity * delta
+	_animation_player.play("crawl")
+	if Input.is_action_just_pressed("ui_up"):
+		velocity.y = jump_force / 2
+	velocity.x = move_speed
+	
+	move_and_slide(velocity)
