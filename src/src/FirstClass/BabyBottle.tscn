@@ -9,6 +9,7 @@ extents = Vector2( 77.5, 89.75 )
 [node name="BabyBottle" type="Area2D"]
 position = Vector2( 0, -5 )
 script = ExtResource( 1 )
+points = 5
 
 [node name="BabyBottleSprite" type="Sprite" parent="."]
 position = Vector2( 7, 0 )
