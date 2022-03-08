@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://BackgroundLivingRoom.png" type="Texture" id=2]
 [ext_resource path="res://BabyBottle.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Candy.tscn" type="PackedScene" id=4]
 [ext_resource path="res://FrameUsp.png" type="Texture" id=5]
+[ext_resource path="res://Apple.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2845.75, 37.5 )
@@ -46,72 +47,94 @@ drag_margin_bottom = 0.0
 
 [node name="Elements" type="Node2D" parent="."]
 
-[node name="BabyBottle" parent="Elements" instance=ExtResource( 3 )]
-position = Vector2( 671, 408 )
+[node name="AppleNode" type="Node" parent="Elements"]
+
+[node name="Apple" parent="Elements/AppleNode" instance=ExtResource( 6 )]
+position = Vector2( 2435, 520 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="BabyBottle2" parent="Elements" instance=ExtResource( 3 )]
-position = Vector2( 1028, 400 )
+[node name="Apple2" parent="Elements/AppleNode" instance=ExtResource( 6 )]
+position = Vector2( 1893, 416 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="BabyBottle3" parent="Elements" instance=ExtResource( 3 )]
-position = Vector2( 1416, 518 )
+[node name="Apple3" parent="Elements/AppleNode" instance=ExtResource( 6 )]
+position = Vector2( 2905, 276 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="BabyBottle4" parent="Elements" instance=ExtResource( 3 )]
-position = Vector2( 1700, 364 )
+[node name="Apple4" parent="Elements/AppleNode" instance=ExtResource( 6 )]
+position = Vector2( 4367, 516 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="BabyBottle7" parent="Elements" instance=ExtResource( 3 )]
-position = Vector2( 3043, 657 )
-scale = Vector2( 0.25, 0.25 )
-
-[node name="BabyBottle5" parent="Elements" instance=ExtResource( 3 )]
-position = Vector2( 2111, 346 )
+[node name="Apple5" parent="Elements/AppleNode" instance=ExtResource( 6 )]
+position = Vector2( 3827, 414 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="BabyBottle8" parent="Elements" instance=ExtResource( 3 )]
-position = Vector2( 4562, 516 )
-scale = Vector2( 0.5, 0.5 )
+[node name="CandyNode" type="Node" parent="Elements"]
 
-[node name="BabyBottle10" parent="Elements" instance=ExtResource( 3 )]
-position = Vector2( 3951, 397 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="BabyBottle9" parent="Elements" instance=ExtResource( 3 )]
-position = Vector2( 4893, 498 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="BabyBottle6" parent="Elements" instance=ExtResource( 3 )]
-position = Vector2( 3253, 497 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy" parent="Elements" instance=ExtResource( 4 )]
+[node name="Candy" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 2740, 515 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Candy2" parent="Elements" instance=ExtResource( 4 )]
+[node name="Candy2" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 1248, 508 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Candy3" parent="Elements" instance=ExtResource( 4 )]
+[node name="Candy3" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 1697, 511 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Candy4" parent="Elements" instance=ExtResource( 4 )]
+[node name="Candy4" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 346, 305 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Candy6" parent="Elements" instance=ExtResource( 4 )]
+[node name="Candy6" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 4171, 515 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Candy7" parent="Elements" instance=ExtResource( 4 )]
+[node name="Candy7" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 4704, 491 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Candy5" parent="Elements" instance=ExtResource( 4 )]
+[node name="Candy5" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 3691, 513 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="BabyBottleNode" type="Node" parent="Elements"]
+
+[node name="BabyBottle" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
+position = Vector2( 671, 408 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="BabyBottle2" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
+position = Vector2( 1028, 400 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="BabyBottle3" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
+position = Vector2( 1416, 518 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="BabyBottle4" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
+position = Vector2( 1700, 364 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="BabyBottle5" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
+position = Vector2( 2111, 346 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="BabyBottle8" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
+position = Vector2( 4562, 516 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="BabyBottle10" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
+position = Vector2( 3951, 397 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="BabyBottle9" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
+position = Vector2( 4893, 498 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="BabyBottle6" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
+position = Vector2( 3253, 497 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
