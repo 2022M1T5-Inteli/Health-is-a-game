@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/babyFrame01.png-8a755602c92484e1c542a2e60a35c60c.stex"
+path="res://.import/appleSprite.png-3e07090548f9ed86d418d3282a4feb0e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://babyFrame01.png"
-dest_files=[ "res://.import/babyFrame01.png-8a755602c92484e1c542a2e60a35c60c.stex" ]
+source_file="res://sprites/appleSprite.png"
+dest_files=[ "res://.import/appleSprite.png-3e07090548f9ed86d418d3282a4feb0e.stex" ]
 
 [params]
 

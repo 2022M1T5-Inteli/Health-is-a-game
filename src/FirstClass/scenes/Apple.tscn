@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Apple.gd" type="Script" id=1]
-[ext_resource path="res://Apple.png" type="Texture" id=2]
+[ext_resource path="res://scripts/Apple.gd" type="Script" id=1]
+[ext_resource path="res://sprites/appleSprite.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 73.5, 78.5 )

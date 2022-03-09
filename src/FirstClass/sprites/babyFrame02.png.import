@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/babySpriteSheet.png-a42f8452c1418bde2a28e28f9940eb1e.stex"
+path="res://.import/babyFrame02.png-7a706c7236d3305f86f7506198349e01.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://babySpriteSheet.png"
-dest_files=[ "res://.import/babySpriteSheet.png-a42f8452c1418bde2a28e28f9940eb1e.stex" ]
+source_file="res://sprites/babyFrame02.png"
+dest_files=[ "res://.import/babyFrame02.png-7a706c7236d3305f86f7506198349e01.stex" ]
 
 [params]
 

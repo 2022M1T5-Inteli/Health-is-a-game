@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FrameUsp.png-0566b5e5b01f4d3d23ff93426ed7e993.stex"
+path="res://.import/BackgroundLivingRoom.png-fde6764eceaaec7db69d24a6e6e96d5a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://FrameUsp.png"
-dest_files=[ "res://.import/FrameUsp.png-0566b5e5b01f4d3d23ff93426ed7e993.stex" ]
+source_file="res://backgrounds/BackgroundLivingRoom.png"
+dest_files=[ "res://.import/BackgroundLivingRoom.png-fde6764eceaaec7db69d24a6e6e96d5a.stex" ]
 
 [params]
 
