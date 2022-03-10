@@ -4,11 +4,11 @@
 [ext_resource path="res://backgrounds/BackgroundLivingRoom.png" type="Texture" id=2]
 [ext_resource path="res://scenes/BabyBottle.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/Candy.tscn" type="PackedScene" id=4]
-[ext_resource path="res://backgrounds/USPEasterEgg.png" type="Texture" id=5]
+[ext_resource path="res://scenes/lollipop.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/Apple.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 2845.75, 37.5 )
+extents = Vector2( 2861, 37.5 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 48, 335 )
@@ -18,19 +18,24 @@ extents = Vector2( 48, 335 )
 [node name="Floor" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
-position = Vector2( 2649.25, 620.5 )
+position = Vector2( 2634, 620.5 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Floor"]
+position = Vector2( 8350, 621 )
 shape = SubResource( 1 )
 
 [node name="Baby" type="Sprite" parent="."]
-position = Vector2( 1249, 497 )
-scale = Vector2( 0.375312, 0.375312 )
+position = Vector2( 1258, 470.552 )
+scale = Vector2( 0.374281, 0.458387 )
 texture = ExtResource( 2 )
 offset = Vector2( 3418.49, -479.601 )
 
-[node name="FrameUsp" type="Sprite" parent="."]
-position = Vector2( 4644, 310 )
-scale = Vector2( 0.385, 0.385 )
-texture = ExtResource( 5 )
+[node name="Baby2" type="Sprite" parent="."]
+position = Vector2( 7246, 472.417 )
+scale = Vector2( 0.375312, 0.458281 )
+texture = ExtResource( 2 )
+offset = Vector2( 3418.49, -479.601 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 137, 519 )
@@ -65,8 +70,28 @@ scale = Vector2( 0.5, 0.5 )
 position = Vector2( 4367, 516 )
 scale = Vector2( 0.5, 0.5 )
 
+[node name="Apple6" parent="Elements/AppleNode" instance=ExtResource( 6 )]
+position = Vector2( 4367, 516 )
+scale = Vector2( 0.5, 0.5 )
+
 [node name="Apple5" parent="Elements/AppleNode" instance=ExtResource( 6 )]
 position = Vector2( 3827, 414 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Apple7" parent="Elements/AppleNode" instance=ExtResource( 6 )]
+position = Vector2( 7100, 498 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Apple8" parent="Elements/AppleNode" instance=ExtResource( 6 )]
+position = Vector2( 7507, 236 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Apple9" parent="Elements/AppleNode" instance=ExtResource( 6 )]
+position = Vector2( 10194, 525 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Apple10" parent="Elements/AppleNode" instance=ExtResource( 6 )]
+position = Vector2( 10223, 140 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CandyNode" type="Node" parent="Elements"]
@@ -88,15 +113,31 @@ position = Vector2( 346, 305 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Candy6" parent="Elements/CandyNode" instance=ExtResource( 4 )]
-position = Vector2( 4171, 515 )
+position = Vector2( 4076, 515 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Candy7" parent="Elements/CandyNode" instance=ExtResource( 4 )]
-position = Vector2( 4704, 491 )
+position = Vector2( 5239, 491 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Candy5" parent="Elements/CandyNode" instance=ExtResource( 4 )]
-position = Vector2( 3691, 513 )
+position = Vector2( 3714, 515 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Candy8" parent="Elements/CandyNode" instance=ExtResource( 4 )]
+position = Vector2( 6379, 488 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Candy9" parent="Elements/CandyNode" instance=ExtResource( 4 )]
+position = Vector2( 9383, 278 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Candy11" parent="Elements/CandyNode" instance=ExtResource( 4 )]
+position = Vector2( 10538, 417 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Candy10" parent="Elements/CandyNode" instance=ExtResource( 4 )]
+position = Vector2( 10891, 281 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="BabyBottleNode" type="Node" parent="Elements"]
@@ -133,12 +174,41 @@ scale = Vector2( 0.5, 0.5 )
 position = Vector2( 4893, 498 )
 scale = Vector2( 0.5, 0.5 )
 
+[node name="BabyBottle11" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
+position = Vector2( 7170, 84 )
+scale = Vector2( 0.5, 0.5 )
+
 [node name="BabyBottle6" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 3253, 497 )
 scale = Vector2( 0.5, 0.5 )
 
+[node name="BabyBottle7" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
+position = Vector2( 9219, 561 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="BabyBottle12" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
+position = Vector2( 8994, 187 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="LollipopNode" type="Node" parent="Elements"]
+
+[node name="Lollipop" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
+position = Vector2( 8676, 343 )
+
+[node name="Lollipop2" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
+position = Vector2( 7771, 379 )
+
+[node name="Lollipop3" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
+position = Vector2( 6121, 144 )
+
+[node name="Lollipop4" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
+position = Vector2( 5031, 379 )
+
+[node name="Lollipop5" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
+position = Vector2( 3260, 48 )
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 5146, 335 )
+position = Vector2( 11271, 292 )
 shape = SubResource( 2 )
