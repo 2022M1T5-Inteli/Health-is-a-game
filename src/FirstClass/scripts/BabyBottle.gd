@@ -2,10 +2,12 @@ extends Area2D
 
 onready var _babyBottle = $BabyBottleSprite
 
-#export var points = 20
+var points = 10
 
 # when a body collides with this element, it hides the babyBottle
 func _on_BabyBottle_body_entered(body):
 	# if the body name is "Player", it triggers the hide action mentioned above
 	if body.get_name() == "Player":
 		_babyBottle.hide()
+		if (GameManager.health_score + points) <= 1000:
+			GameManager.health_score = GameManager.health_score + points		

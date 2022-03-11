@@ -21,6 +21,7 @@ const UP = Vector2(0, -1)
 # References the elements from the player node
 onready var _animation_player = $AnimationPlayer
 onready var _camera = $Camera2D
+onready var _scoreLabel = $ScoreLabel
 
 # Controls the player's basic mechanics
 func _physics_process(delta: float) -> void:
@@ -42,13 +43,8 @@ func _physics_process(delta: float) -> void:
 	# Move the player
 	velocity.x = move_speed
 	move_and_slide(velocity, UP)
-
-
-
-
-
-
-
+	_scoreLabel.text = str(GameManager.health_score)
+	print(GameManager.health_score)
 #func damage(damage_count):
 #	hitpoints -= damage_count
 #	$Barenergy.set_percent_value_int(float(max_hitpoints*100))

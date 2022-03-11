@@ -13,6 +13,10 @@ config_version=4
 config/name="BSYM"
 run/main_scene="res://scenes/BabyHouse.tscn"
 
+[autoload]
+
+GameManager="*res://scripts/GameManager.gd"
+
 [input]
 
 ui_up={
