@@ -14,7 +14,7 @@ var has_double_jumped = false
 # defines the UP parameter for the move_and_slide function
 const UP = Vector2(0, -1)
 
-## Points system 
+ #Points system 
 #var healthPoints = 500
 
 

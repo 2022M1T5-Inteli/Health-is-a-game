@@ -2,7 +2,7 @@ extends Area2D
 
 onready var _babyBottle = $BabyBottleSprite
 
-var points = 10
+var points = 5
 
 # when a body collides with this element, it hides the babyBottle
 func _on_BabyBottle_body_entered(body):

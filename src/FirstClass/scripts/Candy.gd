@@ -2,7 +2,7 @@ extends Area2D
 
 onready var _Candy = $CandySprite
 
-var points = -40
+var points = -5
 
 # when a body collides with this element, it hides the candy
 func _on_Candy_body_entered(body):
