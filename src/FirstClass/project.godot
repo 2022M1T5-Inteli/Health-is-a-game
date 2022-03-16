@@ -13,6 +13,10 @@ config_version=4
 config/name="BSYM"
 run/main_scene="res://BabyHouse.tscn"
 
+[display]
+
+window/size/fullscreen=true
+
 [input]
 
 ui_up={

@@ -114,6 +114,10 @@ scale = Vector2( 0.5, 0.5 )
 position = Vector2( 3691, 513 )
 scale = Vector2( 0.5, 0.5 )
 
+[node name="Apple1" parent="Elements" instance=ExtResource( 4 )]
+position = Vector2( 3691, 513 )
+scale = Vector2( 0.5, 0.5 )
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
