@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Apple.PNG-2fae66122fe1f11d0e51dbe9a3293be2.stex"
+path="res://.import/botao_jogar.png-29d5a2d1bd3810e628ac7bb44c3293a4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Apple.PNG"
-dest_files=[ "res://.import/Apple.PNG-2fae66122fe1f11d0e51dbe9a3293be2.stex" ]
+source_file="res://botao_jogar.png"
+dest_files=[ "res://.import/botao_jogar.png-29d5a2d1bd3810e628ac7bb44c3293a4.stex" ]
 
 [params]
 
