@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FrameUsp.png-0566b5e5b01f4d3d23ff93426ed7e993.stex"
+path="res://.import/babyBottleSprite.png-911b8e4b7c703d1f62870ab777ba413d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://FrameUsp.png"
-dest_files=[ "res://.import/FrameUsp.png-0566b5e5b01f4d3d23ff93426ed7e993.stex" ]
+source_file="res://sprites/babyBottleSprite.png"
+dest_files=[ "res://.import/babyBottleSprite.png-911b8e4b7c703d1f62870ab777ba413d.stex" ]
 
 [params]
 

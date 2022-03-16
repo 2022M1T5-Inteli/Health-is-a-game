@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pixil-frame-0 (37).png-f3f0ab80a834e890bf231ecfa44c66be.stex"
+path="res://.import/appleSprite.png-3e07090548f9ed86d418d3282a4feb0e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pixil-frame-0 (37).png"
-dest_files=[ "res://.import/pixil-frame-0 (37).png-f3f0ab80a834e890bf231ecfa44c66be.stex" ]
+source_file="res://sprites/appleSprite.png"
+dest_files=[ "res://.import/appleSprite.png-3e07090548f9ed86d418d3282a4feb0e.stex" ]
 
 [params]
 

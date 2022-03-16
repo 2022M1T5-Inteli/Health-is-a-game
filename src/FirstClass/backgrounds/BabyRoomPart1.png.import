@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BackgroundLivingRoom.png-088b1e1dda16a287598d28a7bf296f6d.stex"
+path="res://.import/BabyRoomPart1.png-3c24a59fdde4a85b0c27076d3da70ae9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BackgroundLivingRoom.png"
-dest_files=[ "res://.import/BackgroundLivingRoom.png-088b1e1dda16a287598d28a7bf296f6d.stex" ]
+source_file="res://backgrounds/BabyRoomPart1.png"
+dest_files=[ "res://.import/BabyRoomPart1.png-3c24a59fdde4a85b0c27076d3da70ae9.stex" ]
 
 [params]
 

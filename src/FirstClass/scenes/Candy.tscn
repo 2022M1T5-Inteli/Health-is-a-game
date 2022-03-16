@@ -1,7 +1,12 @@
 [gd_scene load_steps=4 format=2]
 
+<<<<<<< HEAD:src/FirstClass/Candy.tscn
 [ext_resource path="res://Apple.gd" type="Script" id=1]
 [ext_resource path="res://Apple.PNG" type="Texture" id=2]
+=======
+[ext_resource path="res://scripts/Candy.gd" type="Script" id=1]
+[ext_resource path="res://sprites/candySprite.png" type="Texture" id=2]
+>>>>>>> d39503c070b42df3075b96feed5110402aa7b8da:src/FirstClass/scenes/Candy.tscn
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 73.5, 78.5 )

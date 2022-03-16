@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/babyBottleSprite.png-04c76f54877a70ae441da65c19dbcdb1.stex"
+path="res://.import/BabyRoomPart2.png-1a97507a0b57541998cf3517d8a5f695.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://babyBottleSprite.png"
-dest_files=[ "res://.import/babyBottleSprite.png-04c76f54877a70ae441da65c19dbcdb1.stex" ]
+source_file="res://backgrounds/BabyRoomPart2.png"
+dest_files=[ "res://.import/BabyRoomPart2.png-1a97507a0b57541998cf3517d8a5f695.stex" ]
 
 [params]
 
