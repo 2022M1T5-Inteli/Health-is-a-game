@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/botao_jogar.png-29d5a2d1bd3810e628ac7bb44c3293a4.stex"
+path="res://.import/solmalvado.png-8f559061adbcdea227249d3f8dc322b7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://botao_jogar.png"
-dest_files=[ "res://.import/botao_jogar.png-29d5a2d1bd3810e628ac7bb44c3293a4.stex" ]
+source_file="res://sprites/solmalvado.png"
+dest_files=[ "res://.import/solmalvado.png-8f559061adbcdea227249d3f8dc322b7.stex" ]
 
 [params]
 

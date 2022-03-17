@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cenario de fundo 2.0.png-fed6dd6b8395c14e69f4db51c7c6e862.stex"
+path="res://.import/bananaSprite.png-7bc0cb1b1748389b636c7e19dc1cc55f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cenario de fundo 2.0.png"
-dest_files=[ "res://.import/cenario de fundo 2.0.png-fed6dd6b8395c14e69f4db51c7c6e862.stex" ]
+source_file="res://sprites/bananaSprite.png"
+dest_files=[ "res://.import/bananaSprite.png-7bc0cb1b1748389b636c7e19dc1cc55f.stex" ]
 
 [params]
 

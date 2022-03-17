@@ -1,0 +1,275 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://backgrounds/ChildParkPart1.png" type="Texture" id=1]
+[ext_resource path="res://backgrounds/ChildParkPart2.png" type="Texture" id=2]
+[ext_resource path="res://scenes/Banana.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Ball.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Soda.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/FriedPotatoes.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/SunProtector.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/PlayerChild.tscn" type="PackedScene" id=8]
+[ext_resource path="res://fonts/Pixeled.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://scripts/PlayerChildCamera.gd" type="Script" id=10]
+[ext_resource path="res://scenes/Sun.tscn" type="PackedScene" id=11]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 48, 335 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 4928.81, 37.5 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 34
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 9 )
+
+[node name="ChildPark" type="Node2D"]
+
+[node name="ChildParkPart2" type="Sprite" parent="."]
+position = Vector2( 7362, 307 )
+scale = Vector2( 0.7675, 0.7675 )
+texture = ExtResource( 2 )
+
+[node name="ChildParkPart1" type="Sprite" parent="."]
+position = Vector2( 2454, 305 )
+scale = Vector2( 0.7675, 0.7675 )
+texture = ExtResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 9078, 315 )
+shape = SubResource( 3 )
+
+[node name="Floor" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+position = Vector2( 4158, 574 )
+shape = SubResource( 1 )
+
+[node name="Elements" type="Node" parent="."]
+
+[node name="Soda" type="Node" parent="Elements"]
+
+[node name="Soda" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 1742, 103 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Soda2" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 3210, 134 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Soda3" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 4736, 345 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Soda4" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 5925, 66 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Soda5" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 5537, 439 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Soda6" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 7492, 429 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Soda7" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 7719, 137 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Soda8" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 3047, 308 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Soda9" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 3636, 116 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Soda10" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 7254, 141 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Soda11" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 5085, 119 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Soda12" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 5344, 254 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Soda13" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 7492, 429 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Soda14" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 6514, 330 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Soda15" parent="Elements/Soda" instance=ExtResource( 5 )]
+position = Vector2( 6209, 393 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="FriedPotatoes" type="Node" parent="Elements"]
+
+[node name="FriedPotatoes" parent="Elements/FriedPotatoes" instance=ExtResource( 6 )]
+position = Vector2( 2256, 360 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="FriedPotatoes2" parent="Elements/FriedPotatoes" instance=ExtResource( 6 )]
+position = Vector2( 4668, 87 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="FriedPotatoes3" parent="Elements/FriedPotatoes" instance=ExtResource( 6 )]
+position = Vector2( 3895, 96 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="FriedPotatoes4" parent="Elements/FriedPotatoes" instance=ExtResource( 6 )]
+position = Vector2( 3873, 415 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="FriedPotatoes5" parent="Elements/FriedPotatoes" instance=ExtResource( 6 )]
+position = Vector2( 3267, 446 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="FriedPotatoes6" parent="Elements/FriedPotatoes" instance=ExtResource( 6 )]
+position = Vector2( 876, 172 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="FriedPotatoes7" parent="Elements/FriedPotatoes" instance=ExtResource( 6 )]
+position = Vector2( 8829, 364 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="SunProtector" type="Node" parent="Elements"]
+
+[node name="SunProtector" parent="Elements/SunProtector" instance=ExtResource( 7 )]
+position = Vector2( 1863, 328 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="SunProtector2" parent="Elements/SunProtector" instance=ExtResource( 7 )]
+position = Vector2( 2382, 182 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="SunProtector3" parent="Elements/SunProtector" instance=ExtResource( 7 )]
+position = Vector2( 7009, 285 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="SunProtector4" parent="Elements/SunProtector" instance=ExtResource( 7 )]
+position = Vector2( 8536, 125 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sun" type="Node" parent="Elements"]
+
+[node name="Sun" parent="Elements/Sun" instance=ExtResource( 11 )]
+position = Vector2( 924, 179 )
+
+[node name="Sun2" parent="Elements/Sun" instance=ExtResource( 11 )]
+position = Vector2( 1377, 133 )
+
+[node name="Sun3" parent="Elements/Sun" instance=ExtResource( 11 )]
+position = Vector2( 5896, 181 )
+
+[node name="Sun4" parent="Elements/Sun" instance=ExtResource( 11 )]
+position = Vector2( 4338, 193 )
+
+[node name="Sun5" parent="Elements/Sun" instance=ExtResource( 11 )]
+position = Vector2( 8090, 55 )
+
+[node name="Ball" type="Node" parent="Elements"]
+
+[node name="Ball" parent="Elements/Ball" instance=ExtResource( 4 )]
+position = Vector2( 830, 495 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Ball2" parent="Elements/Ball" instance=ExtResource( 4 )]
+position = Vector2( 1215, 212 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Ball3" parent="Elements/Ball" instance=ExtResource( 4 )]
+position = Vector2( 7302, 404 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Ball4" parent="Elements/Ball" instance=ExtResource( 4 )]
+position = Vector2( 2581, 458 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Ball5" parent="Elements/Ball" instance=ExtResource( 4 )]
+position = Vector2( 6124, 212 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Ball6" parent="Elements/Ball" instance=ExtResource( 4 )]
+position = Vector2( 7845, 336 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Ball7" parent="Elements/Ball" instance=ExtResource( 4 )]
+position = Vector2( 2656, 154 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Ball8" parent="Elements/Ball" instance=ExtResource( 4 )]
+position = Vector2( 4125, 165 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Ball9" parent="Elements/Ball" instance=ExtResource( 4 )]
+position = Vector2( 5782, 419 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Banana" type="Node" parent="Elements"]
+
+[node name="Banana" parent="Elements/Banana" instance=ExtResource( 3 )]
+position = Vector2( 1070, 501 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Banana2" parent="Elements/Banana" instance=ExtResource( 3 )]
+position = Vector2( 5047, 325 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Banana3" parent="Elements/Banana" instance=ExtResource( 3 )]
+position = Vector2( 5560, 234 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Banana4" parent="Elements/Banana" instance=ExtResource( 3 )]
+position = Vector2( 8304, 330 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Banana5" parent="Elements/Banana" instance=ExtResource( 3 )]
+position = Vector2( 2162, 114 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Banana6" parent="Elements/Banana" instance=ExtResource( 3 )]
+position = Vector2( 6726, 186 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Banana7" parent="Elements/Banana" instance=ExtResource( 3 )]
+position = Vector2( 2881, 467 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Banana8" parent="Elements/Banana" instance=ExtResource( 3 )]
+position = Vector2( 7565, 248 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="PlayerChild" parent="." instance=ExtResource( 8 )]
+position = Vector2( 420, 437 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="PlayerCamera" type="Camera2D" parent="PlayerChild"]
+position = Vector2( -8, -264 )
+scale = Vector2( 2.66445, 2.66445 )
+current = true
+drag_margin_v_enabled = true
+smoothing_speed = 6.0
+drag_margin_top = 0.8
+drag_margin_bottom = 0.0
+script = ExtResource( 10 )
+
+[node name="ScoreLabel" type="Label" parent="PlayerChild"]
+margin_left = -55.9534
+margin_top = -229.143
+margin_right = 130.047
+margin_bottom = -34.1427
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "1000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
