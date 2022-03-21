@@ -632,7 +632,7 @@ volume_db = 15.0
 [node name="Door" type="Node" parent="Elements"]
 
 [node name="Door2" parent="Elements" instance=ExtResource( 2 )]
-position = Vector2( 16781, -29 )
+position = Vector2( 16781, -6 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
