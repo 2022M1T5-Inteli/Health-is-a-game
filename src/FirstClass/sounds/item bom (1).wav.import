@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/item bom.wav-1e44f8edbe3152ba0e2d7da88c08158b.sample"
+path="res://.import/item bom (1).wav-6adfc242992251739bb373b4fe49405b.sample"
 
 [deps]
 
-source_file="res://item bom.wav"
-dest_files=[ "res://.import/item bom.wav-1e44f8edbe3152ba0e2d7da88c08158b.sample" ]
+source_file="res://sounds/item bom (1).wav"
+dest_files=[ "res://.import/item bom (1).wav-6adfc242992251739bb373b4fe49405b.sample" ]
 
 [params]
 
