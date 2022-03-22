@@ -9,9 +9,9 @@
 [ext_resource path="res://fonts/Pixeled.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://backgrounds/BabyRoomPart1.png" type="Texture" id=8]
 [ext_resource path="res://backgrounds/BabyRoomPart2.png" type="Texture" id=9]
-[ext_resource path="res://sounds/powerUp2.ogg" type="AudioStream" id=10]
-[ext_resource path="res://sounds/powerUp10.ogg" type="AudioStream" id=11]
+[ext_resource path="res://item ruim.ogg" type="AudioStream" id=10]
 [ext_resource path="res://scripts/Pause.gd" type="Script" id=12]
+[ext_resource path="res://item bom.wav" type="AudioStream" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9520.25, 37.5 )
@@ -76,49 +76,48 @@ position = Vector2( 2435, 520 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedAppleFx" type="AudioStreamPlayer2D" parent="Elements/AppleNode/Apple"]
-stream = ExtResource( 10 )
-volume_db = 15.0
-pitch_scale = 0.98
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="Apple2" parent="Elements/AppleNode" instance=ExtResource( 6 )]
 position = Vector2( 1893, 416 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedAppleFx" type="AudioStreamPlayer2D" parent="Elements/AppleNode/Apple2"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="Apple3" parent="Elements/AppleNode" instance=ExtResource( 6 )]
 position = Vector2( 12502, 404 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedAppleFx" type="AudioStreamPlayer2D" parent="Elements/AppleNode/Apple3"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="Apple4" parent="Elements/AppleNode" instance=ExtResource( 6 )]
 position = Vector2( 4367, 516 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedAppleFx" type="AudioStreamPlayer2D" parent="Elements/AppleNode/Apple4"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="Apple6" parent="Elements/AppleNode" instance=ExtResource( 6 )]
 position = Vector2( 6994, 254 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedAppleFx" type="AudioStreamPlayer2D" parent="Elements/AppleNode/Apple6"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="Apple5" parent="Elements/AppleNode" instance=ExtResource( 6 )]
 position = Vector2( 3827, 414 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedAppleFx" type="AudioStreamPlayer2D" parent="Elements/AppleNode/Apple5"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="CandyNode" type="Node" parent="Elements"]
 
@@ -127,200 +126,225 @@ position = Vector2( 2740, 515 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy2" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 1248, 508 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy2"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy3" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 1728, 161 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy3"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy4" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 346, 305 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy4"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy6" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 5835, 246 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy6"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy7" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 5239, 491 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy7"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy5" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 7215, 407 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy5"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy8" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 6379, 488 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy8"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy9" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 7567, 150 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy9"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy11" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 10538, 417 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy11"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy10" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 10891, 281 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy10"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy12" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 11713, 411 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy12"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy13" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 11170, 514 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy13"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy14" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 12784, 484 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy14"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy15" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 12479, 131 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy15"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy16" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 13388, 393 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy16"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy17" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 16085, 368 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy17"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy18" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 14933, 380 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy18"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy19" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 15358, 297 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy19"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy20" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 16013, 161 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy20"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy21" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 16931, 396 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy21"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy23" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 9722, 211 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy23"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy22" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 10157, 335 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy22"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy24" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 8995, 382 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy24"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Candy25" parent="Elements/CandyNode" instance=ExtResource( 4 )]
 position = Vector2( 8063, 179 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy25"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+visible = false
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="BabyBottleNode" type="Node" parent="Elements"]
 
@@ -329,128 +353,128 @@ position = Vector2( 3903, 250 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="BabyBottle2" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 1028, 400 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle2"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="BabyBottle3" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 657, 392 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle3"]
-stream = ExtResource( 10 )
-volume_db = 15.0
-
-[node name="BabyBottle4" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
-position = Vector2( 3614, 250 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle4"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="BabyBottle5" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 2111, 346 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle5"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="BabyBottle8" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 4450, 269 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle8"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
+
+[node name="BabyBottle4" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
+position = Vector2( 3614, 250 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle4"]
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="BabyBottle10" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 3951, 397 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle10"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="BabyBottle9" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 4893, 498 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle9"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="BabyBottle11" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 7170, 84 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle11"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="BabyBottle6" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 3253, 497 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle6"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="BabyBottle7" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 9296, 349 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle7"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="BabyBottle12" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 8994, 187 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle12"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="BabyBottle13" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 9453, 419 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle13"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="BabyBottle14" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 9570, 165 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle14"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="BabyBottle15" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 9972, 259 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle15"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="BabyBottle16" parent="Elements/BabyBottleNode" instance=ExtResource( 3 )]
 position = Vector2( 10915, 415 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle16"]
-stream = ExtResource( 10 )
-volume_db = 15.0
+stream = ExtResource( 13 )
+volume_db = 24.0
 
 [node name="LollipopNode" type="Node" parent="Elements"]
 
@@ -458,176 +482,176 @@ volume_db = 15.0
 position = Vector2( 1395, 233 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop2" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 3440, 337 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop2"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop3" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 4224, 164 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop3"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop4" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 5031, 379 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop4"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop5" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 3260, 48 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop5"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop6" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 8374, 342 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop6"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop7" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 2331, 220 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop7"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop8" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 11619, 100 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop8"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop9" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 7334, 338 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop9"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop10" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 6578, 96 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop10"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop11" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 5399, 184 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop11"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop12" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 6174, 116 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop12"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop13" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 4752, 50 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop13"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop14" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 11997, 402 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop14"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop15" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 12216, 136 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop15"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop16" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 15712, 287 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop16"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop17" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 14175, 60 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop17"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop18" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 8404, 74 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop18"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop19" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 13894, 350 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop19"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop20" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 15009, 114 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop20"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop21" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 15461, 23 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop21"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop22" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 16464, 121 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop22"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop23" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 15731, 75 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop23"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop24" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 13097, 78 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop24"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Lollipop25" parent="Elements/LollipopNode" instance=ExtResource( 5 )]
 position = Vector2( 7869, 344 )
 
 [node name="CollectedLollipopFx" type="AudioStreamPlayer2D" parent="Elements/LollipopNode/Lollipop25"]
-stream = ExtResource( 11 )
-volume_db = 15.0
+stream = ExtResource( 10 )
+volume_db = 24.0
 
 [node name="Door" type="Node" parent="Elements"]
 
