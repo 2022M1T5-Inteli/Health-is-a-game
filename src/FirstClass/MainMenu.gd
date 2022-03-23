@@ -53,3 +53,8 @@ func set_current_section(_current_section):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_BotaoSair_pressed():
+	get_tree().quit()
+	pass # Replace with function body.
