@@ -11,3 +11,4 @@ func _on_Soda_body_entered(body):
 		_Soda.hide()
 		if (GameManager.health_score + points) <= 1000:
 			GameManager.health_score = GameManager.health_score + points
+	$CollectedSodaFx.play()

@@ -9,3 +9,4 @@ func _on_Ball_body_entered(body):
 		_Ball.hide()
 		if (GameManager.health_score + points) <= 1000:
 			GameManager.health_score = GameManager.health_score + points
+	$CollectedBallFx.play()

@@ -8,3 +8,4 @@ func _on_Banana_body_entered(body):
 		_Banana.hide()
 		if (GameManager.health_score + points) <= 1000:
 			GameManager.health_score = GameManager.health_score + points
+	$CollectedBananaFx.play()
