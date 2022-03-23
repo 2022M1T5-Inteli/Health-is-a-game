@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/logo life is a game.png-5ecbb34d45c3b346116dcbf525ece3fd.stex"
+path="res://.import/logo life is a game.png-f782de39d878170baf02ef08ec3d5b78.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scripts/logo life is a game.png"
-dest_files=[ "res://.import/logo life is a game.png-5ecbb34d45c3b346116dcbf525ece3fd.stex" ]
+source_file="res://logo life is a game.png"
+dest_files=[ "res://.import/logo life is a game.png-f782de39d878170baf02ef08ec3d5b78.stex" ]
 
 [params]
 
