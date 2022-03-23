@@ -12,6 +12,6 @@ func _ready():
 
 #pega o no inteiro e muda a cena
 func _on_TextureButton_pressed():
-	get_tree().change_scene("res://scenes/BabyHouse.tscn")
+	get_tree().change_scene("res://scenes/scenarios/BabyHouse.tscn")
 
 

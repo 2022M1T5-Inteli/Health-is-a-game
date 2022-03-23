@@ -7,3 +7,4 @@ func _process(delta):
 	_healthbar.value = convertedValue
 	_scoreLabel.text = str(GameManager.health_score)
 	
+ 
