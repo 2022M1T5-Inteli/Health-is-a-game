@@ -20,15 +20,12 @@ const UP = Vector2(0, -1)
 
 # References the elements from the player node
 onready var _animation_player = $AnimationPlayer
-onready var _camera = get_parent().get_node("PlayerCamera")
-onready var _scoreLabel = $ScoreLabel
+onready var _camera = get_node("../PlayerCamera")
 
 # Controls the player's basic mechanics
 func _physics_process(delta: float) -> void:
-#	print(_camera)
-#	_camera.set_position(get_position())
-#
 	velocity.y += gravity * delta
+	_camera.position.x = position.x
 	# Plays the crawl animation
 	_animation_player.play("walk")
 	# Controls the jump/double jump actions
@@ -45,17 +42,4 @@ func _physics_process(delta: float) -> void:
 	# Move the player
 	velocity.x = move_speed
 	move_and_slide(velocity, UP)
-	_scoreLabel.text = str(GameManager.health_score)
 	print(GameManager.health_score)
-#func damage(damage_count):
-#	hitpoints -= damage_count
-#	$Barenergy.set_percent_value_int(float(max_hitpoints*100))
-#	if max_hitpoints <= 0:
-#		queue_free()	
-#
-# 
-#
-#
-#
-#func _on_Area2D_body_entered(body):
-#	pass # Replace with function body.
