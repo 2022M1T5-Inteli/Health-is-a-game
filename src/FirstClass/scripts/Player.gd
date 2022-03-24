@@ -40,6 +40,8 @@ func _physics_process(delta: float) -> void:
 		has_double_jumped = false
 	
 	
+	
+	
 	# Move the player
 	velocity.x = move_speed
 	move_and_slide(velocity, UP)
