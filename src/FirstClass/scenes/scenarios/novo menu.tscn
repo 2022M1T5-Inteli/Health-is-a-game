@@ -70,8 +70,13 @@ tracks/0/keys = {
 resource_name = "teste2"
 length = 4.5
 
-[node name="Menu" type="Node"]
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
@@ -153,8 +158,6 @@ __meta__ = {
 
 [node name="SoundIcon(2)" type="Sprite" parent="TextureButton"]
 position = Vector2( 118, 104 )
-
-[node name="Node" type="Node" parent="."]
 
 [connection signal="pressed" from="VBoxContainer/JogarButton" to="." method="_on_JogarButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/SairButton" to="." method="_on_SairButton_pressed"]
