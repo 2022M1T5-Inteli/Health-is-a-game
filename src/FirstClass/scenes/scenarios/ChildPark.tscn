@@ -224,28 +224,28 @@ position = Vector2( 1863, 328 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedSunProtectorFx" type="AudioStreamPlayer2D" parent="Elements/SunProtector/SunProtector"]
-stream = ExtResource( 13 )
+stream = ExtResource( 9 )
 
 [node name="SunProtector2" parent="Elements/SunProtector" instance=ExtResource( 7 )]
 position = Vector2( 2382, 182 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedSunProtectorFx" type="AudioStreamPlayer2D" parent="Elements/SunProtector/SunProtector2"]
-stream = ExtResource( 13 )
+stream = ExtResource( 9 )
 
 [node name="SunProtector3" parent="Elements/SunProtector" instance=ExtResource( 7 )]
 position = Vector2( 7009, 285 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedSunProtectorFx" type="AudioStreamPlayer2D" parent="Elements/SunProtector/SunProtector3"]
-stream = ExtResource( 13 )
+stream = ExtResource( 9 )
 
 [node name="SunProtector4" parent="Elements/SunProtector" instance=ExtResource( 7 )]
 position = Vector2( 8536, 125 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedSunProtectorFx" type="AudioStreamPlayer2D" parent="Elements/SunProtector/SunProtector4"]
-stream = ExtResource( 13 )
+stream = ExtResource( 9 )
 
 [node name="Sun" type="Node" parent="Elements"]
 

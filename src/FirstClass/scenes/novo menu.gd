@@ -22,17 +22,13 @@ func _on_SairButton_pressed():
 	pass # Replace with function body.
 
 func _on_TutorialButton_pressed():
-	var tutorial = load("res://scenes/Tuturial.tscn").instance()
+	var tutorial = load("res://scenes/Tutorial.tscn").instance()
 	# criar uma cena com o tutorial e colocar entre ""
 	get_tree().current_scene.add_child(tutorial)
 	$AudioStreamPlayer.stop()
 	
-<<<<<<< Updated upstream
-
-=======
 	$AudioStreamPlayer.stop()
->>>>>>> Stashed changes
-	'	'
+	
 func _process(delta):
 
 	$BabyFrame01/AnimationPlayer.play("teste")
