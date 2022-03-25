@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="BSYM"
-run/main_scene="res://scenes/MainMenu.tscn"
+run/main_scene="res://scenes/scenarios/novo menu.tscn"
 boot_splash/image="res://logo life is a game.png"
 boot_splash/fullsize=false
 
