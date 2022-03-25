@@ -8,7 +8,7 @@
 [ext_resource path="res://scenes/itens/lollipop.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/itens/Candy.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scripts/Pause.gd" type="Script" id=8]
-[ext_resource path="res://backgrounds/BabyRoomPart1.png" type="Texture" id=10]
+[ext_resource path="res://BabyRoomPart1.png" type="Texture" id=10]
 [ext_resource path="res://backgrounds/BabyRoomPart2.png" type="Texture" id=11]
 [ext_resource path="res://sounds/item ruim (1).ogg" type="AudioStream" id=12]
 [ext_resource path="res://sounds/item bom (1).wav" type="AudioStream" id=13]
