@@ -5,50 +5,33 @@
 [ext_resource path="res://sprites/PressSpace2x.png" type="Texture" id=3]
 [ext_resource path="res://scenes/Tuturial.gd" type="Script" id=4]
 [ext_resource path="res://sprites/voltarFINAL.png" type="Texture" id=5]
-<<<<<<< Updated upstream
 [ext_resource path="res://sprites/voltar.png" type="Texture" id=6]
-=======
->>>>>>> Stashed changes
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 4 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 1176.0
-margin_bottom = 706.0
-
 [node name="ChooseTheGoodItens" type="Sprite" parent="."]
-position = Vector2( 514, 264 )
+position = Vector2( 510, 323 )
 scale = Vector2( 0.388, 0.388 )
 texture = ExtResource( 1 )
 
 [node name="PressSpace1x" type="Sprite" parent="."]
-position = Vector2( 153, 336 )
+position = Vector2( 145, 339 )
 scale = Vector2( 0.2875, 0.2875 )
 texture = ExtResource( 2 )
 
 [node name="PressSpace2x" type="Sprite" parent="."]
-position = Vector2( 873, 346 )
+position = Vector2( 884, 342 )
 scale = Vector2( 0.295, 0.295 )
 texture = ExtResource( 3 )
 
 [node name="TextureButton" type="TextureButton" parent="."]
-<<<<<<< Updated upstream
 margin_left = 391.0
 margin_top = 533.0
 margin_right = 635.0
 margin_bottom = 590.0
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 5 )
-=======
-margin_left = 504.0
-margin_top = 769.0
-margin_right = 605.0
-margin_bottom = 778.0
-rect_scale = Vector2( 2, 10 )
-rect_pivot_offset = Vector2( 93, 29 )
-texture_normal = ExtResource( 5 )
->>>>>>> Stashed changes
 expand = true
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
