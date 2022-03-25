@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://backgrounds/ChildParkPart1.png" type="Texture" id=1]
 [ext_resource path="res://backgrounds/ChildParkPart2.png" type="Texture" id=2]
@@ -9,7 +9,6 @@
 [ext_resource path="res://scenes/itens/SunProtector.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/PlayerChild.tscn" type="PackedScene" id=8]
 [ext_resource path="res://sounds/item ruim (1).ogg" type="AudioStream" id=9]
-[ext_resource path="res://scripts/PlayerChildCamera.gd" type="Script" id=10]
 [ext_resource path="res://scenes/itens/Sun.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/itens/Healthbar.tscn" type="PackedScene" id=12]
 [ext_resource path="res://sounds/item bom (1).wav" type="AudioStream" id=13]
@@ -411,7 +410,6 @@ drag_margin_v_enabled = true
 smoothing_speed = 6.0
 drag_margin_top = 0.8
 drag_margin_bottom = 0.0
-script = ExtResource( 10 )
 
 [node name="Healthbar" parent="PlayerCamera" instance=ExtResource( 12 )]
 position = Vector2( -376.813, -214.679 )
