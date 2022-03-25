@@ -19,4 +19,4 @@ func _ready():
 func _on_TextureButton_pressed():
 	
 	var menu = load ("res://scenes/scenarios/novo menu.tscn").instance()
-	get_tree().current_scene.add_child()
+	get_tree().current_scene.add_child(menu)

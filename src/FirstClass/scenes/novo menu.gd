@@ -25,8 +25,9 @@ func _on_TutorialButton_pressed():
 	var tutorial = load("res://scenes/Tuturial.tscn").instance()
 	# criar uma cena com o tutorial e colocar entre ""
 	get_tree().current_scene.add_child(tutorial)
+	$AudioStreamPlayer.stop()
 	
-	$AudioStreamPlayer.play()
+
 	'	'
 func _process(delta):
 
