@@ -77,6 +77,71 @@ script = ExtResource( 4 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 746.0
+margin_top = -668.0
+margin_right = 1099.0
+margin_bottom = -395.0
+
+[node name="TextureButton" type="TextureButton" parent="CenterContainer"]
+margin_left = 46.0
+margin_top = 41.0
+margin_right = 306.0
+margin_bottom = 231.0
+size_flags_horizontal = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="SoundIcon(2)" type="Sprite" parent="CenterContainer/TextureButton"]
+position = Vector2( 118, 104 )
+
+[node name="TextureButton" type="TextureButton" parent="CenterContainer/TextureButton"]
+anchor_left = 0.0292969
+anchor_top = 0.0566667
+anchor_right = 0.0292969
+anchor_bottom = 0.0566667
+margin_left = 869.0
+margin_top = -31.0
+margin_right = 1129.0
+margin_bottom = 159.0
+rect_scale = Vector2( 0.5, 0.5 )
+size_flags_horizontal = 0
+keep_pressed_outside = true
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+autoplay = true
+bus = "SHAKIRA"
+
+[node name="BabyFrame01" type="Sprite" parent="."]
+position = Vector2( 156, 79 )
+scale = Vector2( 0.3625, 0.3625 )
+texture = ExtResource( 5 )
+hframes = 2
+vframes = 2
+frame = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BabyFrame01"]
+anims/RESET = SubResource( 1 )
+anims/teste = SubResource( 2 )
+anims/teste2 = SubResource( 3 )
+
+[node name="LogoLifeIsAGame" type="Sprite" parent="."]
+position = Vector2( 512, 175 )
+scale = Vector2( 0.764, 0.764 )
+texture = ExtResource( 10 )
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.339844
 anchor_top = 0.483333
@@ -110,6 +175,7 @@ margin_bottom = 448.0
 focus_neighbour_bottom = NodePath("../JogarButton")
 texture_normal = ExtResource( 3 )
 
+<<<<<<< Updated upstream
 [node name="LogoLifeIsAGame" type="Sprite" parent="."]
 position = Vector2( 512, 175 )
 scale = Vector2( 0.764, 0.764 )
@@ -156,7 +222,10 @@ position = Vector2( 118, 104 )
 
 [node name="Node" type="Node" parent="."]
 
+=======
+[connection signal="pressed" from="CenterContainer/TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="CenterContainer/TextureButton/TextureButton" to="." method="_on_TextureButton_pressed"]
+>>>>>>> Stashed changes
 [connection signal="pressed" from="VBoxContainer/JogarButton" to="." method="_on_JogarButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/SairButton" to="." method="_on_SairButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/TutorialButton" to="." method="_on_TutorialButton_pressed"]
-[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

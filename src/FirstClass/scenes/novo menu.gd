@@ -1,4 +1,4 @@
-extends Control
+extends Node
 
 
 # Declare member variables here. Examples:
@@ -27,7 +27,11 @@ func _on_TutorialButton_pressed():
 	get_tree().current_scene.add_child(tutorial)
 	$AudioStreamPlayer.stop()
 	
+<<<<<<< Updated upstream
 
+=======
+	$AudioStreamPlayer.stop()
+>>>>>>> Stashed changes
 	'	'
 func _process(delta):
 

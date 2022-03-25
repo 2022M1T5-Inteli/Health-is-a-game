@@ -19,6 +19,7 @@ boot_splash/fullsize=false
 
 GameManager="*res://scripts/GameManager.gd"
 
+<<<<<<< Updated upstream
 [display]
 
 window/size/borderless=true
@@ -26,6 +27,8 @@ window/size/fullscreen=true
 window/stretch/mode="2d"
 window/stretch/aspect="keep_height"
 
+=======
+>>>>>>> Stashed changes
 [input]
 
 ui_up={
