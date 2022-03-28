@@ -16,17 +16,18 @@ func _ready():
 func _on_JogarButton_pressed():
 		get_tree().change_scene("res://scenes/scenarios/BabyHouse.tscn")
 		
-		
-func _on_SairButton_pressed():
-	get_tree().quit()
-	pass # Replace with function body.
-
 func _on_TutorialButton_pressed():
-	var tutorial = load("res://scenes/Tutorial.tscn").instance()
+	var tutorial = load ("res://scenes/Tutorial.tscn").instance()
 	# criar uma cena com o tutorial e colocar entre ""
 	get_tree().current_scene.add_child(tutorial)
 	$AudioStreamPlayer.stop()
 	
+	
+func _on_SairButton_pressed():
+	get_tree().quit()
+	pass # Replace with function body.
+
+
 	$AudioStreamPlayer.stop()
 	
 func _process(delta):
@@ -34,8 +35,6 @@ func _process(delta):
 	$BabyFrame01/AnimationPlayer.play("teste")
 	$BabyFrame01.move_local_x(velocidade)
 	
-
-
 
 
 func _on_TextureButton_pressed():

@@ -97,8 +97,6 @@ texture_normal = ExtResource( 7 )
 texture_pressed = ExtResource( 6 )
 
 [node name="SairButton" type="TextureButton" parent="VBoxContainer"]
-anchor_left = 0.14
-anchor_right = 0.385
 margin_top = 144.0
 margin_right = 512.0
 margin_bottom = 284.0
