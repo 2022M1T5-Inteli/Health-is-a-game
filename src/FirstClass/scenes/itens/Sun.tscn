@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scripts/itens/Sun.gd" type="Script" id=1]
 [ext_resource path="res://sprites/solmalvado.png" type="Texture" id=2]
-
+[ext_resource path="res://sounds/item bom (1).wav" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16.7149, 16.5422 )
@@ -20,5 +20,8 @@ shape = SubResource( 1 )
 position = Vector2( 58, 109 )
 scale = Vector2( 0.511765, 0.5125 )
 texture = ExtResource( 2 )
+
+[node name="CollectedBadSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
 
 [connection signal="body_entered" from="." to="." method="_on_Sun_body_entered"]

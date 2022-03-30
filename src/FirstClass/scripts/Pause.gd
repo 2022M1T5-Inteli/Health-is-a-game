@@ -5,14 +5,8 @@ extends Node
 #func _ready():
 	#$Labeal.visible = false
 
-func _process(delta):
-	
-	if Input.is_action_just_pressed("pause"):
-		var pause = load ("res://scenes/PauseMenu.tscn").instance()
-		if get_tree().paused == false:
-			get_tree().paused = true
-
-			#$Label.visible #pode colocar uma label text escrito pausado
-		else:	
-			get_tree().paused = false
-			#$Labeal.visible = false
+#func _process(delta):
+#
+#	if Input.is_action_just_pressed("pause"):
+#		#var pause = load ("res://scenes/PauseMenu.tscn").instance()
+#		get_tree().paused = !get_tree().paused

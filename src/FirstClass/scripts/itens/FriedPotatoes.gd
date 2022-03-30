@@ -11,4 +11,4 @@ func _on_FriedPotatoes_body_entered(body):
 		_FriedPotatoes.hide()
 		if (GameManager.health_score + points) <= 1000:
 			GameManager.health_score = GameManager.health_score + points
-	$CollectedFriedPotatoesFx.play()
+	$CollectedSoundBad.play()

@@ -14,6 +14,7 @@ func _ready():
 #func _process(delta):
 #	pass
 func _on_JogarButton_pressed():
+		GameManager.health_score = 1000
 		get_tree().change_scene("res://scenes/scenarios/BabyHouse.tscn")
 		
 func _on_TutorialButton_pressed():
@@ -31,7 +32,6 @@ func _on_SairButton_pressed():
 	$AudioStreamPlayer.stop()
 	
 func _process(delta):
-
 	$BabyFrame01/AnimationPlayer.play("teste")
 	$BabyFrame01.move_local_x(velocidade)
 	
