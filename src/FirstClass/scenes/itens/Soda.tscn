@@ -2,10 +2,7 @@
 
 [ext_resource path="res://scripts/itens/Soda.gd" type="Script" id=1]
 [ext_resource path="res://sprites/refri-export.png" type="Texture" id=2]
-<<<<<<< HEAD
 [ext_resource path="res://sounds/item ruim (1).ogg" type="AudioStream" id=3]
-=======
->>>>>>> 21359a615ffc497ed9a671e37456f1386a8a2add
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 61.5, 78.5 )
@@ -25,5 +22,6 @@ shape = SubResource( 1 )
 
 [node name="CollectedSoundBad" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
+volume_db = 15.0
 
 [connection signal="body_entered" from="." to="." method="_on_Soda_body_entered"]
