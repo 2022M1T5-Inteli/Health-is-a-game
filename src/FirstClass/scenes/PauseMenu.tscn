@@ -55,12 +55,20 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+<<<<<<< HEAD
 [node name="SoundGame" type="TextureButton" parent="."]
 margin_left = 590.0
 margin_top = 530.0
 margin_right = 720.0
 margin_bottom = 660.0
 rect_scale = Vector2( 1.1, 1.1 )
+=======
+[node name="SoundGame" type="TextureButton" parent="CenterContainer/VBoxContainer2/HBoxContainer"]
+margin_left = 221.0
+margin_right = 351.0
+margin_bottom = 189.0
+rect_min_size = Vector2( 0.5, 0 )
+>>>>>>> 21359a615ffc497ed9a671e37456f1386a8a2add
 texture_normal = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
