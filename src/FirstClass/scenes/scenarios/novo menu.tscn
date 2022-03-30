@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://sprites/sair.png" type="Texture" id=1]
 [ext_resource path="res://sprites/soundIcon (1).png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://sounds/MUSICA MENU.mp3" type="AudioStream" id=8]
 [ext_resource path="res://sprites/soundIcon (2).png" type="Texture" id=9]
 [ext_resource path="res://logo life is a game.png" type="Texture" id=10]
+[ext_resource path="res://sprites/jogarLight.png" type="Texture" id=11]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -95,6 +96,7 @@ margin_bottom = 140.0
 focus_neighbour_top = NodePath("../TutorialButton")
 texture_normal = ExtResource( 7 )
 texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 11 )
 
 [node name="SairButton" type="TextureButton" parent="VBoxContainer"]
 margin_top = 144.0
