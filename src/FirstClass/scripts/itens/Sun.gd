@@ -10,4 +10,4 @@ func _on_Sun_body_entered(body):
 		_sun.hide()
 		if (GameManager.health_score + points) <= 1000:
 			GameManager.health_score = GameManager.health_score + points
-	$CollectedSunFx.play()
+	$CollectedSoundBad.play()
