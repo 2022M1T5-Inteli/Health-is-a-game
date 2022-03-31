@@ -1,0 +1,73 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://sprites/soundIcon (1).png" type="Texture" id=1]
+[ext_resource path="res://sprites/reiniciarfinal.png" type="Texture" id=2]
+[ext_resource path="res://scripts/PauseMenu.gd" type="Script" id=3]
+[ext_resource path="res://sprites/retomar1.png" type="Texture" id=4]
+[ext_resource path="res://sprites/pauseFrame.png" type="Texture" id=5]
+[ext_resource path="res://sprites/VoltarMenuBtnLight.png" type="Texture" id=6]
+
+[node name="PauseMenu" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 62.0
+margin_right = -184.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PauseFrame" type="Sprite" parent="."]
+position = Vector2( 563, 326 )
+scale = Vector2( 0.8235, 0.8235 )
+texture = ExtResource( 5 )
+
+[node name="ResumeBtn" type="TextureButton" parent="."]
+margin_left = 284.0
+margin_top = 61.0
+margin_right = 857.0
+margin_bottom = 257.0
+texture_normal = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuBtn" type="TextureButton" parent="."]
+margin_left = 381.0
+margin_top = 274.0
+margin_right = 761.0
+margin_bottom = 434.0
+texture_normal = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RestartGameBtn" type="TextureButton" parent="."]
+margin_left = 664.0
+margin_top = 607.0
+margin_right = 861.0
+margin_bottom = 796.0
+rect_min_size = Vector2( 190, 0 )
+rect_scale = Vector2( 0.8, 0.8 )
+rect_pivot_offset = Vector2( -1402, -408 )
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SoundGame" type="TextureButton" parent="."]
+margin_left = 590.0
+margin_top = 530.0
+margin_right = 720.0
+margin_bottom = 660.0
+rect_scale = Vector2( 1.1, 1.1 )
+texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="ResumeBtn" to="." method="_on_ResumeBtn_pressed"]
+[connection signal="pressed" from="MenuBtn" to="." method="_on_MenuBtn_pressed"]
+[connection signal="pressed" from="RestartGameBtn" to="." method="_on_RestartGameBtn_pressed"]
+[connection signal="pressed" from="SoundGame" to="." method="_on_SoundGame_pressed"]
