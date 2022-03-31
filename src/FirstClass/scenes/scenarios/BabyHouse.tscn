@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://scenes/itens/BabyBottle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/itens/Door.tscn" type="PackedScene" id=2]
@@ -15,6 +15,9 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9520.25, 37.5 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "porta"
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 48, 335 )
@@ -50,7 +53,7 @@ position = Vector2( -498, -287 )
 scale = Vector2( 0.02, 0.02 )
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( -24, 511 )
+position = Vector2( -183, 509 )
 scale = Vector2( 0.375312, 0.375312 )
 
 [node name="Elements" type="Node2D" parent="."]
@@ -135,7 +138,7 @@ stream = ExtResource( 12 )
 volume_db = 15.0
 
 [node name="Candy4" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 346, 305 )
+position = Vector2( 1268, 322 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedCandyFx" type="AudioStreamPlayer2D" parent="Elements/CandyNode/Candy4"]
@@ -331,7 +334,7 @@ stream = ExtResource( 13 )
 volume_db = 15.0
 
 [node name="BabyBottle3" parent="Elements/BabyBottleNode" instance=ExtResource( 1 )]
-position = Vector2( 640, 525 )
+position = Vector2( 1820, 215 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedBabyBottleFx" type="AudioStreamPlayer2D" parent="Elements/BabyBottleNode/BabyBottle3"]
@@ -630,7 +633,10 @@ volume_db = 15.0
 [node name="Door" type="Node" parent="Elements"]
 
 [node name="Door2" parent="Elements" instance=ExtResource( 2 )]
-position = Vector2( 16775, 253 )
+position = Vector2( 16796, 0 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Elements/Door2"]
+anims/porta = SubResource( 3 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

@@ -5,9 +5,9 @@ export(int) var hitpoints = 100
 # Player speed amount and gravity variables
 var SPEED = 4.7
 var velocity = Vector2.ZERO
-var move_speed = 580
-var gravity = 1800
-var jump_force = -1520
+var move_speed = 500
+var gravity = 1500
+var jump_force = -1500
 var max_hitpoints = max_hitpoints
 var has_double_jumped = false
 

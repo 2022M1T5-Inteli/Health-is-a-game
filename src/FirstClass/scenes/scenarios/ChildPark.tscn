@@ -257,31 +257,31 @@ stream = ExtResource( 9 )
 position = Vector2( 1591, 145 )
 
 [node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/Sun/Sun"]
-stream = ExtResource( 13 )
+stream = ExtResource( 9 )
 
 [node name="Sun2" parent="Elements/Sun" instance=ExtResource( 11 )]
 position = Vector2( 1035, 321 )
 
 [node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/Sun/Sun2"]
-stream = ExtResource( 13 )
+stream = ExtResource( 9 )
 
 [node name="Sun3" parent="Elements/Sun" instance=ExtResource( 11 )]
 position = Vector2( 5111, 349 )
 
 [node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/Sun/Sun3"]
-stream = ExtResource( 13 )
+stream = ExtResource( 9 )
 
 [node name="Sun4" parent="Elements/Sun" instance=ExtResource( 11 )]
 position = Vector2( 4635, 80 )
 
 [node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/Sun/Sun4"]
-stream = ExtResource( 13 )
+stream = ExtResource( 9 )
 
 [node name="Sun5" parent="Elements/Sun" instance=ExtResource( 11 )]
 position = Vector2( 8036, 197 )
 
 [node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/Sun/Sun5"]
-stream = ExtResource( 13 )
+stream = ExtResource( 9 )
 
 [node name="Ball" type="Node" parent="Elements"]
 
