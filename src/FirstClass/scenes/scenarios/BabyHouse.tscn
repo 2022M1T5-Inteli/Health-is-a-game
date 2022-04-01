@@ -316,7 +316,8 @@ position = Vector2( 8038, 227 )
 [node name="Door" type="Node" parent="Elements"]
 
 [node name="Door2" parent="Elements" instance=ExtResource( 2 )]
-position = Vector2( 16775, 253 )
+position = Vector2( 16773, 44 )
+targetScenePath = "res://scenes/scenarios/ChildPark.tscn"
 
 [node name="PlayerCamera" type="Camera2D" parent="."]
 position = Vector2( -4, 309 )

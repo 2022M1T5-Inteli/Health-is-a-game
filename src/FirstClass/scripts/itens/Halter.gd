@@ -1,11 +1,14 @@
 extends Area2D
 
-onready var _SunProtector = $SunProtectorSprite
-var points = 4
 
-func _on_SunProtector_body_entered(body):
+onready var _Halter = $HalterSprite
+
+var points = +5
+
+func _on_Halter_body_entered(body):
+	# if the body name is "Player", it triggers the hide action mentioned above
 	if body.get_name() == "Player":
-		_SunProtector.hide()
+		$HalterSprite.hide()
 		if (GameManager.health_score + points) <= 1000:
 			GameManager.health_score = GameManager.health_score + points
 	$CollectedSoundGood.play()

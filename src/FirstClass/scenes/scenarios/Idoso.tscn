@@ -1,11 +1,15 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://backgrounds/cenarioidosoorganizado1.png" type="Texture" id=1]
 [ext_resource path="res://backgrounds/cenarioidosoorganizado2.png" type="Texture" id=2]
 [ext_resource path="res://backgrounds/cenarioidosoorganizado3.png" type="Texture" id=3]
 [ext_resource path="res://scenes/PlayerSenior.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/itens/Saladao.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/itens/Healthbar.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/PauseMenu.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/itens/DoorFinal.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/itens/SolBom.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/itens/Cigarro.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 48, 335 )
@@ -31,10 +35,10 @@ texture = ExtResource( 3 )
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 15057, 200 )
+position = Vector2( 20132, 181 )
 shape = SubResource( 1 )
 
-[node name="PlayerIdoso" parent="." instance=ExtResource( 4 )]
+[node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 431, 211 )
 
 [node name="StaticBodyChaoSEnior" type="StaticBody2D" parent="."]
@@ -61,3 +65,85 @@ visible = false
 position = Vector2( -208.674, -113.345 )
 scale = Vector2( 0.4, 0.4 )
 z_index = 5
+
+[node name="Saladdao2" type="Node" parent="."]
+
+[node name="Saladdao" parent="Saladdao2" instance=ExtResource( 5 )]
+position = Vector2( 1626, 262 )
+
+[node name="Saladdao2" parent="Saladdao2" instance=ExtResource( 5 )]
+position = Vector2( 13921, 141 )
+
+[node name="Saladdao3" parent="Saladdao2" instance=ExtResource( 5 )]
+position = Vector2( 4947, 266 )
+
+[node name="Saladdao4" parent="Saladdao2" instance=ExtResource( 5 )]
+position = Vector2( 5556, 211 )
+
+[node name="Saladdao5" parent="Saladdao2" instance=ExtResource( 5 )]
+position = Vector2( 4024, 204 )
+
+[node name="Saladdao6" parent="Saladdao2" instance=ExtResource( 5 )]
+position = Vector2( 10196, 43 )
+
+[node name="Saladdao7" parent="Saladdao2" instance=ExtResource( 5 )]
+position = Vector2( 8698, 185 )
+
+[node name="Saladdao8" parent="Saladdao2" instance=ExtResource( 5 )]
+position = Vector2( 17873, 239 )
+
+[node name="Saladdao9" parent="Saladdao2" instance=ExtResource( 5 )]
+position = Vector2( 6808, 54 )
+
+[node name="Saladdao10" parent="Saladdao2" instance=ExtResource( 5 )]
+position = Vector2( 12252, 164 )
+
+[node name="SolBom" type="Node" parent="."]
+
+[node name="SolBom" parent="SolBom" instance=ExtResource( 9 )]
+visible = false
+position = Vector2( 3084, 195 )
+
+[node name="SolBom2" parent="SolBom" instance=ExtResource( 9 )]
+position = Vector2( 19486, 173 )
+
+[node name="SolBom3" parent="SolBom" instance=ExtResource( 9 )]
+position = Vector2( 4514, 164 )
+
+[node name="SolBom4" parent="SolBom" instance=ExtResource( 9 )]
+position = Vector2( 11925, 342 )
+
+[node name="SolBom5" parent="SolBom" instance=ExtResource( 9 )]
+position = Vector2( 13366, 359 )
+
+[node name="SolBom6" parent="SolBom" instance=ExtResource( 9 )]
+position = Vector2( 15503, 244 )
+
+[node name="SolBom7" parent="SolBom" instance=ExtResource( 9 )]
+position = Vector2( 8209, 325 )
+
+[node name="SolBom8" parent="SolBom" instance=ExtResource( 9 )]
+position = Vector2( 11087, 351 )
+
+[node name="Cigarro" type="Node" parent="."]
+
+[node name="Cigarro" parent="Cigarro" instance=ExtResource( 10 )]
+position = Vector2( 1484, 282 )
+
+[node name="Cigarro2" parent="Cigarro" instance=ExtResource( 10 )]
+position = Vector2( 9605, 318 )
+
+[node name="Cigarro3" parent="Cigarro" instance=ExtResource( 10 )]
+position = Vector2( 12756, 299 )
+
+[node name="Cigarro4" parent="Cigarro" instance=ExtResource( 10 )]
+position = Vector2( 14439, 247 )
+
+[node name="Cigarro5" parent="Cigarro" instance=ExtResource( 10 )]
+position = Vector2( 2363, 287 )
+
+[node name="DoorFinal" parent="." instance=ExtResource( 8 )]
+position = Vector2( 19043, -86 )
+badEndThreshold = 900
+goodEndtargetScenePath = "res://scenes/scenarios/FinalBom.tscn"
+badEndtargetScenePath = "res://scenes/scenarios/FinalRuim.tscn"

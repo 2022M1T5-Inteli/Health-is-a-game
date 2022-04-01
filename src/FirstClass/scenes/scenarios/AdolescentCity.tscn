@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scenes/itens/Healthbar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://backgrounds/adolescentefinal2t3.png" type="Texture" id=2]
@@ -7,6 +7,10 @@
 [ext_resource path="res://scenes/PauseMenu.tscn" type="PackedScene" id=5]
 [ext_resource path="res://sounds/item ruim (1).ogg" type="AudioStream" id=6]
 [ext_resource path="res://scenes/itens/Chocolate.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/itens/Hamburger.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/itens/Halter.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/itens/Saladao.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/itens/Door.tscn" type="PackedScene" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 156, 296 )
@@ -57,14 +61,37 @@ scale = Vector2( 0.4, 0.4 )
 z_index = 5
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( -22, 416 )
+position = Vector2( 317, 412 )
 
 [node name="Elements" type="Node" parent="."]
+
+[node name="Halter" type="Node" parent="Elements"]
+
+[node name="Halter" parent="Elements/Halter" instance=ExtResource( 9 )]
+position = Vector2( 6577, 391 )
+
+[node name="Halter2" parent="Elements/Halter" instance=ExtResource( 9 )]
+position = Vector2( 4626, 415 )
+
+[node name="Halter3" parent="Elements/Halter" instance=ExtResource( 9 )]
+position = Vector2( 5809, 426 )
+
+[node name="Halter4" parent="Elements/Halter" instance=ExtResource( 9 )]
+position = Vector2( 7930, 368 )
+
+[node name="Halter5" parent="Elements/Halter" instance=ExtResource( 9 )]
+position = Vector2( 2465, 438 )
+
+[node name="Halter6" parent="Elements/Halter" instance=ExtResource( 9 )]
+position = Vector2( 9917, 426 )
+
+[node name="Halter7" parent="Elements/Halter" instance=ExtResource( 9 )]
+position = Vector2( 1195, 428 )
 
 [node name="Chocolate" type="Node" parent="Elements"]
 
 [node name="Chocolate" parent="Elements/Chocolate" instance=ExtResource( 7 )]
-position = Vector2( 506, 343 )
+position = Vector2( 13206, 466 )
 scale = Vector2( 0.6, 0.6 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Elements/Chocolate/Chocolate"]
@@ -76,7 +103,7 @@ position = Vector2( 1020, 284 )
 scale = Vector2( 0.6, 0.6 )
 
 [node name="Chocolate3" parent="Elements/Chocolate" instance=ExtResource( 7 )]
-position = Vector2( 1595, 400 )
+position = Vector2( 9532, 352 )
 scale = Vector2( 0.6, 0.6 )
 
 [node name="Chocolate4" parent="Elements/Chocolate" instance=ExtResource( 7 )]
@@ -84,5 +111,110 @@ position = Vector2( 2347, 299 )
 scale = Vector2( 0.6, 0.6 )
 
 [node name="Chocolate5" parent="Elements/Chocolate" instance=ExtResource( 7 )]
-position = Vector2( 2746, 455 )
+position = Vector2( 2783, 435 )
 scale = Vector2( 0.6, 0.6 )
+
+[node name="Chocolate6" parent="Elements/Chocolate" instance=ExtResource( 7 )]
+position = Vector2( 7477, 387 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Elements/Chocolate/Chocolate6"]
+position = Vector2( 91.6667, 70 )
+stream = ExtResource( 6 )
+
+[node name="Chocolate7" parent="Elements/Chocolate" instance=ExtResource( 7 )]
+position = Vector2( 6270, 401 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Elements/Chocolate/Chocolate7"]
+position = Vector2( 91.6667, 70 )
+stream = ExtResource( 6 )
+
+[node name="Chocolate8" parent="Elements/Chocolate" instance=ExtResource( 7 )]
+position = Vector2( 8936, 346 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Elements/Chocolate/Chocolate8"]
+position = Vector2( 91.6667, 70 )
+stream = ExtResource( 6 )
+
+[node name="Chocolate9" parent="Elements/Chocolate" instance=ExtResource( 7 )]
+position = Vector2( 11362, 337 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Elements/Chocolate/Chocolate9"]
+position = Vector2( 91.6667, 70 )
+stream = ExtResource( 6 )
+
+[node name="Chocolate10" parent="Elements/Chocolate" instance=ExtResource( 7 )]
+position = Vector2( 1835, 303 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Elements/Chocolate/Chocolate10"]
+position = Vector2( 91.6667, 70 )
+stream = ExtResource( 6 )
+
+[node name="Hamburger" type="Node" parent="Elements"]
+
+[node name="Hamburger" parent="Elements/Hamburger" instance=ExtResource( 8 )]
+position = Vector2( 1642, 388 )
+
+[node name="Hamburger2" parent="Elements/Hamburger" instance=ExtResource( 8 )]
+position = Vector2( 8331, 283 )
+
+[node name="Hamburger3" parent="Elements/Hamburger" instance=ExtResource( 8 )]
+position = Vector2( 12231, 443 )
+
+[node name="Hamburger4" parent="Elements/Hamburger" instance=ExtResource( 8 )]
+position = Vector2( 13716, 446 )
+
+[node name="Hamburger5" parent="Elements/Hamburger" instance=ExtResource( 8 )]
+position = Vector2( 14415, 173 )
+
+[node name="Hamburger6" parent="Elements/Hamburger" instance=ExtResource( 8 )]
+position = Vector2( 3667, 360 )
+
+[node name="Hamburger7" parent="Elements/Hamburger" instance=ExtResource( 8 )]
+position = Vector2( 10565, 445 )
+
+[node name="Hamburger8" parent="Elements/Hamburger" instance=ExtResource( 8 )]
+position = Vector2( 5407, 197 )
+
+[node name="Hamburger9" parent="Elements/Hamburger" instance=ExtResource( 8 )]
+position = Vector2( 2056, 445 )
+
+[node name="Saladao" type="Node" parent="Elements"]
+
+[node name="Saladao" parent="Elements/Saladao" instance=ExtResource( 10 )]
+position = Vector2( 8488, 382 )
+
+[node name="Saladao2" parent="Elements/Saladao" instance=ExtResource( 10 )]
+position = Vector2( 11676, 390 )
+
+[node name="Saladao3" parent="Elements/Saladao" instance=ExtResource( 10 )]
+position = Vector2( 2951, 381 )
+
+[node name="Saladao4" parent="Elements/Saladao" instance=ExtResource( 10 )]
+position = Vector2( 3976, 393 )
+
+[node name="Saladao5" parent="Elements/Saladao" instance=ExtResource( 10 )]
+position = Vector2( 13920, 103 )
+
+[node name="Saladao6" parent="Elements/Saladao" instance=ExtResource( 10 )]
+position = Vector2( 10186, 170 )
+
+[node name="Saladao7" parent="Elements/Saladao" instance=ExtResource( 10 )]
+position = Vector2( 10805, 393 )
+
+[node name="Saladao8" parent="Elements/Saladao" instance=ExtResource( 10 )]
+position = Vector2( 12786, 400 )
+
+[node name="Saladao9" parent="Elements/Saladao" instance=ExtResource( 10 )]
+position = Vector2( 9159, 387 )
+
+[node name="Saladao10" parent="Elements/Saladao" instance=ExtResource( 10 )]
+position = Vector2( 7555, 385 )
+
+[node name="Door" parent="." instance=ExtResource( 11 )]
+position = Vector2( 13600, -26 )
+targetScenePath = "res://scenes/scenarios/AdultScene.tscn"

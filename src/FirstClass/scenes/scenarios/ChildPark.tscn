@@ -8,7 +8,7 @@
 [ext_resource path="res://scenes/itens/FriedPotatoes.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/itens/SunProtector.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/PlayerChild.tscn" type="PackedScene" id=8]
-[ext_resource path="res://scenes/itens/DoorChild.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/itens/Door.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/itens/SolBom.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/itens/Sun.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/itens/Healthbar.tscn" type="PackedScene" id=12]
@@ -44,9 +44,6 @@ shape = SubResource( 3 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
 position = Vector2( 4422.09, 574 )
 shape = SubResource( 1 )
-
-[node name="DoorChild" parent="Floor/CollisionShape2D" instance=ExtResource( 9 )]
-position = Vector2( 4044.91, -568 )
 
 [node name="Elements" type="Node" parent="."]
 
@@ -457,6 +454,10 @@ drag_margin_bottom = 0.0
 position = Vector2( -297.999, -216.932 )
 scale = Vector2( 0.02, 0.02 )
 
-[node name="PlayerChild" parent="." instance=ExtResource( 8 )]
+[node name="Player" parent="." instance=ExtResource( 8 )]
 position = Vector2( 420, 437 )
 scale = Vector2( 0.5, 0.5 )
+
+[node name="Door" parent="." instance=ExtResource( 9 )]
+position = Vector2( 8469, 1 )
+targetScenePath = "res://scenes/scenarios/AdolescentCity.tscn"
