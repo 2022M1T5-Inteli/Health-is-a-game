@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://sprites/adultoanimado2.png" type="Texture" id=1]
+[ext_resource path="res://sprites/adultoanimado3.png" type="Texture" id=2]
+[ext_resource path="res://sprites/adultoanimado1.png" type="Texture" id=3]
+[ext_resource path="res://sprites/adultoanimado4.png" type="Texture" id=4]
+[ext_resource path="res://scripts/PlayerAdulto.gd" type="Script" id=5]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 78, 124.5 )
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("AdultoSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "Walk"
+length = 0.9
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AdultoSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5, 0.7, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 3 ]
+}
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="PlayerAdulto" type="KinematicBody2D"]
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 48, 19.5 )
+shape = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+playback_speed = 1.1
+anims/RESET = SubResource( 4 )
+anims/Walk = SubResource( 5 )
+
+[node name="AdultoSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -1.00002, 3.00001 )
+scale = Vector2( 0.58125, 0.58125 )
+frames = SubResource( 3 )
+speed_scale = 0.9
