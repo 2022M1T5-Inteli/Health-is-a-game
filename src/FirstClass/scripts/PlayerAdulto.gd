@@ -7,7 +7,7 @@ export(int) var hitpoints = 100
 # Atribuição de valores para as variáveis velocidade e gravidade
 var SPEED = 4.7
 var velocity = Vector2.ZERO
-var move_speed = 580
+var move_speed = 530
 var gravity = 1800
 var jump_force = -1520
 var max_hitpoints = max_hitpoints

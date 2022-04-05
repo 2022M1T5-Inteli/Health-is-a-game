@@ -3,9 +3,9 @@ extends KinematicBody2D
 export(int) var hitpoints = 100
 
 # Player speed amount and gravity variables
-var SPEED = 4.7
+var SPEED = 1.0
 var velocity = Vector2.ZERO
-var move_speed = 580
+var move_speed = 440
 var gravity = 1800
 var jump_force = -1520
 var max_hitpoints = max_hitpoints
