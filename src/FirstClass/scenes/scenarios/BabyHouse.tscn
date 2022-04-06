@@ -12,6 +12,8 @@
 [ext_resource path="res://BabyRoomPart1.png" type="Texture" id=10]
 [ext_resource path="res://backgrounds/BabyRoomPart2.png" type="Texture" id=11]
 [ext_resource path="res://BadPointsOverPlayer.tscn" type="PackedScene" id=12]
+[ext_resource path="res://backgrounds/cenariobebeditavel.png" type="Texture" id=10]
+[ext_resource path="res://backgrounds/cenariocriançaeditavel1.png" type="Texture" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9520.25, 37.5 )
@@ -21,14 +23,14 @@ extents = Vector2( 48, 335 )
 
 [node name="Node2D" type="Node2D"]
 
-[node name="BabyRoomPart2" type="Sprite" parent="."]
-position = Vector2( 13723, 331 )
-scale = Vector2( 0.74747, 0.820391 )
+[node name="Cenariocriançaeditavel1" type="Sprite" parent="."]
+position = Vector2( 15501, 329 )
+scale = Vector2( 0.819873, 0.82 )
 texture = ExtResource( 11 )
 
-[node name="BabyRoomPart1" type="Sprite" parent="."]
-position = Vector2( 4298.44, 331 )
-scale = Vector2( 0.702855, 0.820391 )
+[node name="Cenariobebeditavel" type="Sprite" parent="."]
+position = Vector2( 4849, 329 )
+scale = Vector2( 0.82, 0.82 )
 texture = ExtResource( 10 )
 
 [node name="Floor" type="StaticBody2D" parent="."]
