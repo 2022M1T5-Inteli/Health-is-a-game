@@ -6,7 +6,6 @@ export var targetScenePath = ""
 func _on_Door_body_entered(body):
 	if body.get_name() == "Player":
 		_animatedSprite.play("doorOpening")
-		
 
 
 func _on_AnimatedSprite_animation_finished():

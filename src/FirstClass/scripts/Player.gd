@@ -14,10 +14,6 @@ var has_double_jumped = false
 # defines the UP parameter for the move_and_slide function
 const UP = Vector2(0, -1)
 
- #Points system 
-#var healthPoints = 500
-
-
 # References the elements from the player node
 onready var _animation_player = $AnimationPlayer
 onready var _camera = get_node("../PlayerCamera")
@@ -46,3 +42,13 @@ func _physics_process(delta: float) -> void:
 	velocity.x = move_speed
 	move_and_slide(velocity, UP)
 	print(GameManager.health_score)
+
+
+func _on_Candy4_on_hit():
+	$BadHit.play_bad_hit()
+
+func play_bad_hit():
+	$BadHit.play_bad_hit()
+
+func play_good_hit():
+	$BadHit.play_good_hit()
