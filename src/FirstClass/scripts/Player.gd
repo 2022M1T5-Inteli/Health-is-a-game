@@ -24,7 +24,7 @@ func _physics_process(delta: float) -> void:
 	_camera.position.x = position.x
 	
 	# Plays the crawl animation
-	_animation_player.play("crawl")
+	_animation_player.play("walk")
 	# Controls the jump/double jump actions
 	if Input.is_action_just_pressed("ui_up") and has_double_jumped == false:
 		velocity.y = jump_force / 2
