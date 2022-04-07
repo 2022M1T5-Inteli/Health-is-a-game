@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scenes/itens/BabyBottle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/itens/Door.tscn" type="PackedScene" id=2]
@@ -7,13 +7,10 @@
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/itens/lollipop.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/itens/Candy.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scripts/Pause.gd" type="Script" id=8]
 [ext_resource path="res://scenes/PauseMenu.tscn" type="PackedScene" id=9]
-[ext_resource path="res://BabyRoomPart1.png" type="Texture" id=10]
-[ext_resource path="res://backgrounds/BabyRoomPart2.png" type="Texture" id=11]
-[ext_resource path="res://BadPointsOverPlayer.tscn" type="PackedScene" id=12]
 [ext_resource path="res://backgrounds/cenariobebeditavel.png" type="Texture" id=10]
 [ext_resource path="res://backgrounds/cenariocriançaeditavel1.png" type="Texture" id=11]
+[ext_resource path="res://BadPointsOverPlayer.tscn" type="PackedScene" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9520.25, 37.5 )
@@ -350,9 +347,5 @@ position = Vector2( 17912, 315 )
 shape = SubResource( 2 )
 
 [node name="Background" type="Node" parent="."]
-
-[node name="Pause" type="Node" parent="."]
-pause_mode = 2
-script = ExtResource( 8 )
 
 [connection signal="on_hit" from="Elements/CandyNode/Candy4" to="Player" method="_on_Candy4_on_hit"]
