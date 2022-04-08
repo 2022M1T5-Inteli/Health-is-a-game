@@ -9,6 +9,7 @@ var points = -5
 func _on_Candy_body_entered(body):
 	# if the body name is "Player", it triggers the hide action mentioned above
 	if body.get_name() == "Player":
+		GameManager.candy = 1
 		_Candy.hide()
 		body.play_bad_hit()
 		$CollectedSoundBad.play()
