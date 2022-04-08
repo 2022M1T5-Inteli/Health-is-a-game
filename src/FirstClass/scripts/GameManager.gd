@@ -3,6 +3,7 @@ extends Node
 var health_score = 1000
 var is_muted = false
 
+var nome = ""
 
 # Quantidades de itens
 var cigarro = 0
