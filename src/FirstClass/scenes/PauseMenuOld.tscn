@@ -2,10 +2,11 @@
 
 [ext_resource path="res://sprites/soundIcon (1).png" type="Texture" id=1]
 [ext_resource path="res://sprites/reiniciarfinal.png" type="Texture" id=2]
-[ext_resource path="res://scripts/PauseMenu.gd" type="Script" id=3]
+[ext_resource path="res://scenes/scripts/PauseMenu.gd" type="Script" id=3]
 [ext_resource path="res://sprites/retomar1.png" type="Texture" id=4]
 [ext_resource path="res://sprites/pauseFrame.png" type="Texture" id=5]
 [ext_resource path="res://sprites/VoltarMenuBtnLight.png" type="Texture" id=6]
+
 
 [node name="PauseMenu" type="Control"]
 pause_mode = 2

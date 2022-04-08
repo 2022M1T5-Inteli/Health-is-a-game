@@ -1,14 +1,13 @@
 extends Area2D
 
-onready var _sun = $Sun
 
-var points = -5
+onready var _GoodSun = $GoodSunSprite
+export var points = 4
 
-
-func _on_Sun_body_entered(body):
+func _on_GoodSun_body_entered(body):
 	if body.get_name() == "Player":
-		GameManager.sun = 1
-		_sun.hide()
+		_GoodSun.hide()
 		if (GameManager.health_score + points) <= 1000:
 			GameManager.health_score = GameManager.health_score + points
-	$CollectedSoundBad.play()
+	
+	$CollectedSoundGood.play()

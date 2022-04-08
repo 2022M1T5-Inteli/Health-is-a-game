@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dilma.jpg-6ac78eb50725ac1078fa662390954478.stex"
+path="res://.import/Alcohol.png-4b100d2f31ca20c0f831501ff1c201d9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/dilma.jpg"
-dest_files=[ "res://.import/dilma.jpg-6ac78eb50725ac1078fa662390954478.stex" ]
+source_file="res://sprites/Alcohol.png"
+dest_files=[ "res://.import/Alcohol.png-4b100d2f31ca20c0f831501ff1c201d9.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0

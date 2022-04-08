@@ -1,7 +1,7 @@
 extends Area2D
 
 onready var _animatedSprite = $AnimatedSprite 
-export var targetScenePath = ""
+export var targetScenePath = "."
 
 func _on_Door_body_entered(body):
 	if body.get_name() == "Player":

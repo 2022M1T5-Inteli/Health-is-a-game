@@ -2,12 +2,13 @@
 
 [ext_resource path="res://backgrounds/finalHospital.png" type="Texture" id=1]
 [ext_resource path="res://sprites/finalRuimMessage.png" type="Texture" id=2]
-[ext_resource path="res://scenes/scenarios/RestartGameBtn.gd" type="Script" id=3]
+[ext_resource path="res://scenes/scripts/RestartGameBtn.gd" type="Script" id=3]
 [ext_resource path="res://scenes/PlayerSenior.tscn" type="PackedScene" id=4]
 [ext_resource path="res://sprites/reiniciarfinal.png" type="Texture" id=5]
 [ext_resource path="res://scenes/itens/Healthbar.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/PauseMenu.tscn" type="PackedScene" id=7]
 [ext_resource path="res://sprites/reiniciarfinalLight.png" type="Texture" id=8]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 48, 335 )

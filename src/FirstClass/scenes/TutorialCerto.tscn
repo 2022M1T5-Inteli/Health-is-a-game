@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://scenes/TutorialCerto.gd" type="Script" id=1]
+[ext_resource path="res://scenes/scripts/TutorialCerto.gd" type="Script" id=1]
 [ext_resource path="res://backgrounds/tutorial1000%.png" type="Texture" id=2]
 [ext_resource path="res://sprites/tutuspace1x.png" type="Texture" id=3]
 [ext_resource path="res://sprites/tutuSpace2x.png" type="Texture" id=4]
@@ -10,6 +10,7 @@
 [ext_resource path="res://scenes/itens/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/PauseMenu.tscn" type="PackedScene" id=9]
 [ext_resource path="res://sprites/balaodefala1000.png" type="Texture" id=10]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9247.63, 37.5 )

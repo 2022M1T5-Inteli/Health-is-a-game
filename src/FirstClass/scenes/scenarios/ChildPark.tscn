@@ -1,7 +1,7 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://backgrounds/correcaochaoparquercrianca-export (1)edt.png" type="Texture" id=1]
-[ext_resource path="res://scripts/Pause.gd" type="Script" id=2]
+[ext_resource path="res://scenes/scripts/Pause.gd" type="Script" id=2]
 [ext_resource path="res://scenes/itens/Banana.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/itens/Ball.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/itens/Soda.tscn" type="PackedScene" id=5]
@@ -15,6 +15,8 @@
 [ext_resource path="res://sounds/item bom (1).wav" type="AudioStream" id=13]
 [ext_resource path="res://sounds/item ruim (1).ogg" type="AudioStream" id=14]
 [ext_resource path="res://scenes/PauseMenu.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/scripts/ChildPark.gd" type="Script" id=16]
+[ext_resource path="res://scenes/itens/Chocolate.tscn" type="PackedScene" id=17]
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 46.5, 335 )
@@ -23,6 +25,7 @@ extents = Vector2( 46.5, 335 )
 extents = Vector2( 5176.91, 37.5 )
 
 [node name="ChildPark" type="Node2D"]
+script = ExtResource( 16 )
 
 [node name="Correcaochaoparquercrianca-export(1)edt" type="Sprite" parent="."]
 position = Vector2( 4915.95, 295 )
@@ -48,6 +51,7 @@ shape = SubResource( 1 )
 [node name="Soda" parent="Elements/Soda" instance=ExtResource( 5 )]
 position = Vector2( 1742, 103 )
 scale = Vector2( 0.5, 0.5 )
+points = -4
 
 [node name="CollectedSodaFx" type="AudioStreamPlayer2D" parent="Elements/Soda/Soda"]
 stream = ExtResource( 14 )
@@ -169,6 +173,7 @@ stream = ExtResource( 14 )
 [node name="FriedPotatoes" parent="Elements/FriedPotatoes" instance=ExtResource( 6 )]
 position = Vector2( 2256, 360 )
 scale = Vector2( 0.5, 0.5 )
+points = -26
 
 [node name="CollectedFriedPotatoesFx" type="AudioStreamPlayer2D" parent="Elements/FriedPotatoes/FriedPotatoes"]
 stream = ExtResource( 14 )
@@ -219,62 +224,58 @@ stream = ExtResource( 14 )
 
 [node name="SunProtector" parent="Elements/SunProtector" instance=ExtResource( 7 )]
 position = Vector2( 1863, 328 )
-scale = Vector2( 0.5, 0.5 )
+scale = Vector2( 0.49962, 0.299017 )
+points = 5
 
 [node name="CollectedSunProtectorFx" type="AudioStreamPlayer2D" parent="Elements/SunProtector/SunProtector"]
-stream = ExtResource( 14 )
+stream = ExtResource( 13 )
 
 [node name="SunProtector2" parent="Elements/SunProtector" instance=ExtResource( 7 )]
 position = Vector2( 2382, 182 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedSunProtectorFx" type="AudioStreamPlayer2D" parent="Elements/SunProtector/SunProtector2"]
-stream = ExtResource( 14 )
+stream = ExtResource( 13 )
 
 [node name="SunProtector3" parent="Elements/SunProtector" instance=ExtResource( 7 )]
 position = Vector2( 7009, 285 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedSunProtectorFx" type="AudioStreamPlayer2D" parent="Elements/SunProtector/SunProtector3"]
-stream = ExtResource( 14 )
+stream = ExtResource( 13 )
 
 [node name="SunProtector4" parent="Elements/SunProtector" instance=ExtResource( 7 )]
 position = Vector2( 8536, 125 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedSunProtectorFx" type="AudioStreamPlayer2D" parent="Elements/SunProtector/SunProtector4"]
-stream = ExtResource( 14 )
+stream = ExtResource( 13 )
 
-[node name="SolMalvado" type="Node" parent="Elements"]
+[node name="BadSun" type="Node" parent="Elements"]
 
-[node name="BadSun" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
+[node name="BadSun" parent="Elements/BadSun" instance=ExtResource( 11 )]
 position = Vector2( 994, 257 )
+points = -12
 
-[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/BadSun"]
+[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/BadSun/BadSun"]
 stream = ExtResource( 13 )
 
-[node name="BadSun2" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
-position = Vector2( 1399, 246 )
+[node name="BadSun2" parent="Elements/BadSun" instance=ExtResource( 11 )]
+position = Vector2( 969, -51 )
 
-[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/BadSun2"]
+[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/BadSun/BadSun2"]
 stream = ExtResource( 13 )
 
-[node name="BadSun3" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
+[node name="BadSun3" parent="Elements/BadSun" instance=ExtResource( 11 )]
 position = Vector2( 5896, 181 )
 
-[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/BadSun3"]
+[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/BadSun/BadSun3"]
 stream = ExtResource( 13 )
 
-[node name="BadSun4" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
+[node name="BadSun4" parent="Elements/BadSun" instance=ExtResource( 11 )]
 position = Vector2( 4338, 193 )
 
-[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/BadSun4"]
-stream = ExtResource( 13 )
-
-[node name="BadSun5" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
-position = Vector2( 8090, 55 )
-
-[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/BadSun5"]
+[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/BadSun/BadSun4"]
 stream = ExtResource( 13 )
 
 [node name="Ball" type="Node" parent="Elements"]
@@ -282,12 +283,13 @@ stream = ExtResource( 13 )
 [node name="Ball" parent="Elements/Ball" instance=ExtResource( 4 )]
 position = Vector2( 830, 495 )
 scale = Vector2( 0.8, 0.8 )
+points = 5
 
 [node name="CollectedBallFx" type="AudioStreamPlayer2D" parent="Elements/Ball/Ball"]
 stream = ExtResource( 13 )
 
 [node name="Ball2" parent="Elements/Ball" instance=ExtResource( 4 )]
-position = Vector2( 1215, 212 )
+position = Vector2( 986, 198 )
 scale = Vector2( 0.8, 0.8 )
 
 [node name="CollectedBallFx" type="AudioStreamPlayer2D" parent="Elements/Ball/Ball2"]
@@ -328,25 +330,12 @@ scale = Vector2( 0.8, 0.8 )
 [node name="CollectedBallFx" type="AudioStreamPlayer2D" parent="Elements/Ball/Ball7"]
 stream = ExtResource( 13 )
 
-[node name="Ball8" parent="Elements/Ball" instance=ExtResource( 4 )]
-position = Vector2( 4125, 165 )
-scale = Vector2( 0.8, 0.8 )
-
-[node name="CollectedBallFx" type="AudioStreamPlayer2D" parent="Elements/Ball/Ball8"]
-stream = ExtResource( 13 )
-
-[node name="Ball9" parent="Elements/Ball" instance=ExtResource( 4 )]
-position = Vector2( 5782, 419 )
-scale = Vector2( 0.8, 0.8 )
-
-[node name="CollectedBallFx" type="AudioStreamPlayer2D" parent="Elements/Ball/Ball9"]
-stream = ExtResource( 13 )
-
 [node name="Banana" type="Node" parent="Elements"]
 
 [node name="Banana" parent="Elements/Banana" instance=ExtResource( 3 )]
 position = Vector2( 1070, 501 )
 scale = Vector2( 0.65, 0.65 )
+points = 5
 
 [node name="CollectedBananaFx" type="AudioStreamPlayer2D" parent="Elements/Banana/Banana"]
 stream = ExtResource( 13 )
@@ -393,49 +382,31 @@ scale = Vector2( 0.65, 0.65 )
 [node name="CollectedBananaFx" type="AudioStreamPlayer2D" parent="Elements/Banana/Banana7"]
 stream = ExtResource( 13 )
 
-[node name="Banana8" parent="Elements/Banana" instance=ExtResource( 3 )]
-position = Vector2( 7565, 248 )
-scale = Vector2( 0.65, 0.65 )
-
-[node name="CollectedBananaFx" type="AudioStreamPlayer2D" parent="Elements/Banana/Banana8"]
-stream = ExtResource( 13 )
-
 [node name="GoodSun" type="Node" parent="Elements"]
 
 [node name="GoodSun" parent="Elements/GoodSun" instance=ExtResource( 10 )]
-position = Vector2( 622, 272 )
-scale = Vector2( 0.7, 0.7 )
-
-[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/GoodSun/GoodSun"]
-stream = ExtResource( 14 )
+visible = false
+points = 5
 
 [node name="GoodSun2" parent="Elements/GoodSun" instance=ExtResource( 10 )]
-position = Vector2( 2417, 322 )
-scale = Vector2( 0.7, 0.7 )
+position = Vector2( 621, 217 )
 
-[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/GoodSun/GoodSun2"]
-stream = ExtResource( 14 )
+[node name="Chocolate" type="Node" parent="Elements"]
 
-[node name="GoodSun3" parent="Elements/GoodSun" instance=ExtResource( 10 )]
-position = Vector2( 3391, 292 )
-scale = Vector2( 0.7, 0.7 )
+[node name="Chocolate" parent="Elements/Chocolate" instance=ExtResource( 17 )]
+points = -20
 
-[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/GoodSun/GoodSun3"]
-stream = ExtResource( 14 )
+[node name="Chocolate2" parent="Elements/Chocolate" instance=ExtResource( 17 )]
 
-[node name="GoodSun4" parent="Elements/GoodSun" instance=ExtResource( 10 )]
-position = Vector2( 5220, 378 )
-scale = Vector2( 0.7, 0.7 )
+[node name="Chocolate3" parent="Elements/Chocolate" instance=ExtResource( 17 )]
 
-[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/GoodSun/GoodSun4"]
-stream = ExtResource( 14 )
+[node name="Chocolate4" parent="Elements/Chocolate" instance=ExtResource( 17 )]
 
-[node name="GoodSun5" parent="Elements/GoodSun" instance=ExtResource( 10 )]
-position = Vector2( 8860, 160 )
-scale = Vector2( 0.7, 0.7 )
+[node name="Chocolate5" parent="Elements/Chocolate" instance=ExtResource( 17 )]
 
-[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/GoodSun/GoodSun5"]
-stream = ExtResource( 14 )
+[node name="Chocolate6" parent="Elements/Chocolate" instance=ExtResource( 17 )]
+
+[node name="Chocolate7" parent="Elements/Chocolate" instance=ExtResource( 17 )]
 
 [node name="PlayerCamera" type="Camera2D" parent="."]
 position = Vector2( 416, 305 )
@@ -447,7 +418,7 @@ drag_margin_top = 0.8
 drag_margin_bottom = 0.0
 
 [node name="Healthbar" parent="PlayerCamera" instance=ExtResource( 12 )]
-position = Vector2( -334.779, -210.175 )
+position = Vector2( -320.518, -226.689 )
 scale = Vector2( 0.02, 0.02 )
 
 [node name="MenuPause" parent="PlayerCamera" instance=ExtResource( 15 )]
@@ -467,3 +438,8 @@ targetScenePath = "res://scenes/scenarios/AdolescentCity.tscn"
 [node name="Pause" type="Node" parent="."]
 pause_mode = 2
 script = ExtResource( 2 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 9156, 76 )
+
+[connection signal="body_entered" from="Elements/GoodSun/GoodSun" to="Elements/GoodSun/GoodSun" method="_on_GoodSun_body_entered"]
