@@ -1,7 +1,7 @@
 extends Area2D
 
 onready var _Banana = $BananaSprite
-var points = 2
+export var points = 2
 
 func _on_Banana_body_entered(body):
 	if body.get_name() == "Player":

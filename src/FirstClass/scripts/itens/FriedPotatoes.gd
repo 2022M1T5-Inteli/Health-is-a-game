@@ -2,7 +2,7 @@ extends Area2D
 
 onready var _FriedPotatoes = $FriedPotatoesSprite
 
-var points = -3
+export var points = -3
 
 
 func _on_FriedPotatoes_body_entered(body):

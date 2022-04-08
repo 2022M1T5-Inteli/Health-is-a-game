@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vacina.png-afbe5e0da4a8c86f64a838cf19409bee.stex"
+path="res://.import/Sopa-0002.png-11992e264ef510276922addbeba022f8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/vacina.png"
-dest_files=[ "res://.import/vacina.png-afbe5e0da4a8c86f64a838cf19409bee.stex" ]
+source_file="res://sprites/Sopa-0002.png"
+dest_files=[ "res://.import/Sopa-0002.png-11992e264ef510276922addbeba022f8.stex" ]
 
 [params]
 

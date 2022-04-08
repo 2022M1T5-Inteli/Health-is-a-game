@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vacina.png-afbe5e0da4a8c86f64a838cf19409bee.stex"
+path="res://.import/virushpv1000.png-8b4c9feb6990d77405bc491258da798a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/vacina.png"
-dest_files=[ "res://.import/vacina.png-afbe5e0da4a8c86f64a838cf19409bee.stex" ]
+source_file="res://sprites/virushpv1000.png"
+dest_files=[ "res://.import/virushpv1000.png-8b4c9feb6990d77405bc491258da798a.stex" ]
 
 [params]
 

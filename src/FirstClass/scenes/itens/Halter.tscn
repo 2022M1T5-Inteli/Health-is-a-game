@@ -8,15 +8,15 @@
 extents = Vector2( 57.125, 35.25 )
 
 [node name="Halter" type="Area2D"]
-position = Vector2( 0, -5 )
+position = Vector2( 320, 211 )
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 94.875, 96.75 )
+position = Vector2( 0, 8 )
 shape = SubResource( 1 )
 
 [node name="HalterSprite" type="Sprite" parent="."]
-position = Vector2( 113.078, 102.086 )
+position = Vector2( 23, 9.00003 )
 scale = Vector2( 0.371657, 0.40554 )
 texture = ExtResource( 2 )
 

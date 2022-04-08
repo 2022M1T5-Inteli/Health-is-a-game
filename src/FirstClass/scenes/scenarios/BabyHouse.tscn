@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scenes/itens/BabyBottle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/itens/Door.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/itens/lollipop.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/itens/Candy.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scripts/BabyHouse.gd" type="Script" id=8]
 [ext_resource path="res://scenes/PauseMenu.tscn" type="PackedScene" id=9]
 [ext_resource path="res://backgrounds/cenariobebeditavel.png" type="Texture" id=10]
 [ext_resource path="res://backgrounds/cenariocriançaeditavel1.png" type="Texture" id=11]
@@ -19,6 +20,7 @@ extents = Vector2( 9520.25, 37.5 )
 extents = Vector2( 48, 335 )
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 8 )
 
 [node name="Cenariocriançaeditavel1" type="Sprite" parent="."]
 position = Vector2( 15501, 329 )
@@ -50,10 +52,12 @@ position = Vector2( -522.232, -487.594 )
 [node name="Apple" parent="Elements/AppleNode" instance=ExtResource( 3 )]
 position = Vector2( 2892, 513 )
 scale = Vector2( 0.5, 0.5 )
+points = 8
 
 [node name="Apple2" parent="Elements/AppleNode" instance=ExtResource( 3 )]
 position = Vector2( 1896, 518 )
 scale = Vector2( 0.5, 0.5 )
+points = 8
 
 [node name="Apple3" parent="Elements/AppleNode" instance=ExtResource( 3 )]
 position = Vector2( 12530, 541 )
@@ -88,90 +92,12 @@ scale = Vector2( 0.5, 0.5 )
 [node name="Candy4" parent="Elements/CandyNode" instance=ExtResource( 7 )]
 position = Vector2( 432, 465 )
 scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy6" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 5943, 257 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy7" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 5325, 531 )
-scale = Vector2( 0.5, 0.5 )
+points = -25
 
 [node name="Candy5" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 7566, 525 )
+position = Vector2( 432, 465 )
 scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy8" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 6379, 488 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy9" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 7581, 158 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy11" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 10666, 512 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy10" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 11393, 288 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy12" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 11834, 310 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy13" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 11170, 514 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy14" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 12900, 532 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy15" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 12648, 291 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy16" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 13434, 528 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy17" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 15787, 520 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy18" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 14352, 234 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy19" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 14823, 253 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy20" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 16549, 518 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy21" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 16931, 396 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy23" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 10013, 276 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy22" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 10366, 335 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy24" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 9205, 519 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Candy25" parent="Elements/CandyNode" instance=ExtResource( 7 )]
-position = Vector2( 8063, 179 )
-scale = Vector2( 0.5, 0.5 )
+points = -25
 
 [node name="BabyBottleNode" type="Node" parent="Elements"]
 
@@ -186,6 +112,7 @@ scale = Vector2( 0.5, 0.5 )
 [node name="BabyBottle3" parent="Elements/BabyBottleNode" instance=ExtResource( 1 )]
 position = Vector2( 640, 525 )
 scale = Vector2( 0.5, 0.5 )
+points = 10
 
 [node name="BabyBottle4" parent="Elements/BabyBottleNode" instance=ExtResource( 1 )]
 position = Vector2( 3789, 307 )
@@ -195,54 +122,15 @@ scale = Vector2( 0.5, 0.5 )
 position = Vector2( 2111, 346 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="BabyBottle8" parent="Elements/BabyBottleNode" instance=ExtResource( 1 )]
-position = Vector2( 4450, 269 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="BabyBottle10" parent="Elements/BabyBottleNode" instance=ExtResource( 1 )]
-position = Vector2( 6218, 487 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="BabyBottle9" parent="Elements/BabyBottleNode" instance=ExtResource( 1 )]
-position = Vector2( 4983, 404 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="BabyBottle11" parent="Elements/BabyBottleNode" instance=ExtResource( 1 )]
-position = Vector2( 8062, 540 )
-scale = Vector2( 0.5, 0.5 )
-
 [node name="BabyBottle6" parent="Elements/BabyBottleNode" instance=ExtResource( 1 )]
-position = Vector2( 3282, 531 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="BabyBottle7" parent="Elements/BabyBottleNode" instance=ExtResource( 1 )]
-position = Vector2( 8678, 536 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="BabyBottle12" parent="Elements/BabyBottleNode" instance=ExtResource( 1 )]
-position = Vector2( 9208, 241 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="BabyBottle13" parent="Elements/BabyBottleNode" instance=ExtResource( 1 )]
-position = Vector2( 9453, 419 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="BabyBottle14" parent="Elements/BabyBottleNode" instance=ExtResource( 1 )]
-position = Vector2( 10224, 529 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="BabyBottle15" parent="Elements/BabyBottleNode" instance=ExtResource( 1 )]
-position = Vector2( 10814, 306 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="BabyBottle16" parent="Elements/BabyBottleNode" instance=ExtResource( 1 )]
-position = Vector2( 11664, 519 )
+position = Vector2( 2111, 346 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="LollipopNode" type="Node" parent="Elements"]
 
 [node name="Lollipop" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 1268, 234 )
+position = Vector2( 1268, 500 )
+points = -25
 
 [node name="Lollipop2" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
 position = Vector2( 3531, 361 )
@@ -255,66 +143,6 @@ position = Vector2( 6475, 339 )
 
 [node name="Lollipop5" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
 position = Vector2( 3224, 232 )
-
-[node name="Lollipop6" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 9497, 364 )
-
-[node name="Lollipop7" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 2295, 371 )
-
-[node name="Lollipop8" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 11760, 350 )
-
-[node name="Lollipop9" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 8349, 10 )
-
-[node name="Lollipop10" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 7502, 183 )
-
-[node name="Lollipop11" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 6761, 330 )
-
-[node name="Lollipop12" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 7013, 173 )
-
-[node name="Lollipop13" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 4401, 258 )
-
-[node name="Lollipop14" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 12013, 151 )
-
-[node name="Lollipop15" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 12756, 171 )
-
-[node name="Lollipop16" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 15199, 109 )
-
-[node name="Lollipop17" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 13836, 361 )
-
-[node name="Lollipop18" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 8569, 145 )
-
-[node name="Lollipop19" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 13425, 215 )
-
-[node name="Lollipop20" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 14255, 350 )
-
-[node name="Lollipop21" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 14908, 346 )
-
-[node name="Lollipop22" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 16464, 121 )
-
-[node name="Lollipop23" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 15875, 359 )
-
-[node name="Lollipop24" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 13097, 78 )
-
-[node name="Lollipop25" parent="Elements/LollipopNode" instance=ExtResource( 6 )]
-position = Vector2( 8038, 227 )
 
 [node name="Door" type="Node" parent="Elements"]
 
@@ -349,3 +177,4 @@ shape = SubResource( 2 )
 [node name="Background" type="Node" parent="."]
 
 [connection signal="on_hit" from="Elements/CandyNode/Candy4" to="Player" method="_on_Candy4_on_hit"]
+[connection signal="on_hit" from="Elements/CandyNode/Candy5" to="Player" method="_on_Candy4_on_hit"]

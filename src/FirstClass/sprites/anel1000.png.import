@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vacina.png-afbe5e0da4a8c86f64a838cf19409bee.stex"
+path="res://.import/anel1000.png-b04504f036296b570c7aa5a8188fb145.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/vacina.png"
-dest_files=[ "res://.import/vacina.png-afbe5e0da4a8c86f64a838cf19409bee.stex" ]
+source_file="res://sprites/anel1000.png"
+dest_files=[ "res://.import/anel1000.png-b04504f036296b570c7aa5a8188fb145.stex" ]
 
 [params]
 

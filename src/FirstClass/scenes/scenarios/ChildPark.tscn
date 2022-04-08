@@ -247,34 +247,34 @@ stream = ExtResource( 14 )
 
 [node name="SolMalvado" type="Node" parent="Elements"]
 
-[node name="Sun" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
+[node name="BadSun" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
 position = Vector2( 994, 257 )
 
-[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/Sun"]
+[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/BadSun"]
 stream = ExtResource( 13 )
 
-[node name="Sun2" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
+[node name="BadSun2" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
 position = Vector2( 1399, 246 )
 
-[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/Sun2"]
+[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/BadSun2"]
 stream = ExtResource( 13 )
 
-[node name="Sun3" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
+[node name="BadSun3" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
 position = Vector2( 5896, 181 )
 
-[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/Sun3"]
+[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/BadSun3"]
 stream = ExtResource( 13 )
 
-[node name="Sun4" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
+[node name="BadSun4" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
 position = Vector2( 4338, 193 )
 
-[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/Sun4"]
+[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/BadSun4"]
 stream = ExtResource( 13 )
 
-[node name="Sun5" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
+[node name="BadSun5" parent="Elements/SolMalvado" instance=ExtResource( 11 )]
 position = Vector2( 8090, 55 )
 
-[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/Sun5"]
+[node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/SolMalvado/BadSun5"]
 stream = ExtResource( 13 )
 
 [node name="Ball" type="Node" parent="Elements"]
@@ -400,41 +400,41 @@ scale = Vector2( 0.65, 0.65 )
 [node name="CollectedBananaFx" type="AudioStreamPlayer2D" parent="Elements/Banana/Banana8"]
 stream = ExtResource( 13 )
 
-[node name="SolBom" type="Node" parent="Elements"]
+[node name="GoodSun" type="Node" parent="Elements"]
 
-[node name="SolBom" parent="Elements/SolBom" instance=ExtResource( 10 )]
+[node name="GoodSun" parent="Elements/GoodSun" instance=ExtResource( 10 )]
 position = Vector2( 622, 272 )
 scale = Vector2( 0.7, 0.7 )
 
-[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/SolBom/SolBom"]
+[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/GoodSun/GoodSun"]
 stream = ExtResource( 14 )
 
-[node name="SolBom2" parent="Elements/SolBom" instance=ExtResource( 10 )]
+[node name="GoodSun2" parent="Elements/GoodSun" instance=ExtResource( 10 )]
 position = Vector2( 2417, 322 )
 scale = Vector2( 0.7, 0.7 )
 
-[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/SolBom/SolBom2"]
+[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/GoodSun/GoodSun2"]
 stream = ExtResource( 14 )
 
-[node name="SolBom3" parent="Elements/SolBom" instance=ExtResource( 10 )]
+[node name="GoodSun3" parent="Elements/GoodSun" instance=ExtResource( 10 )]
 position = Vector2( 3391, 292 )
 scale = Vector2( 0.7, 0.7 )
 
-[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/SolBom/SolBom3"]
+[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/GoodSun/GoodSun3"]
 stream = ExtResource( 14 )
 
-[node name="SolBom4" parent="Elements/SolBom" instance=ExtResource( 10 )]
+[node name="GoodSun4" parent="Elements/GoodSun" instance=ExtResource( 10 )]
 position = Vector2( 5220, 378 )
 scale = Vector2( 0.7, 0.7 )
 
-[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/SolBom/SolBom4"]
+[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/GoodSun/GoodSun4"]
 stream = ExtResource( 14 )
 
-[node name="SolBom5" parent="Elements/SolBom" instance=ExtResource( 10 )]
+[node name="GoodSun5" parent="Elements/GoodSun" instance=ExtResource( 10 )]
 position = Vector2( 8860, 160 )
 scale = Vector2( 0.7, 0.7 )
 
-[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/SolBom/SolBom5"]
+[node name="CollectedSolBomFx" type="AudioStreamPlayer2D" parent="Elements/GoodSun/GoodSun5"]
 stream = ExtResource( 14 )
 
 [node name="PlayerCamera" type="Camera2D" parent="."]
