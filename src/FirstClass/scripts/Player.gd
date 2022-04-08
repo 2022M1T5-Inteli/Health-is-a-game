@@ -43,12 +43,12 @@ func _physics_process(delta: float) -> void:
 	move_and_slide(velocity, UP)
 	print(GameManager.health_score)
 
-
+#when thw player hits the bad items shows an animation (a red minus)
 func _on_Candy4_on_hit():
 	$BadHit.play_bad_hit()
 
 func play_bad_hit():
 	$BadHit.play_bad_hit()
-
+#when thw player hits the good items shows an animation (a green plus)
 func play_good_hit():
 	$BadHit.play_good_hit()

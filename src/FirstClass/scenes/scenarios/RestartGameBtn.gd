@@ -11,11 +11,9 @@ func _ready():
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
 
 
+#whrn the RestartGameBtn is pressed the health scrore goes to 1000 and the game restarts
 func _on_RestartGameBtn_pressed():
 	GameManager.health_score = 1000
 	get_tree().change_scene(("res://scenes/novo menu.tscn"))

@@ -4,7 +4,7 @@ onready var _FriedPotatoes = $FriedPotatoesSprite
 
 var points = -3
 
-
+# when a body collides with this element, it hides the FriedPotatoes
 func _on_FriedPotatoes_body_entered(body):
 	# if the body name is "Player", it triggers the hide action mentioned above
 	if body.get_name() == "Player":

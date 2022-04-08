@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://scenes/itens/Healthbar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://backgrounds/adult2.png" type="Texture" id=2]
@@ -9,9 +9,7 @@
 [ext_resource path="res://scenes/itens/Water.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/itens/Cigarro.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/scenarios/AdultScene.gd" type="Script" id=9]
-[ext_resource path="res://scenes/itens/FriedPotatoes.tscn" type="PackedScene" id=10]
-[ext_resource path="res://scenes/itens/Hamburger.tscn" type="PackedScene" id=11]
-[ext_resource path="res://scenes/itens/Halter.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/itens/Bike.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/itens/Saladao.tscn" type="PackedScene" id=13]
 [ext_resource path="res://scenes/itens/Cerveja.tscn" type="PackedScene" id=14]
 [ext_resource path="res://scenes/itens/Cerveja.gd" type="Script" id=15]
@@ -75,32 +73,44 @@ position = Vector2( 199, 421 )
 
 [node name="Elements" type="Node" parent="."]
 
-[node name="Cigarro" type="Node" parent="Elements"]
+[node name="Cigarrete" type="Node" parent="Elements"]
 
-[node name="Cigarro" parent="Elements/Cigarro" instance=ExtResource( 8 )]
+[node name="Cigarrete" parent="Elements/Cigarrete" instance=ExtResource( 8 )]
 position = Vector2( 365, 40 )
 
-[node name="Cigarro2" parent="Elements/Cigarro" instance=ExtResource( 8 )]
+[node name="Cigarrete2" parent="Elements/Cigarrete" instance=ExtResource( 8 )]
 visible = false
 position = Vector2( 911, 312 )
 
-[node name="Cigarro3" parent="Elements/Cigarro" instance=ExtResource( 8 )]
+[node name="Cigarrete3" parent="Elements/Cigarrete" instance=ExtResource( 8 )]
 position = Vector2( 2894, 203 )
 
-[node name="Cigarro4" parent="Elements/Cigarro" instance=ExtResource( 8 )]
+[node name="Cigarrete4" parent="Elements/Cigarrete" instance=ExtResource( 8 )]
 position = Vector2( 2423, 296 )
 
-[node name="Cigarro5" parent="Elements/Cigarro" instance=ExtResource( 8 )]
+[node name="Cigarrete5" parent="Elements/Cigarrete" instance=ExtResource( 8 )]
 position = Vector2( 3004, 284 )
 
-[node name="Cigarro6" parent="Elements/Cigarro" instance=ExtResource( 8 )]
+[node name="Cigarrete6" parent="Elements/Cigarrete" instance=ExtResource( 8 )]
 position = Vector2( 2126, 32 )
 
-[node name="Cigarro7" parent="Elements/Cigarro" instance=ExtResource( 8 )]
+[node name="Cigarrete7" parent="Elements/Cigarrete" instance=ExtResource( 8 )]
 position = Vector2( 3271, 320 )
 
-[node name="Cigarro8" parent="Elements/Cigarro" instance=ExtResource( 8 )]
+[node name="Cigarrete8" parent="Elements/Cigarrete" instance=ExtResource( 8 )]
 position = Vector2( 3418, 326 )
+
+[node name="Cigarrete9" parent="Elements/Cigarrete" instance=ExtResource( 8 )]
+position = Vector2( 365, 40 )
+
+[node name="Cigarrete10" parent="Elements/Cigarrete" instance=ExtResource( 8 )]
+position = Vector2( 365, 40 )
+
+[node name="Cigarrete11" parent="Elements/Cigarrete" instance=ExtResource( 8 )]
+position = Vector2( 365, 40 )
+
+[node name="Cigarrete12" parent="Elements/Cigarrete" instance=ExtResource( 8 )]
+position = Vector2( 365, 40 )
 
 [node name="Water" type="Node" parent="Elements"]
 
@@ -119,129 +129,137 @@ position = Vector2( 1867, 508 )
 [node name="Water5" parent="Elements/Water" instance=ExtResource( 7 )]
 position = Vector2( 3062, 315 )
 
-[node name="Halter" type="Node" parent="Elements"]
+[node name="Water6" parent="Elements/Water" instance=ExtResource( 7 )]
+position = Vector2( 785, 357 )
 
-[node name="Halter" parent="Elements/Halter" instance=ExtResource( 12 )]
-position = Vector2( 1317, 223 )
+[node name="Water7" parent="Elements/Water" instance=ExtResource( 7 )]
+position = Vector2( 785, 357 )
 
-[node name="Halter2" parent="Elements/Halter" instance=ExtResource( 12 )]
-position = Vector2( 3968, 218 )
+[node name="Water8" parent="Elements/Water" instance=ExtResource( 7 )]
+position = Vector2( 785, 357 )
 
-[node name="Halter3" parent="Elements/Halter" instance=ExtResource( 12 )]
-position = Vector2( 5786, 195 )
+[node name="Water9" parent="Elements/Water" instance=ExtResource( 7 )]
+position = Vector2( 785, 357 )
 
-[node name="Halter4" parent="Elements/Halter" instance=ExtResource( 12 )]
-position = Vector2( 1203, 214 )
+[node name="Water10" parent="Elements/Water" instance=ExtResource( 7 )]
+position = Vector2( 785, 357 )
 
-[node name="Halter5" parent="Elements/Halter" instance=ExtResource( 12 )]
-position = Vector2( 1295, -17 )
+[node name="Water11" parent="Elements/Water" instance=ExtResource( 7 )]
+position = Vector2( 785, 357 )
 
-[node name="Hamburger" type="Node" parent="Elements"]
+[node name="Water12" parent="Elements/Water" instance=ExtResource( 7 )]
+position = Vector2( 785, 357 )
 
-[node name="Hamburger" parent="Elements/Hamburger" instance=ExtResource( 11 )]
-position = Vector2( 756, 250 )
+[node name="Salad" type="Node" parent="Elements"]
 
-[node name="Hamburger2" parent="Elements/Hamburger" instance=ExtResource( 11 )]
-position = Vector2( 2907, 32 )
-
-[node name="Hamburger3" parent="Elements/Hamburger" instance=ExtResource( 11 )]
-position = Vector2( 1336, 395 )
-
-[node name="Hamburger4" parent="Elements/Hamburger" instance=ExtResource( 11 )]
-position = Vector2( 5068, 159 )
-
-[node name="Hamburger5" parent="Elements/Hamburger" instance=ExtResource( 11 )]
-position = Vector2( 5094, -33 )
-
-[node name="Hamburger6" parent="Elements/Hamburger" instance=ExtResource( 11 )]
-position = Vector2( 5355, -40 )
-
-[node name="Hamburger7" parent="Elements/Hamburger" instance=ExtResource( 11 )]
-position = Vector2( 4729, -31 )
-
-[node name="Hamburger8" parent="Elements/Hamburger" instance=ExtResource( 11 )]
-position = Vector2( 5534, 444 )
-
-[node name="Hamburger9" parent="Elements/Hamburger" instance=ExtResource( 11 )]
-position = Vector2( 5598, 209 )
-
-[node name="Batata" type="Node" parent="Elements"]
-
-[node name="FriedPotatoes" parent="Elements/Batata" instance=ExtResource( 10 )]
-position = Vector2( 690, 566 )
-
-[node name="FriedPotatoes2" parent="Elements/Batata" instance=ExtResource( 10 )]
-position = Vector2( 4426, 454 )
-
-[node name="FriedPotatoes3" parent="Elements/Batata" instance=ExtResource( 10 )]
-position = Vector2( 4002, 505 )
-
-[node name="FriedPotatoes4" parent="Elements/Batata" instance=ExtResource( 10 )]
-position = Vector2( 3041, 303 )
-
-[node name="FriedPotatoes5" parent="Elements/Batata" instance=ExtResource( 10 )]
-position = Vector2( 1893, 111 )
-
-[node name="FriedPotatoes6" parent="Elements/Batata" instance=ExtResource( 10 )]
-position = Vector2( 3377, 298 )
-
-[node name="FriedPotatoes7" parent="Elements/Batata" instance=ExtResource( 10 )]
-position = Vector2( 1665, 81 )
-
-[node name="Saladas" type="Node" parent="Elements"]
-
-[node name="Saladdao" parent="Elements/Saladas" instance=ExtResource( 13 )]
+[node name="Salad" parent="Elements/Salad" instance=ExtResource( 13 )]
 position = Vector2( 1268, 97 )
 
-[node name="Saladdao2" parent="Elements/Saladas" instance=ExtResource( 13 )]
+[node name="Salad2" parent="Elements/Salad" instance=ExtResource( 13 )]
 position = Vector2( 1212, 6 )
 
-[node name="Saladdao3" parent="Elements/Saladas" instance=ExtResource( 13 )]
+[node name="Salad3" parent="Elements/Salad" instance=ExtResource( 13 )]
 position = Vector2( 4090, 82 )
 
-[node name="Saladdao4" parent="Elements/Saladas" instance=ExtResource( 13 )]
+[node name="Salad4" parent="Elements/Salad" instance=ExtResource( 13 )]
 position = Vector2( 3515, 286 )
 
-[node name="Saladdao5" parent="Elements/Saladas" instance=ExtResource( 13 )]
+[node name="Salad5" parent="Elements/Salad" instance=ExtResource( 13 )]
 position = Vector2( 2881, 289 )
 
-[node name="Cerveja" type="Node" parent="Elements"]
+[node name="Salad6" parent="Elements/Salad" instance=ExtResource( 13 )]
+position = Vector2( 1268, 97 )
 
-[node name="Cerveja" parent="Elements/Cerveja" instance=ExtResource( 14 )]
+[node name="Salad7" parent="Elements/Salad" instance=ExtResource( 13 )]
+position = Vector2( 1268, 97 )
+
+[node name="Salad8" parent="Elements/Salad" instance=ExtResource( 13 )]
+position = Vector2( 1268, 97 )
+
+[node name="Salad9" parent="Elements/Salad" instance=ExtResource( 13 )]
+position = Vector2( 1268, 97 )
+
+[node name="Beer" type="Node" parent="Elements"]
+
+[node name="Beer" parent="Elements/Beer" instance=ExtResource( 14 )]
 position = Vector2( 1666, 416 )
 script = ExtResource( 15 )
 
-[node name="Cerveja2" parent="Elements/Cerveja" instance=ExtResource( 14 )]
+[node name="Beer2" parent="Elements/Beer" instance=ExtResource( 14 )]
 position = Vector2( 1672, 286 )
 script = ExtResource( 15 )
 
-[node name="Cerveja3" parent="Elements/Cerveja" instance=ExtResource( 14 )]
+[node name="Beer3" parent="Elements/Beer" instance=ExtResource( 14 )]
 position = Vector2( 1225, 51 )
 script = ExtResource( 15 )
 
-[node name="Cerveja4" parent="Elements/Cerveja" instance=ExtResource( 14 )]
+[node name="Beer4" parent="Elements/Beer" instance=ExtResource( 14 )]
 position = Vector2( 2897, 358 )
 script = ExtResource( 15 )
 
-[node name="Cerveja5" parent="Elements/Cerveja" instance=ExtResource( 14 )]
+[node name="Beer5" parent="Elements/Beer" instance=ExtResource( 14 )]
 position = Vector2( 1355, 210 )
 script = ExtResource( 15 )
 
-[node name="Cerveja6" parent="Elements/Cerveja" instance=ExtResource( 14 )]
+[node name="Beer6" parent="Elements/Beer" instance=ExtResource( 14 )]
 position = Vector2( 1113, 147 )
 script = ExtResource( 15 )
 
-[node name="Cerveja7" parent="Elements/Cerveja" instance=ExtResource( 14 )]
+[node name="Beer7" parent="Elements/Beer" instance=ExtResource( 14 )]
 position = Vector2( 1922, 180 )
 script = ExtResource( 15 )
+
+[node name="Beer8" parent="Elements/Beer" instance=ExtResource( 14 )]
+position = Vector2( 1666, 416 )
+script = ExtResource( 15 )
+
+[node name="Beer9" parent="Elements/Beer" instance=ExtResource( 14 )]
+position = Vector2( 1666, 416 )
+script = ExtResource( 15 )
+
+[node name="Beer10" parent="Elements/Beer" instance=ExtResource( 14 )]
+position = Vector2( 1666, 416 )
+script = ExtResource( 15 )
+
+[node name="Bike" type="Node" parent="Elements"]
+
+[node name="Bike" parent="Elements/Bike" instance=ExtResource( 10 )]
+position = Vector2( 53, 24 )
+
+[node name="Bike2" parent="Elements/Bike" instance=ExtResource( 10 )]
+position = Vector2( 53, 24 )
+
+[node name="Bike3" parent="Elements/Bike" instance=ExtResource( 10 )]
+position = Vector2( 53, 24 )
+
+[node name="Bike4" parent="Elements/Bike" instance=ExtResource( 10 )]
+position = Vector2( 53, 24 )
+
+[node name="Bike5" parent="Elements/Bike" instance=ExtResource( 10 )]
+position = Vector2( 53, 24 )
+
+[node name="Bike6" parent="Elements/Bike" instance=ExtResource( 10 )]
+position = Vector2( 53, 24 )
+
+[node name="Bike7" parent="Elements/Bike" instance=ExtResource( 10 )]
+position = Vector2( 53, 24 )
+
+[node name="Bike8" parent="Elements/Bike" instance=ExtResource( 10 )]
+position = Vector2( 53, 24 )
+
+[node name="Bike9" parent="Elements/Bike" instance=ExtResource( 10 )]
+position = Vector2( 53, 24 )
 
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( 576, 90 )
 
-[connection signal="body_entered" from="Elements/Cerveja/Cerveja" to="Elements/Cerveja/Cerveja" method="_on_Cerveja_body_entered"]
-[connection signal="body_entered" from="Elements/Cerveja/Cerveja2" to="Elements/Cerveja/Cerveja2" method="_on_Cerveja_body_entered"]
-[connection signal="body_entered" from="Elements/Cerveja/Cerveja3" to="Elements/Cerveja/Cerveja3" method="_on_Cerveja_body_entered"]
-[connection signal="body_entered" from="Elements/Cerveja/Cerveja4" to="Elements/Cerveja/Cerveja4" method="_on_Cerveja_body_entered"]
-[connection signal="body_entered" from="Elements/Cerveja/Cerveja5" to="Elements/Cerveja/Cerveja5" method="_on_Cerveja_body_entered"]
-[connection signal="body_entered" from="Elements/Cerveja/Cerveja6" to="Elements/Cerveja/Cerveja6" method="_on_Cerveja_body_entered"]
-[connection signal="body_entered" from="Elements/Cerveja/Cerveja7" to="Elements/Cerveja/Cerveja7" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer" to="Elements/Beer/Beer" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer2" to="Elements/Beer/Beer2" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer3" to="Elements/Beer/Beer3" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer4" to="Elements/Beer/Beer4" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer5" to="Elements/Beer/Beer5" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer6" to="Elements/Beer/Beer6" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer7" to="Elements/Beer/Beer7" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer8" to="Elements/Beer/Beer8" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer9" to="Elements/Beer/Beer9" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer10" to="Elements/Beer/Beer10" method="_on_Cerveja_body_entered"]

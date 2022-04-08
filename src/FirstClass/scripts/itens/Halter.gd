@@ -4,7 +4,7 @@ extends Area2D
 onready var _Halter = $HalterSprite
 
 var points = +5
-
+# when a body collides with this element, it hides the Halter
 func _on_Halter_body_entered(body):
 	# if the body name is "Player", it triggers the hide action mentioned above
 	if body.get_name() == "Player":
