@@ -1,14 +1,14 @@
 extends Area2D
 
 
-onready var _Beer = $Beer
+onready var _Cerveja = $Cerveja
 
 var points = -5
-# when a body collides with this element, it hides the Beer
-func _on_Beer_body_entered(body):
+
+func _on_Cerveja_body_entered(body):
 	# if the body name is "Player", it triggers the hide action mentioned above
 	if body.get_name() == "Player":
-		$Beer.hide()
+		$Cerveja.hide()
 		if (GameManager.health_score + points) <= 1000:
 			GameManager.health_score = GameManager.health_score + points
 	$CollectedSoundBad.play()

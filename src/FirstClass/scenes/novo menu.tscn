@@ -92,14 +92,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="PlayButton" type="TextureButton" parent="VBoxContainer"]
+[node name="JogarButton" type="TextureButton" parent="VBoxContainer"]
 margin_right = 508.0
 margin_bottom = 140.0
 focus_neighbour_top = NodePath("../TutorialButton")
 texture_normal = ExtResource( 7 )
 texture_pressed = ExtResource( 11 )
 
-[node name="ExitButton" type="TextureButton" parent="VBoxContainer"]
+[node name="SairButton" type="TextureButton" parent="VBoxContainer"]
 margin_top = 144.0
 margin_right = 508.0
 margin_bottom = 304.0
@@ -114,7 +114,7 @@ visible = false
 margin_top = 308.0
 margin_right = 508.0
 margin_bottom = 468.0
-focus_neighbour_bottom = NodePath("../PlayButton")
+focus_neighbour_bottom = NodePath("../JogarButton")
 texture_normal = ExtResource( 3 )
 
 [node name="LogoLifeIsAGame" type="Sprite" parent="."]
@@ -140,7 +140,7 @@ stream = ExtResource( 8 )
 volume_db = 0.9
 autoplay = true
 
-[node name="SoundButton" type="TextureButton" parent="."]
+[node name="TextureButton" type="TextureButton" parent="."]
 anchor_left = 0.0449219
 anchor_top = 0.0416667
 anchor_right = 0.0449219
@@ -158,12 +158,12 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="SoundIcon(2)" type="Sprite" parent="SoundButton"]
+[node name="SoundIcon(2)" type="Sprite" parent="TextureButton"]
 position = Vector2( 118, 104 )
 
 [node name="Node" type="Node" parent="."]
 
-[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_PlayButton_pressed"]
-[connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_ExitButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/JogarButton" to="." method="_on_JogarButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/SairButton" to="." method="_on_SairButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/TutorialButton" to="." method="_on_TutorialButton_pressed"]
-[connection signal="pressed" from="SoundButton" to="." method="_on_SoundButton_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
