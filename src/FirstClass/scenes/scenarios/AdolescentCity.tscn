@@ -1,16 +1,20 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://scenes/itens/Healthbar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://backgrounds/adolescentefinal2t3.png" type="Texture" id=2]
 [ext_resource path="res://backgrounds/adolescentefinal2t4.png" type="Texture" id=3]
 [ext_resource path="res://scenes/PlayerAdolescente.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/PauseMenu.tscn" type="PackedScene" id=5]
-[ext_resource path="res://sounds/item ruim (1).ogg" type="AudioStream" id=6]
-[ext_resource path="res://scenes/itens/Chocolate.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/itens/FriedPotatoes.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/itens/Water.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/itens/Hamburger.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/itens/Halter.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/itens/Saladao.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/itens/Door.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/itens/Cerveja.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/itens/Cigarro.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/scenarios/AdolescentCity.gd" type="Script" id=14]
+[ext_resource path="res://scenes/itens/Cerveja.gd" type="Script" id=15]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 156, 296 )
@@ -19,6 +23,7 @@ extents = Vector2( 156, 296 )
 extents = Vector2( 7475, 50.75 )
 
 [node name="AdolescentCity" type="Node2D"]
+script = ExtResource( 14 )
 
 [node name="Adolescentefinal2T3" type="Sprite" parent="."]
 position = Vector2( 5433, 316 )
@@ -63,158 +68,179 @@ z_index = 5
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 317, 412 )
 
+[node name="Door" parent="." instance=ExtResource( 11 )]
+position = Vector2( 13600, -26 )
+targetScenePath = "res://scenes/scenarios/AdultScene.tscn"
+
 [node name="Elements" type="Node" parent="."]
+
+[node name="Cigarro" type="Node" parent="Elements"]
+
+[node name="Cigarro" parent="Elements/Cigarro" instance=ExtResource( 13 )]
+position = Vector2( 365, 40 )
+
+[node name="Cigarro2" parent="Elements/Cigarro" instance=ExtResource( 13 )]
+visible = false
+position = Vector2( 911, 312 )
+
+[node name="Cigarro3" parent="Elements/Cigarro" instance=ExtResource( 13 )]
+position = Vector2( 2894, 203 )
+
+[node name="Cigarro4" parent="Elements/Cigarro" instance=ExtResource( 13 )]
+position = Vector2( 2423, 296 )
+
+[node name="Cigarro5" parent="Elements/Cigarro" instance=ExtResource( 13 )]
+position = Vector2( 3004, 284 )
+
+[node name="Cigarro6" parent="Elements/Cigarro" instance=ExtResource( 13 )]
+position = Vector2( 2126, 32 )
+
+[node name="Cigarro7" parent="Elements/Cigarro" instance=ExtResource( 13 )]
+position = Vector2( 3271, 320 )
+
+[node name="Cigarro8" parent="Elements/Cigarro" instance=ExtResource( 13 )]
+position = Vector2( 3418, 326 )
+
+[node name="Water" type="Node" parent="Elements"]
+
+[node name="Water" parent="Elements/Water" instance=ExtResource( 7 )]
+position = Vector2( 785, 357 )
+
+[node name="Water2" parent="Elements/Water" instance=ExtResource( 7 )]
+position = Vector2( 1321, 506 )
+
+[node name="Water3" parent="Elements/Water" instance=ExtResource( 7 )]
+position = Vector2( 1574, 349 )
+
+[node name="Water4" parent="Elements/Water" instance=ExtResource( 7 )]
+position = Vector2( 1867, 508 )
+
+[node name="Water5" parent="Elements/Water" instance=ExtResource( 7 )]
+position = Vector2( 3062, 315 )
 
 [node name="Halter" type="Node" parent="Elements"]
 
 [node name="Halter" parent="Elements/Halter" instance=ExtResource( 9 )]
-position = Vector2( 6577, 391 )
+position = Vector2( 1317, 223 )
 
 [node name="Halter2" parent="Elements/Halter" instance=ExtResource( 9 )]
-position = Vector2( 4626, 415 )
+position = Vector2( 3968, 218 )
 
 [node name="Halter3" parent="Elements/Halter" instance=ExtResource( 9 )]
-position = Vector2( 5809, 426 )
+position = Vector2( 5786, 195 )
 
 [node name="Halter4" parent="Elements/Halter" instance=ExtResource( 9 )]
-position = Vector2( 7930, 368 )
+position = Vector2( 1203, 214 )
 
 [node name="Halter5" parent="Elements/Halter" instance=ExtResource( 9 )]
-position = Vector2( 2465, 438 )
-
-[node name="Halter6" parent="Elements/Halter" instance=ExtResource( 9 )]
-position = Vector2( 9917, 426 )
-
-[node name="Halter7" parent="Elements/Halter" instance=ExtResource( 9 )]
-position = Vector2( 1195, 428 )
-
-[node name="Chocolate" type="Node" parent="Elements"]
-
-[node name="Chocolate" parent="Elements/Chocolate" instance=ExtResource( 7 )]
-position = Vector2( 13206, 466 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Elements/Chocolate/Chocolate"]
-position = Vector2( 91.6667, 70 )
-stream = ExtResource( 6 )
-
-[node name="Chocolate2" parent="Elements/Chocolate" instance=ExtResource( 7 )]
-position = Vector2( 1020, 284 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="Chocolate3" parent="Elements/Chocolate" instance=ExtResource( 7 )]
-position = Vector2( 9532, 352 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="Chocolate4" parent="Elements/Chocolate" instance=ExtResource( 7 )]
-position = Vector2( 2347, 299 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="Chocolate5" parent="Elements/Chocolate" instance=ExtResource( 7 )]
-position = Vector2( 2783, 435 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="Chocolate6" parent="Elements/Chocolate" instance=ExtResource( 7 )]
-position = Vector2( 7477, 387 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Elements/Chocolate/Chocolate6"]
-position = Vector2( 91.6667, 70 )
-stream = ExtResource( 6 )
-
-[node name="Chocolate7" parent="Elements/Chocolate" instance=ExtResource( 7 )]
-position = Vector2( 6270, 401 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Elements/Chocolate/Chocolate7"]
-position = Vector2( 91.6667, 70 )
-stream = ExtResource( 6 )
-
-[node name="Chocolate8" parent="Elements/Chocolate" instance=ExtResource( 7 )]
-position = Vector2( 8936, 346 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Elements/Chocolate/Chocolate8"]
-position = Vector2( 91.6667, 70 )
-stream = ExtResource( 6 )
-
-[node name="Chocolate9" parent="Elements/Chocolate" instance=ExtResource( 7 )]
-position = Vector2( 11362, 337 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Elements/Chocolate/Chocolate9"]
-position = Vector2( 91.6667, 70 )
-stream = ExtResource( 6 )
-
-[node name="Chocolate10" parent="Elements/Chocolate" instance=ExtResource( 7 )]
-position = Vector2( 1835, 303 )
-scale = Vector2( 0.6, 0.6 )
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Elements/Chocolate/Chocolate10"]
-position = Vector2( 91.6667, 70 )
-stream = ExtResource( 6 )
+position = Vector2( 1295, -17 )
 
 [node name="Hamburger" type="Node" parent="Elements"]
 
 [node name="Hamburger" parent="Elements/Hamburger" instance=ExtResource( 8 )]
-position = Vector2( 1642, 388 )
+position = Vector2( 756, 250 )
 
 [node name="Hamburger2" parent="Elements/Hamburger" instance=ExtResource( 8 )]
-position = Vector2( 8331, 283 )
+position = Vector2( 2907, 32 )
 
 [node name="Hamburger3" parent="Elements/Hamburger" instance=ExtResource( 8 )]
-position = Vector2( 12231, 443 )
+position = Vector2( 1336, 395 )
 
 [node name="Hamburger4" parent="Elements/Hamburger" instance=ExtResource( 8 )]
-position = Vector2( 13716, 446 )
+position = Vector2( 5068, 159 )
 
 [node name="Hamburger5" parent="Elements/Hamburger" instance=ExtResource( 8 )]
-position = Vector2( 14415, 173 )
+position = Vector2( 5094, -33 )
 
 [node name="Hamburger6" parent="Elements/Hamburger" instance=ExtResource( 8 )]
-position = Vector2( 3667, 360 )
+position = Vector2( 5355, -40 )
 
 [node name="Hamburger7" parent="Elements/Hamburger" instance=ExtResource( 8 )]
-position = Vector2( 10565, 445 )
+position = Vector2( 4729, -31 )
 
 [node name="Hamburger8" parent="Elements/Hamburger" instance=ExtResource( 8 )]
-position = Vector2( 5407, 197 )
+position = Vector2( 5534, 444 )
 
 [node name="Hamburger9" parent="Elements/Hamburger" instance=ExtResource( 8 )]
-position = Vector2( 2056, 445 )
+position = Vector2( 5598, 209 )
 
-[node name="Saladao" type="Node" parent="Elements"]
+[node name="Batata" type="Node" parent="Elements"]
 
-[node name="Saladao" parent="Elements/Saladao" instance=ExtResource( 10 )]
-position = Vector2( 8488, 382 )
+[node name="FriedPotatoes" parent="Elements/Batata" instance=ExtResource( 6 )]
+position = Vector2( 690, 566 )
 
-[node name="Saladao2" parent="Elements/Saladao" instance=ExtResource( 10 )]
-position = Vector2( 11676, 390 )
+[node name="FriedPotatoes2" parent="Elements/Batata" instance=ExtResource( 6 )]
+position = Vector2( 4426, 454 )
 
-[node name="Saladao3" parent="Elements/Saladao" instance=ExtResource( 10 )]
-position = Vector2( 2951, 381 )
+[node name="FriedPotatoes3" parent="Elements/Batata" instance=ExtResource( 6 )]
+position = Vector2( 4002, 505 )
 
-[node name="Saladao4" parent="Elements/Saladao" instance=ExtResource( 10 )]
-position = Vector2( 3976, 393 )
+[node name="FriedPotatoes4" parent="Elements/Batata" instance=ExtResource( 6 )]
+position = Vector2( 3041, 303 )
 
-[node name="Saladao5" parent="Elements/Saladao" instance=ExtResource( 10 )]
-position = Vector2( 13920, 103 )
+[node name="FriedPotatoes5" parent="Elements/Batata" instance=ExtResource( 6 )]
+position = Vector2( 1893, 111 )
 
-[node name="Saladao6" parent="Elements/Saladao" instance=ExtResource( 10 )]
-position = Vector2( 10186, 170 )
+[node name="FriedPotatoes6" parent="Elements/Batata" instance=ExtResource( 6 )]
+position = Vector2( 3377, 298 )
 
-[node name="Saladao7" parent="Elements/Saladao" instance=ExtResource( 10 )]
-position = Vector2( 10805, 393 )
+[node name="FriedPotatoes7" parent="Elements/Batata" instance=ExtResource( 6 )]
+position = Vector2( 1665, 81 )
 
-[node name="Saladao8" parent="Elements/Saladao" instance=ExtResource( 10 )]
-position = Vector2( 12786, 400 )
+[node name="Saladas" type="Node" parent="Elements"]
 
-[node name="Saladao9" parent="Elements/Saladao" instance=ExtResource( 10 )]
-position = Vector2( 9159, 387 )
+[node name="Saladdao" parent="Elements/Saladas" instance=ExtResource( 10 )]
+position = Vector2( 1268, 97 )
 
-[node name="Saladao10" parent="Elements/Saladao" instance=ExtResource( 10 )]
-position = Vector2( 7555, 385 )
+[node name="Saladdao2" parent="Elements/Saladas" instance=ExtResource( 10 )]
+position = Vector2( 1212, 6 )
 
-[node name="Door" parent="." instance=ExtResource( 11 )]
-position = Vector2( 13600, -26 )
-targetScenePath = "res://scenes/scenarios/AdultScene.tscn"
+[node name="Saladdao3" parent="Elements/Saladas" instance=ExtResource( 10 )]
+position = Vector2( 4090, 82 )
+
+[node name="Saladdao4" parent="Elements/Saladas" instance=ExtResource( 10 )]
+position = Vector2( 3515, 286 )
+
+[node name="Saladdao5" parent="Elements/Saladas" instance=ExtResource( 10 )]
+position = Vector2( 2881, 289 )
+
+[node name="Cerveja" type="Node" parent="Elements"]
+
+[node name="Cerveja" parent="Elements/Cerveja" instance=ExtResource( 12 )]
+position = Vector2( 1666, 416 )
+script = ExtResource( 15 )
+
+[node name="Cerveja2" parent="Elements/Cerveja" instance=ExtResource( 12 )]
+position = Vector2( 1672, 286 )
+script = ExtResource( 15 )
+
+[node name="Cerveja3" parent="Elements/Cerveja" instance=ExtResource( 12 )]
+position = Vector2( 1225, 51 )
+script = ExtResource( 15 )
+
+[node name="Cerveja4" parent="Elements/Cerveja" instance=ExtResource( 12 )]
+position = Vector2( 2897, 358 )
+script = ExtResource( 15 )
+
+[node name="Cerveja5" parent="Elements/Cerveja" instance=ExtResource( 12 )]
+position = Vector2( 1355, 210 )
+script = ExtResource( 15 )
+
+[node name="Cerveja6" parent="Elements/Cerveja" instance=ExtResource( 12 )]
+position = Vector2( 1113, 147 )
+script = ExtResource( 15 )
+
+[node name="Cerveja7" parent="Elements/Cerveja" instance=ExtResource( 12 )]
+position = Vector2( 1922, 180 )
+script = ExtResource( 15 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 972, 280 )
+
+[connection signal="body_entered" from="Elements/Cerveja/Cerveja" to="Elements/Cerveja/Cerveja" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Cerveja/Cerveja2" to="Elements/Cerveja/Cerveja2" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Cerveja/Cerveja3" to="Elements/Cerveja/Cerveja3" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Cerveja/Cerveja4" to="Elements/Cerveja/Cerveja4" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Cerveja/Cerveja5" to="Elements/Cerveja/Cerveja5" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Cerveja/Cerveja6" to="Elements/Cerveja/Cerveja6" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Cerveja/Cerveja7" to="Elements/Cerveja/Cerveja7" method="_on_Cerveja_body_entered"]
