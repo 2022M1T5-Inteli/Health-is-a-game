@@ -1,8 +1,7 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://sprites/sair_quando_apertado_certo.png" type="Texture" id=1]
 [ext_resource path="res://sprites/soundIcon (1).png" type="Texture" id=2]
-[ext_resource path="res://sprites/tutorial.png" type="Texture" id=3]
 [ext_resource path="res://scripts/novo menu.gd" type="Script" id=4]
 [ext_resource path="res://sprites/New Piskel (1).png" type="Texture" id=5]
 [ext_resource path="res://sprites/sair_botao_certo.png" type="Texture" id=6]
@@ -95,7 +94,6 @@ __meta__ = {
 [node name="JogarButton" type="TextureButton" parent="VBoxContainer"]
 margin_right = 508.0
 margin_bottom = 140.0
-focus_neighbour_top = NodePath("../TutorialButton")
 texture_normal = ExtResource( 7 )
 texture_pressed = ExtResource( 11 )
 
@@ -108,14 +106,6 @@ size_flags_vertical = 5
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 1 )
 stretch_mode = 1
-
-[node name="TutorialButton" type="TextureButton" parent="VBoxContainer"]
-visible = false
-margin_top = 308.0
-margin_right = 508.0
-margin_bottom = 468.0
-focus_neighbour_bottom = NodePath("../JogarButton")
-texture_normal = ExtResource( 3 )
 
 [node name="LogoLifeIsAGame" type="Sprite" parent="."]
 position = Vector2( 512, 175 )
@@ -165,5 +155,4 @@ position = Vector2( 118, 104 )
 
 [connection signal="pressed" from="VBoxContainer/JogarButton" to="." method="_on_JogarButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/SairButton" to="." method="_on_SairButton_pressed"]
-[connection signal="pressed" from="VBoxContainer/TutorialButton" to="." method="_on_TutorialButton_pressed"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

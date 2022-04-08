@@ -15,13 +15,8 @@ func _ready():
 #	pass
 func _on_JogarButton_pressed():
 		GameManager.health_score = 1000
-		get_tree().change_scene("res://scenes/scenarios/BabyHouse.tscn")
+		get_tree().change_scene("res://scenes/TutorialCerto.tscn")
 		
-func _on_TutorialButton_pressed():
-	var tutorial = load ("res://scenes/Tutorial.tscn").instance()
-	# criar uma cena com o tutorial e colocar entre ""
-	get_tree().current_scene.add_child(tutorial)
-	$AudioStreamPlayer.stop()
 	
 	
 func _on_SairButton_pressed():
