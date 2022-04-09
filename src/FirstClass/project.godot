@@ -11,13 +11,13 @@ config_version=4
 [application]
 
 config/name="BSYM"
-run/main_scene="res://scenes/scenarios/novo menu.tscn"
+run/main_scene="res://scenes/novo menu.tscn"
 boot_splash/image="res://logo life is a game.png"
 boot_splash/fullsize=false
 
 [autoload]
 
-GameManager="*res://scripts/GameManager.gd"
+GameManager="*res://scenes/scripts/GameManager.gd"
 
 [display]
 
@@ -42,6 +42,11 @@ pause={
 para_cima={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777232,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+esc={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777217,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
 

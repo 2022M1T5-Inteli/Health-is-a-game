@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/scripts/itens/Saladao.gd" type="Script" id=1]
+[ext_resource path="res://sprites/saladao.png" type="Texture" id=2]
+[ext_resource path="res://sounds/item bom (1).wav" type="AudioStream" id=3]
+
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 49, 41.5 )
+
+[node name="Saladdao" type="Area2D"]
+position = Vector2( 258, 210 )
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1, -2 )
+shape = SubResource( 1 )
+
+[node name="SaladaoSprite" type="Sprite" parent="."]
+position = Vector2( -2.99997, -2.99999 )
+scale = Vector2( 0.505703, 0.551807 )
+texture = ExtResource( 2 )
+
+[node name="CollectedSoundGood" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 0, 24 )
+stream = ExtResource( 3 )
+volume_db = 15.0
+
+[connection signal="body_entered" from="." to="." method="_on_Saladdao_body_entered"]

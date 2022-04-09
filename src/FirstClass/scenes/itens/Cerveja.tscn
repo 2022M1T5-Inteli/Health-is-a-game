@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/scripts/itens/Cigarro.gd" type="Script" id=1]
+[ext_resource path="res://sprites/cervejinha.png" type="Texture" id=2]
+[ext_resource path="res://sounds/item ruim (1).ogg" type="AudioStream" id=3]
+
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 42.8477, 50.9116 )
+
+[node name="Cerveja" type="Area2D"]
+position = Vector2( 140, 74 )
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -2, -1 )
+rotation = -2.35619
+shape = SubResource( 1 )
+
+[node name="CollectedSoundBad" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( -2, -5 )
+stream = ExtResource( 3 )
+volume_db = 15.0
+
+[node name="Cerveja" type="Sprite" parent="."]
+position = Vector2( 5, -4 )
+scale = Vector2( 4.21788, 4.21788 )
+texture = ExtResource( 2 )
+
+[connection signal="body_entered" from="." to="." method="_on_Cigarro_body_entered"]

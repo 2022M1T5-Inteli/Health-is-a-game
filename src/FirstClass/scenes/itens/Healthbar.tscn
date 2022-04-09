@@ -1,9 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://fonts/Pixeled.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://scripts/itens/Healthbar.gd" type="Script" id=2]
+[ext_resource path="res://scenes/scripts/itens/Healthbar.gd" type="Script" id=2]
 [ext_resource path="res://sprites/emptyHealthbar.png" type="Texture" id=3]
 [ext_resource path="res://sprites/healthbarFill.png" type="Texture" id=4]
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 800

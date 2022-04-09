@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/scripts/itens/SolBom.gd" type="Script" id=1]
+[ext_resource path="res://sprites/Sopa-0002.png" type="Texture" id=2]
+[ext_resource path="res://sounds/item bom (1).wav" type="AudioStream" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 86, 74.8393 )
+
+[node name="Soup" type="Area2D"]
+position = Vector2( 113, 196 )
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -3, -8 )
+scale = Vector2( 0.5, 0.7 )
+shape = SubResource( 1 )
+
+[node name="SoupSprite" type="Sprite" parent="."]
+position = Vector2( -4, -9 )
+scale = Vector2( 0.613666, 0.618573 )
+texture = ExtResource( 2 )
+
+[node name="CollectedSoundGood" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( -15, 4 )
+stream = ExtResource( 3 )
+volume_db = 15.0
+
+[connection signal="body_entered" from="." to="." method="_on_Saladdao_body_entered"]

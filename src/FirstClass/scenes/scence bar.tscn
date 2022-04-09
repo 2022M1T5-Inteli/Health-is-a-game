@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://scripts/itens/TextureProgress.gd" type="Script" id=1]
+[ext_resource path="res://scenes/scripts/itens/TextureProgress.gd" type="Script" id=1]
 [ext_resource path="res://sprites/pixil-frame-0 (37).png" type="Texture" id=2]
 [ext_resource path="res://sprites/pixil-frame-0 (2).png" type="Texture" id=3]
+
 
 [node name="Bar energy" type="TextureRect"]
 margin_right = 184.0

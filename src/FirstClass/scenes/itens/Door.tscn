@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://scripts/itens/Door.gd" type="Script" id=1]
+[ext_resource path="res://scenes/scripts/itens/Door.gd" type="Script" id=1]
 [ext_resource path="res://sprites/Doors/animacao_portajogo2.png" type="Texture" id=2]
 [ext_resource path="res://sprites/Doors/animacao_portajogo1.png" type="Texture" id=3]
 [ext_resource path="res://sprites/Doors/animacao_portajogo4.png" type="Texture" id=4]
@@ -32,3 +32,4 @@ position = Vector2( 942, 276.5 )
 shape = SubResource( 4 )
 
 [connection signal="body_entered" from="." to="." method="_on_Door_body_entered"]
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

@@ -3,7 +3,8 @@
 [ext_resource path="res://fonts/Pixeled.ttf" type="DynamicFontData" id=1]
 
 [resource]
-size = 56
+size = 0
 outline_size = 7
 outline_color = Color( 0.0627451, 0.0352941, 0.0352941, 1 )
+use_filter = true
 font_data = ExtResource( 1 )
