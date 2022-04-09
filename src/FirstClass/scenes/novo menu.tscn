@@ -2,7 +2,7 @@
 
 [ext_resource path="res://sprites/sair_quando_apertado_certo.png" type="Texture" id=1]
 [ext_resource path="res://sprites/soundIcon (1).png" type="Texture" id=2]
-[ext_resource path="res://scenes/scripts/novo menu.gd" type="Script" id=4]
+[ext_resource path="res://scripts/novo menu.gd" type="Script" id=4]
 [ext_resource path="res://sprites/New Piskel (1).png" type="Texture" id=5]
 [ext_resource path="res://sprites/sair_botao_certo.png" type="Texture" id=6]
 [ext_resource path="res://sprites/jogarFINAL.png" type="Texture" id=7]

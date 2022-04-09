@@ -8,7 +8,7 @@ var muted_texture = load("res://sprites/soundIcon (2).png")
 #		self.is_paused = !is_paused
 
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed ("pause") or Input.is_action_just_pressed("esc"):
 		self.is_paused = !is_paused
 

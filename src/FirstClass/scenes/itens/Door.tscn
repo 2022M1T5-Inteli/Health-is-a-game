@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://scenes/scripts/itens/Door.gd" type="Script" id=1]
+[ext_resource path="res://scripts/itens/Door.gd" type="Script" id=1]
 [ext_resource path="res://sprites/Doors/animacao_portajogo2.png" type="Texture" id=2]
 [ext_resource path="res://sprites/Doors/animacao_portajogo1.png" type="Texture" id=3]
 [ext_resource path="res://sprites/Doors/animacao_portajogo4.png" type="Texture" id=4]
@@ -8,7 +8,7 @@
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 4 ) ],
 "loop": false,
 "name": "doorOpening",
 "speed": 5.0
@@ -25,6 +25,7 @@ position = Vector2( -1176.96, -329.257 )
 scale = Vector2( 0.920769, 1.00571 )
 frames = SubResource( 3 )
 animation = "doorOpening"
+frame = 3
 offset = Vector2( 1736, 570 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

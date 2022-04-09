@@ -31,10 +31,10 @@ func _ready():
 	$Elements/Potato/FriedPotatoes7.position = Vector2(rng.randi_range(16510, 16925), rng.randi_range(100, 400))
 	
 	$Elements/Salad/Salad.position = Vector2(rng.randi_range(1900, 1500), rng.randi_range(100, 400))
-	$Elements/Salada/Salad2.position = Vector2(rng.randi_range(2486, 2900), rng.randi_range(100,400))
-	$Elements/Salada/Salad3.position = Vector2(rng.randi_range(5461,5875), rng.randi_range(100, 400))
-	$Elements/Salada/Salad4.position = Vector2(rng.randi_range(11410,11825), rng.randi_range(100,400))
-	$Elements/Salada/Salad5.position = Vector2(rng.randi_range(16935,17350), rng.randi_range(100,400))
+	$Elements/Salad/Salad2.position = Vector2(rng.randi_range(2486, 2900), rng.randi_range(100,400))
+	$Elements/Salad/Salad3.position = Vector2(rng.randi_range(5461,5875), rng.randi_range(100, 400))
+	$Elements/Salad/Salad4.position = Vector2(rng.randi_range(11410,11825), rng.randi_range(100,400))
+	$Elements/Salad/Salad5.position = Vector2(rng.randi_range(16935,17350), rng.randi_range(100,400))
 	
 	$Elements/Halter/Halter.position = Vector2(rng.randi_range(2000, 2400), rng.randi_range(100, 400))
 	$Elements/Halter/Halter2.position = Vector2(rng.randi_range(4186, 4600), rng.randi_range(100, 400))

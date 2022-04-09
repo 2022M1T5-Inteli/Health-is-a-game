@@ -1,7 +1,7 @@
 extends Area2D
 
 
-onready var _GoodSun = $GoodSunSprite
+onready var _GoodSun = $GoodSun
 export var points = 4
 
 func _on_GoodSun_body_entered(body):

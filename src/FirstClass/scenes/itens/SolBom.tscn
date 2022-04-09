@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://scenes/scripts/itens/SolBom.gd" type="Script" id=1]
+[ext_resource path="res://scripts/itens/SolBom.gd" type="Script" id=1]
 [ext_resource path="res://sprites/solbom.png" type="Texture" id=2]
 [ext_resource path="res://sounds/item bom (1).wav" type="AudioStream" id=3]
 

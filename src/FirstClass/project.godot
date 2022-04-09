@@ -17,7 +17,7 @@ boot_splash/fullsize=false
 
 [autoload]
 
-GameManager="*res://scenes/scripts/GameManager.gd"
+GameManager="*res://scripts/GameManager.gd"
 
 [display]
 

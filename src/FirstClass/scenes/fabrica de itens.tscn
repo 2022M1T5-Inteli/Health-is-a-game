@@ -1,10 +1,11 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://sprites/agua.png" type="Texture" id=1]
-[ext_resource path="res://scenes/scripts/itens/Water.gd" type="Script" id=2]
-[ext_resource path="res://scenes/scripts/itens/Apple.gd" type="Script" id=3]
+[ext_resource path="res://scripts/itens/Water.gd" type="Script" id=2]
+[ext_resource path="res://scripts/itens/Apple.gd" type="Script" id=3]
 [ext_resource path="res://sprites/appleSprite.png" type="Texture" id=4]
 [ext_resource path="res://scripts/fabrica de itens.gd" type="Script" id=5]
+
 
 
 [node name="fabrica de itens" type="Node"]
