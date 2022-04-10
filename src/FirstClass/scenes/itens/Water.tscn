@@ -4,26 +4,24 @@
 [ext_resource path="res://sprites/agua.png" type="Texture" id=2]
 [ext_resource path="res://sounds/item ruim (1).ogg" type="AudioStream" id=3]
 
-
-
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 61, 86.5 )
+extents = Vector2( 33, 67.5 )
 
 [node name="Water" type="Area2D"]
-position = Vector2( 0, -5 )
+position = Vector2( 421, 175 )
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 15, 8.5 )
+position = Vector2( 27, 27.5 )
 shape = SubResource( 1 )
 
 [node name="CollectedSoundGood" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
 
 [node name="WaterSprite" type="Sprite" parent="."]
-position = Vector2( 16, 10 )
-scale = Vector2( 0.739286, 0.739286 )
+position = Vector2( 26.875, 29.4196 )
+scale = Vector2( 0.583929, 0.583929 )
 texture = ExtResource( 2 )
 
 [connection signal="body_entered" from="." to="." method="_on_Water_body_entered"]

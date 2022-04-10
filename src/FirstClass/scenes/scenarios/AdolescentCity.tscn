@@ -28,7 +28,7 @@ extents = Vector2( 7475, 50.75 )
 script = ExtResource( 14 )
 
 [node name="Adolescentefinal2T3" type="Sprite" parent="."]
-position = Vector2( 5433, 316 )
+position = Vector2( 5300, 316 )
 scale = Vector2( 0.770781, 0.770781 )
 texture = ExtResource( 2 )
 
@@ -82,26 +82,25 @@ targetScenePath = "res://scenes/scenarios/AdultScene.tscn"
 position = Vector2( 779, 224 )
 
 [node name="Cigarette2" parent="Elements/Cigarette" instance=ExtResource( 13 )]
-visible = false
-position = Vector2( 911, 312 )
+position = Vector2( 779, 224 )
 
 [node name="Cigarette3" parent="Elements/Cigarette" instance=ExtResource( 13 )]
-position = Vector2( 2894, 203 )
+position = Vector2( 779, 224 )
 
 [node name="Cigarette4" parent="Elements/Cigarette" instance=ExtResource( 13 )]
-position = Vector2( 2423, 296 )
+position = Vector2( 779, 224 )
 
 [node name="Cigarette5" parent="Elements/Cigarette" instance=ExtResource( 13 )]
-position = Vector2( 3004, 284 )
+position = Vector2( 779, 224 )
 
 [node name="Cigarette6" parent="Elements/Cigarette" instance=ExtResource( 13 )]
-position = Vector2( 2126, 32 )
+position = Vector2( 779, 224 )
 
 [node name="Cigarette7" parent="Elements/Cigarette" instance=ExtResource( 13 )]
-position = Vector2( 3271, 320 )
+position = Vector2( 779, 224 )
 
 [node name="Cigarette8" parent="Elements/Cigarette" instance=ExtResource( 13 )]
-position = Vector2( 3418, 326 )
+position = Vector2( 779, 224 )
 
 [node name="Water" type="Node" parent="Elements"]
 
@@ -164,10 +163,10 @@ position = Vector2( 5355, -40 )
 position = Vector2( 4729, -31 )
 
 [node name="Hamburger8" parent="Elements/Hamburger" instance=ExtResource( 8 )]
-position = Vector2( 5534, 444 )
+position = Vector2( 10396, 401 )
 
 [node name="Hamburger9" parent="Elements/Hamburger" instance=ExtResource( 8 )]
-position = Vector2( 5598, 209 )
+position = Vector2( 14000, 294 )
 
 [node name="Potato" type="Node" parent="Elements"]
 
@@ -219,49 +218,58 @@ script = ExtResource( 15 )
 points = -28
 
 [node name="Beer2" parent="Elements/Beer" instance=ExtResource( 12 )]
-position = Vector2( 1672, 286 )
+position = Vector2( 1666, 416 )
 script = ExtResource( 15 )
-points = -24
+points = -28
 
 [node name="Beer3" parent="Elements/Beer" instance=ExtResource( 12 )]
-position = Vector2( 1225, 51 )
+position = Vector2( 1666, 416 )
 script = ExtResource( 15 )
-points = -24
+points = -28
 
 [node name="Beer4" parent="Elements/Beer" instance=ExtResource( 12 )]
-position = Vector2( 2897, 358 )
+position = Vector2( 1666, 416 )
 script = ExtResource( 15 )
-points = -24
+points = -28
 
 [node name="Beer5" parent="Elements/Beer" instance=ExtResource( 12 )]
-position = Vector2( 1355, 210 )
+position = Vector2( 1666, 416 )
 script = ExtResource( 15 )
-points = -24
+points = -28
 
 [node name="Beer6" parent="Elements/Beer" instance=ExtResource( 12 )]
-position = Vector2( 1113, 147 )
+position = Vector2( 1666, 416 )
 script = ExtResource( 15 )
-points = -24
+points = -28
 
 [node name="Beer7" parent="Elements/Beer" instance=ExtResource( 12 )]
-position = Vector2( 1922, 180 )
+position = Vector2( 1856, 250 )
 script = ExtResource( 15 )
-points = -24
+points = -28
 
 [node name="Vacine" type="Node" parent="Elements"]
 
 [node name="Vacine" parent="Elements/Vacine" instance=ExtResource( 16 )]
-position = Vector2( 575, 161 )
+position = Vector2( 1070, 324 )
 script = ExtResource( 17 )
 points = 30
 
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( 972, 280 )
 
-[connection signal="body_entered" from="Elements/Beer/Beer" to="Elements/Beer/Beer" method="_on_Cerveja_body_entered"]
-[connection signal="body_entered" from="Elements/Beer/Beer2" to="Elements/Beer/Beer2" method="_on_Cerveja_body_entered"]
-[connection signal="body_entered" from="Elements/Beer/Beer3" to="Elements/Beer/Beer3" method="_on_Cerveja_body_entered"]
-[connection signal="body_entered" from="Elements/Beer/Beer4" to="Elements/Beer/Beer4" method="_on_Cerveja_body_entered"]
-[connection signal="body_entered" from="Elements/Beer/Beer5" to="Elements/Beer/Beer5" method="_on_Cerveja_body_entered"]
-[connection signal="body_entered" from="Elements/Beer/Beer6" to="Elements/Beer/Beer6" method="_on_Cerveja_body_entered"]
-[connection signal="body_entered" from="Elements/Beer/Beer7" to="Elements/Beer/Beer7" method="_on_Cerveja_body_entered"]
+[connection signal="body_entered" from="Elements/Cigarette/Cigarette" to="Elements/Cigarette/Cigarette" method="_on_Cigarette_body_entered"]
+[connection signal="body_entered" from="Elements/Cigarette/Cigarette2" to="Elements/Cigarette/Cigarette2" method="_on_Cigarette_body_entered"]
+[connection signal="body_entered" from="Elements/Cigarette/Cigarette3" to="Elements/Cigarette/Cigarette3" method="_on_Cigarette_body_entered"]
+[connection signal="body_entered" from="Elements/Cigarette/Cigarette4" to="Elements/Cigarette/Cigarette4" method="_on_Cigarette_body_entered"]
+[connection signal="body_entered" from="Elements/Cigarette/Cigarette5" to="Elements/Cigarette/Cigarette5" method="_on_Cigarette_body_entered"]
+[connection signal="body_entered" from="Elements/Cigarette/Cigarette6" to="Elements/Cigarette/Cigarette6" method="_on_Cigarette_body_entered"]
+[connection signal="body_entered" from="Elements/Cigarette/Cigarette7" to="Elements/Cigarette/Cigarette7" method="_on_Cigarette_body_entered"]
+[connection signal="body_entered" from="Elements/Cigarette/Cigarette8" to="Elements/Cigarette/Cigarette8" method="_on_Cigarette_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer" to="Elements/Beer/Beer" method="_on_Beer_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer2" to="Elements/Beer/Beer2" method="_on_Beer_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer3" to="Elements/Beer/Beer3" method="_on_Beer_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer4" to="Elements/Beer/Beer4" method="_on_Beer_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer5" to="Elements/Beer/Beer5" method="_on_Beer_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer6" to="Elements/Beer/Beer6" method="_on_Beer_body_entered"]
+[connection signal="body_entered" from="Elements/Beer/Beer7" to="Elements/Beer/Beer7" method="_on_Beer_body_entered"]
+[connection signal="body_entered" from="Elements/Vacine/Vacine" to="Elements/Vacine/Vacine" method="_on_Vacine_body_entered"]
