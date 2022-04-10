@@ -25,9 +25,12 @@ Meu projeto é um exemplo de como utilizar o github.
 
 
 💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+
 💡O jogo aborda a alta de conhecimento sobre prevenção do câncer  e negligência na passagem de informação.
-💡 Como o jogo é sócio educativo, ele não pertence a um segmento de mercado saturado. Logo, há poucas iniciativas para a construção de um jogo que visa ensinar métodos de prevenção ao câncer, de forma divertida. 
-💡 O público está entre adolescentes de 14 a 17 anos que comprovadamente são os maiores vetores de convencimento dentro de casa.
+
+💡Como o jogo é sócio educativo, ele não pertence a um segmento de mercado saturado. Logo, há poucas iniciativas para a construção de um jogo que visa ensinar métodos de prevenção ao câncer, de forma divertida.
+
+💡O público está entre adolescentes de 14 a 17 anos que comprovadamente são os maiores vetores de convencimento dentro de casa.
 <br><br>
 Meu projeto ajuda estudantes inteli a configurarem seus githubs.
 <br><br>
