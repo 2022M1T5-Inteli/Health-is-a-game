@@ -17,3 +17,5 @@ var candy = 0
 var soda = 0
 var sun = 0
 var sunprotector = 0
+
+var playerCollectVacine = false

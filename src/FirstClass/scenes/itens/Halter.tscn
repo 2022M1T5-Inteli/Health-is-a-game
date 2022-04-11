@@ -5,19 +5,19 @@
 [ext_resource path="res://sounds/item bom (1).wav" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 38, 24.5 )
+extents = Vector2( 46, 27.75 )
 
 [node name="Halter" type="Area2D"]
 position = Vector2( 320, 211 )
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 1, 12.5 )
+position = Vector2( 12, 20 )
 shape = SubResource( 1 )
 
 [node name="HalterSprite" type="Sprite" parent="."]
-position = Vector2( 14, 14 )
-scale = Vector2( 0.238594, 0.260346 )
+position = Vector2( 27.6976, 21.0215 )
+scale = Vector2( 0.283147, 0.308961 )
 texture = ExtResource( 2 )
 
 [node name="CollectedSoundGood" type="AudioStreamPlayer2D" parent="."]

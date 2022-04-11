@@ -1,11 +1,11 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://scenes/itens/Healthbar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://backgrounds/adolescentefinal2t3.png" type="Texture" id=2]
 [ext_resource path="res://backgrounds/adolescentefinal2t4.png" type="Texture" id=3]
 [ext_resource path="res://scenes/PlayerAdolescente.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/PauseMenu.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/itens/FriedPotatoes.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/FriedPotatoes2.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/itens/Water.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/itens/Hamburger.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/itens/Halter.tscn" type="PackedScene" id=9]
@@ -17,6 +17,7 @@
 [ext_resource path="res://scenes/itens/Cerveja.gd" type="Script" id=15]
 [ext_resource path="res://scenes/itens/Vacine.tscn" type="PackedScene" id=16]
 [ext_resource path="res://scenes/itens/Vacine.gd" type="Script" id=17]
+[ext_resource path="res://scenes/BadPointsOverPlayer.tscn" type="PackedScene" id=18]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 156, 296 )
@@ -69,6 +70,9 @@ z_index = 5
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 317, 412 )
+
+[node name="BadHit" parent="Player" instance=ExtResource( 18 )]
+position = Vector2( -522.232, -487.594 )
 
 [node name="Door" parent="." instance=ExtResource( 11 )]
 position = Vector2( 13600, -26 )
@@ -171,26 +175,18 @@ position = Vector2( 14000, 294 )
 [node name="Potato" type="Node" parent="Elements"]
 
 [node name="FriedPotatoes" parent="Elements/Potato" instance=ExtResource( 6 )]
-position = Vector2( 690, 566 )
-points = -26
 
 [node name="FriedPotatoes2" parent="Elements/Potato" instance=ExtResource( 6 )]
-position = Vector2( 4426, 454 )
 
 [node name="FriedPotatoes3" parent="Elements/Potato" instance=ExtResource( 6 )]
-position = Vector2( 4002, 505 )
 
 [node name="FriedPotatoes4" parent="Elements/Potato" instance=ExtResource( 6 )]
-position = Vector2( 3041, 303 )
 
 [node name="FriedPotatoes5" parent="Elements/Potato" instance=ExtResource( 6 )]
-position = Vector2( 1893, 111 )
 
 [node name="FriedPotatoes6" parent="Elements/Potato" instance=ExtResource( 6 )]
-position = Vector2( 3377, 298 )
 
 [node name="FriedPotatoes7" parent="Elements/Potato" instance=ExtResource( 6 )]
-position = Vector2( 1665, 81 )
 
 [node name="Salad" type="Node" parent="Elements"]
 
@@ -250,7 +246,7 @@ points = -28
 [node name="Vacine" type="Node" parent="Elements"]
 
 [node name="Vacine" parent="Elements/Vacine" instance=ExtResource( 16 )]
-position = Vector2( 1070, 324 )
+position = Vector2( 1070, 102 )
 script = ExtResource( 17 )
 points = 30
 
@@ -265,6 +261,13 @@ position = Vector2( 972, 280 )
 [connection signal="body_entered" from="Elements/Cigarette/Cigarette6" to="Elements/Cigarette/Cigarette6" method="_on_Cigarette_body_entered"]
 [connection signal="body_entered" from="Elements/Cigarette/Cigarette7" to="Elements/Cigarette/Cigarette7" method="_on_Cigarette_body_entered"]
 [connection signal="body_entered" from="Elements/Cigarette/Cigarette8" to="Elements/Cigarette/Cigarette8" method="_on_Cigarette_body_entered"]
+[connection signal="body_entered" from="Elements/Potato/FriedPotatoes" to="Elements/Potato/FriedPotatoes" method="_on_FriedPotatoes_body_entered"]
+[connection signal="body_entered" from="Elements/Potato/FriedPotatoes2" to="Elements/Potato/FriedPotatoes2" method="_on_FriedPotatoes_body_entered"]
+[connection signal="body_entered" from="Elements/Potato/FriedPotatoes3" to="Elements/Potato/FriedPotatoes3" method="_on_FriedPotatoes_body_entered"]
+[connection signal="body_entered" from="Elements/Potato/FriedPotatoes4" to="Elements/Potato/FriedPotatoes4" method="_on_FriedPotatoes_body_entered"]
+[connection signal="body_entered" from="Elements/Potato/FriedPotatoes5" to="Elements/Potato/FriedPotatoes5" method="_on_FriedPotatoes_body_entered"]
+[connection signal="body_entered" from="Elements/Potato/FriedPotatoes6" to="Elements/Potato/FriedPotatoes6" method="_on_FriedPotatoes_body_entered"]
+[connection signal="body_entered" from="Elements/Potato/FriedPotatoes7" to="Elements/Potato/FriedPotatoes7" method="_on_FriedPotatoes_body_entered"]
 [connection signal="body_entered" from="Elements/Beer/Beer" to="Elements/Beer/Beer" method="_on_Beer_body_entered"]
 [connection signal="body_entered" from="Elements/Beer/Beer2" to="Elements/Beer/Beer2" method="_on_Beer_body_entered"]
 [connection signal="body_entered" from="Elements/Beer/Beer3" to="Elements/Beer/Beer3" method="_on_Beer_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://backgrounds/correcaochaoparquercrianca-export (1)edt.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Pause.gd" type="Script" id=2]
@@ -17,6 +17,8 @@
 [ext_resource path="res://scenes/PauseMenu.tscn" type="PackedScene" id=15]
 [ext_resource path="res://scripts/ChildPark.gd" type="Script" id=16]
 [ext_resource path="res://scenes/itens/Chocolate.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/itens/VacineHBC.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/BadPointsOverPlayer.tscn" type="PackedScene" id=19]
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 46.5, 335 )
@@ -89,7 +91,7 @@ position = Vector2( 0, 6 )
 stream = ExtResource( 14 )
 
 [node name="Soda6" parent="Elements/Soda" instance=ExtResource( 5 )]
-position = Vector2( 7492, 429 )
+position = Vector2( 8700, 333 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedSodaFx" type="AudioStreamPlayer2D" parent="Elements/Soda/Soda6"]
@@ -101,7 +103,7 @@ position = Vector2( 7719, 137 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedSodaFx" type="AudioStreamPlayer2D" parent="Elements/Soda/Soda7"]
-position = Vector2( 0, 6 )
+position = Vector2( -4, -6 )
 stream = ExtResource( 14 )
 
 [node name="Soda8" parent="Elements/Soda" instance=ExtResource( 5 )]
@@ -109,62 +111,6 @@ position = Vector2( 3047, 308 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedSodaFx" type="AudioStreamPlayer2D" parent="Elements/Soda/Soda8"]
-position = Vector2( 0, 6 )
-stream = ExtResource( 14 )
-
-[node name="Soda9" parent="Elements/Soda" instance=ExtResource( 5 )]
-position = Vector2( 3636, 116 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="CollectedSodaFx" type="AudioStreamPlayer2D" parent="Elements/Soda/Soda9"]
-position = Vector2( 0, 6 )
-stream = ExtResource( 14 )
-
-[node name="Soda10" parent="Elements/Soda" instance=ExtResource( 5 )]
-position = Vector2( 7254, 141 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="CollectedSodaFx" type="AudioStreamPlayer2D" parent="Elements/Soda/Soda10"]
-position = Vector2( 0, 6 )
-stream = ExtResource( 14 )
-
-[node name="Soda11" parent="Elements/Soda" instance=ExtResource( 5 )]
-position = Vector2( 5066, 154 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="CollectedSodaFx" type="AudioStreamPlayer2D" parent="Elements/Soda/Soda11"]
-position = Vector2( 0, 6 )
-stream = ExtResource( 14 )
-
-[node name="Soda12" parent="Elements/Soda" instance=ExtResource( 5 )]
-position = Vector2( 5344, 254 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="CollectedSodaFx" type="AudioStreamPlayer2D" parent="Elements/Soda/Soda12"]
-position = Vector2( 0, 6 )
-stream = ExtResource( 14 )
-
-[node name="Soda13" parent="Elements/Soda" instance=ExtResource( 5 )]
-position = Vector2( 7492, 429 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="CollectedSodaFx" type="AudioStreamPlayer2D" parent="Elements/Soda/Soda13"]
-position = Vector2( 0, 6 )
-stream = ExtResource( 14 )
-
-[node name="Soda14" parent="Elements/Soda" instance=ExtResource( 5 )]
-position = Vector2( 6514, 330 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="CollectedSodaFx" type="AudioStreamPlayer2D" parent="Elements/Soda/Soda14"]
-position = Vector2( 0, 6 )
-stream = ExtResource( 14 )
-
-[node name="Soda15" parent="Elements/Soda" instance=ExtResource( 5 )]
-position = Vector2( 6209, 393 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="CollectedSodaFx" type="AudioStreamPlayer2D" parent="Elements/Soda/Soda15"]
 position = Vector2( 0, 6 )
 stream = ExtResource( 14 )
 
@@ -206,26 +152,11 @@ scale = Vector2( 0.5, 0.5 )
 [node name="CollectedFriedPotatoesFx" type="AudioStreamPlayer2D" parent="Elements/FriedPotatoes/FriedPotatoes5"]
 stream = ExtResource( 14 )
 
-[node name="FriedPotatoes6" parent="Elements/FriedPotatoes" instance=ExtResource( 6 )]
-position = Vector2( 876, 172 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="CollectedFriedPotatoesFx" type="AudioStreamPlayer2D" parent="Elements/FriedPotatoes/FriedPotatoes6"]
-stream = ExtResource( 14 )
-
-[node name="FriedPotatoes7" parent="Elements/FriedPotatoes" instance=ExtResource( 6 )]
-position = Vector2( 8829, 364 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="CollectedFriedPotatoesFx" type="AudioStreamPlayer2D" parent="Elements/FriedPotatoes/FriedPotatoes7"]
-stream = ExtResource( 14 )
-
 [node name="SunProtector" type="Node" parent="Elements"]
 
 [node name="SunProtector" parent="Elements/SunProtector" instance=ExtResource( 7 )]
-position = Vector2( 1863, 328 )
-scale = Vector2( 0.49962, 0.299017 )
-points = 5
+position = Vector2( 2382, 182 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedSunProtectorFx" type="AudioStreamPlayer2D" parent="Elements/SunProtector/SunProtector"]
 stream = ExtResource( 13 )
@@ -235,20 +166,6 @@ position = Vector2( 2382, 182 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="CollectedSunProtectorFx" type="AudioStreamPlayer2D" parent="Elements/SunProtector/SunProtector2"]
-stream = ExtResource( 13 )
-
-[node name="SunProtector3" parent="Elements/SunProtector" instance=ExtResource( 7 )]
-position = Vector2( 7009, 285 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="CollectedSunProtectorFx" type="AudioStreamPlayer2D" parent="Elements/SunProtector/SunProtector3"]
-stream = ExtResource( 13 )
-
-[node name="SunProtector4" parent="Elements/SunProtector" instance=ExtResource( 7 )]
-position = Vector2( 8536, 125 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="CollectedSunProtectorFx" type="AudioStreamPlayer2D" parent="Elements/SunProtector/SunProtector4"]
 stream = ExtResource( 13 )
 
 [node name="BadSun" type="Node" parent="Elements"]
@@ -281,7 +198,7 @@ stream = ExtResource( 13 )
 [node name="Ball" type="Node" parent="Elements"]
 
 [node name="Ball" parent="Elements/Ball" instance=ExtResource( 4 )]
-position = Vector2( 830, 495 )
+position = Vector2( 807, 450 )
 scale = Vector2( 0.8, 0.8 )
 points = 5
 
@@ -317,7 +234,7 @@ scale = Vector2( 0.8, 0.8 )
 stream = ExtResource( 13 )
 
 [node name="Ball6" parent="Elements/Ball" instance=ExtResource( 4 )]
-position = Vector2( 7845, 336 )
+position = Vector2( 8500, 281 )
 scale = Vector2( 0.8, 0.8 )
 
 [node name="CollectedBallFx" type="AudioStreamPlayer2D" parent="Elements/Ball/Ball6"]
@@ -355,7 +272,7 @@ scale = Vector2( 0.65, 0.65 )
 stream = ExtResource( 13 )
 
 [node name="Banana4" parent="Elements/Banana" instance=ExtResource( 3 )]
-position = Vector2( 8304, 330 )
+position = Vector2( 8584, 354 )
 scale = Vector2( 0.65, 0.65 )
 
 [node name="CollectedBananaFx" type="AudioStreamPlayer2D" parent="Elements/Banana/Banana4"]
@@ -385,27 +302,41 @@ stream = ExtResource( 13 )
 [node name="GoodSun" type="Node" parent="Elements"]
 
 [node name="GoodSun" parent="Elements/GoodSun" instance=ExtResource( 10 )]
+position = Vector2( 555, 323 )
 points = 5
 
 [node name="GoodSun2" parent="Elements/GoodSun" instance=ExtResource( 10 )]
-position = Vector2( 621, 217 )
+position = Vector2( 555, 323 )
+points = 5
 
 [node name="Chocolate" type="Node" parent="Elements"]
 
 [node name="Chocolate" parent="Elements/Chocolate" instance=ExtResource( 17 )]
+position = Vector2( 736, 293 )
 points = -20
 
 [node name="Chocolate2" parent="Elements/Chocolate" instance=ExtResource( 17 )]
+position = Vector2( 561, 274 )
 
 [node name="Chocolate3" parent="Elements/Chocolate" instance=ExtResource( 17 )]
+position = Vector2( 1444, 99 )
 
 [node name="Chocolate4" parent="Elements/Chocolate" instance=ExtResource( 17 )]
+position = Vector2( 1121, 111 )
 
 [node name="Chocolate5" parent="Elements/Chocolate" instance=ExtResource( 17 )]
+position = Vector2( 1300, 300 )
 
 [node name="Chocolate6" parent="Elements/Chocolate" instance=ExtResource( 17 )]
+position = Vector2( 1286, 60 )
 
 [node name="Chocolate7" parent="Elements/Chocolate" instance=ExtResource( 17 )]
+position = Vector2( 1248, 196 )
+
+[node name="VacineHBC" type="Node" parent="Elements"]
+
+[node name="VacineHBC" parent="Elements/VacineHBC" instance=ExtResource( 18 )]
+position = Vector2( 925, 350 )
 
 [node name="PlayerCamera" type="Camera2D" parent="."]
 position = Vector2( 416, 305 )
@@ -430,8 +361,11 @@ z_index = 5
 position = Vector2( 420, 437 )
 scale = Vector2( 0.5, 0.5 )
 
+[node name="BadHit" parent="Player" instance=ExtResource( 19 )]
+position = Vector2( -522.232, -487.594 )
+
 [node name="Door" parent="." instance=ExtResource( 9 )]
-position = Vector2( 8469, -17 )
+position = Vector2( 8503, -2 )
 targetScenePath = "res://scenes/scenarios/AdolescentCity.tscn"
 
 [node name="Pause" type="Node" parent="."]
@@ -442,3 +376,5 @@ script = ExtResource( 2 )
 position = Vector2( 9156, 76 )
 
 [connection signal="body_entered" from="Elements/GoodSun/GoodSun" to="Elements/GoodSun/GoodSun" method="_on_GoodSun_body_entered"]
+[connection signal="body_entered" from="Elements/GoodSun/GoodSun2" to="Elements/GoodSun/GoodSun2" method="_on_GoodSun_body_entered"]
+[connection signal="body_entered" from="Elements/VacineHBC/VacineHBC" to="Elements/VacineHBC/VacineHBC" method="_on_VacineHBC_body_entered"]

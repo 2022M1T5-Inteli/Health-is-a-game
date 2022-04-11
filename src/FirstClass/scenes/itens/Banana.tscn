@@ -4,22 +4,20 @@
 [ext_resource path="res://sprites/bananaSprite.png" type="Texture" id=2]
 [ext_resource path="res://sounds/item bom (1).wav" type="AudioStream" id=3]
 
-
-
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 51.5, 40 )
+extents = Vector2( 47.5, 37 )
 
 [node name="Banana" type="Area2D"]
 position = Vector2( 527, 211 )
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 20.5, -19 )
+position = Vector2( 19.5, -16 )
 shape = SubResource( 1 )
 
 [node name="BananaSprite" type="Sprite" parent="."]
-position = Vector2( -194, 110 )
-scale = Vector2( 0.7382, 0.7382 )
+position = Vector2( -171, 97 )
+scale = Vector2( 0.6551, 0.6551 )
 texture = ExtResource( 2 )
 
 [node name="CollectedSoundGood" type="AudioStreamPlayer2D" parent="."]

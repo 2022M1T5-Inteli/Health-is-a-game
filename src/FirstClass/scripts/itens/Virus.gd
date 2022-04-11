@@ -12,3 +12,6 @@ func _on_Virus_body_entered(body):
 		if (GameManager.health_score + points) <= 1000:
 			GameManager.health_score = GameManager.health_score + points
 	$CollectedSoundBad.play()
+func _ready():
+	if GameManager.playerCollectVacine == true:
+		$VirusHPV.hide()

@@ -1,6 +1,6 @@
 extends Area2D
 
-onready var _FriedPotatoes = $FriedPotatoesSprite
+onready var _FriedPotatoes = $FriedPotatoes
 
 export var points = -3
 
@@ -10,8 +10,8 @@ func _on_FriedPotatoes_body_entered(body):
 	if body.get_name() == "Player":
 		GameManager.friedpotatoes = 1
 		_FriedPotatoes.hide()
-		# when a body collides with this element, it hides the FriedPotatoes
-		body.play_bad_hit()
+		# shows the bad sign when the player hits the FriedPotatoes
+		body.play_good_hit()
 		if (GameManager.health_score + points) <= 1000:
 			GameManager.health_score = GameManager.health_score + points
 	$CollectedSoundBad.play()

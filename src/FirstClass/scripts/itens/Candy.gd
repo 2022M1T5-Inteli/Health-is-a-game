@@ -11,6 +11,7 @@ func _on_Candy_body_entered(body):
 	if body.get_name() == "Player":
 		GameManager.candy = 1
 		_Candy.hide()
+		#shows the bad sign when the player hits the Candy
 		body.play_bad_hit()
 		$CollectedSoundBad.play()
 		if (GameManager.health_score + points) <= 1000:

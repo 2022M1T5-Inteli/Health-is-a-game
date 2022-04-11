@@ -5,19 +5,19 @@
 [ext_resource path="res://sounds/item ruim (1).ogg" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 27, 27.5 )
+extents = Vector2( 46.4375, 48.1465 )
 
 [node name="FriedPotatoes" type="Area2D"]
-position = Vector2( 215, 93 )
+position = Vector2( 263, 114 )
 script = ExtResource( 1 )
 
 [node name="FriedPotatoesSprite" type="Sprite" parent="."]
-position = Vector2( 3.89999, 4.89999 )
-scale = Vector2( 0.399166, 0.399166 )
+position = Vector2( 5.75001, 13.75 )
+scale = Vector2( 0.702083, 0.702083 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 3, 3 )
+position = Vector2( 3.5625, 10.8535 )
 shape = SubResource( 1 )
 
 [node name="CollectedSoundBad" type="AudioStreamPlayer2D" parent="."]
