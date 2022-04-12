@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://sprites/sair_quando_apertado_certo.png" type="Texture" id=1]
 [ext_resource path="res://sprites/soundIcon (1).png" type="Texture" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://sprites/sair_botao_certo.png" type="Texture" id=6]
 [ext_resource path="res://sprites/jogarFINAL.png" type="Texture" id=7]
 [ext_resource path="res://sounds/Som menu.wav" type="AudioStream" id=8]
-[ext_resource path="res://sprites/soundIcon (2).png" type="Texture" id=9]
 [ext_resource path="res://logo life is a game.png" type="Texture" id=10]
 [ext_resource path="res://sprites/jogarLight.png" type="Texture" id=11]
 
@@ -143,7 +142,6 @@ rect_scale = Vector2( 0.5, 0.5 )
 size_flags_horizontal = 0
 keep_pressed_outside = true
 texture_normal = ExtResource( 2 )
-texture_focused = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": true
 }

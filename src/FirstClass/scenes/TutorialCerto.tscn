@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://scripts/TutorialCerto.gd" type="Script" id=1]
 [ext_resource path="res://backgrounds/tutorial1000%.png" type="Texture" id=2]
@@ -10,16 +10,15 @@
 [ext_resource path="res://scenes/itens/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/PauseMenu.tscn" type="PackedScene" id=9]
 [ext_resource path="res://sprites/balaodefala1000.png" type="Texture" id=10]
-
-
+[ext_resource path="res://fonts/Pixeled.ttf" type="DynamicFontData" id=11]
+[ext_resource path="res://sprites/genderWomanSymbol.png" type="Texture" id=12]
+[ext_resource path="res://sprites/genderMaleSymbol.png" type="Texture" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9247.63, 37.5 )
 
-[sub_resource type="Theme" id=2]
-
-[sub_resource type="StyleBoxFlat" id=3]
-bg_color = Color( 1, 1, 0.921569, 1 )
+[sub_resource type="DynamicFont" id=6]
+font_data = ExtResource( 11 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -47,6 +46,7 @@ texture = ExtResource( 4 )
 [node name="Player" parent="." instance=ExtResource( 7 )]
 position = Vector2( -70, 472 )
 scale = Vector2( 0.375312, 0.375312 )
+move_speed = 100
 
 [node name="PlayerCamera" type="Camera2D" parent="."]
 position = Vector2( 221, 301 )
@@ -87,26 +87,46 @@ position = Vector2( 1274, -34 )
 targetScenePath = "res://scenes/scenarios/BabyHouse.tscn"
 
 [node name="Balaodefala1000" type="Sprite" parent="."]
-visible = false
 position = Vector2( 1954, 325 )
 scale = Vector2( 0.594203, 0.968182 )
 texture = ExtResource( 10 )
 
-[node name="LineEdit" type="LineEdit" parent="Balaodefala1000"]
-anchor_left = 0.825
-anchor_top = 0.5
-anchor_right = 0.825
-anchor_bottom = 0.5
-margin_left = -825.055
-margin_top = -156.479
-margin_right = -312.055
-margin_bottom = -107.479
-theme = SubResource( 2 )
-custom_styles/normal = SubResource( 3 )
-placeholder_text = "odsidiasofhadsifhoadsifhadsiofhadsifhasiofhsd"
-caret_blink = true
+[node name="ChooseGender" type="Node" parent="Balaodefala1000"]
+
+[node name="Label" type="Label" parent="Balaodefala1000"]
+margin_left = -172.0
+margin_top = -86.0657
+margin_right = 153.0
+margin_bottom = -40.0657
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "ESCOLHA UMA DAS OPCOES"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GenderWomanButton" type="TextureButton" parent="Balaodefala1000"]
+margin_left = -103.0
+margin_top = -41.9344
+margin_right = 97.0
+margin_bottom = 208.066
+rect_scale = Vector2( 0.45, 0.27 )
+texture_normal = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GenderMaleButton" type="TextureButton" parent="Balaodefala1000"]
+margin_left = 1.68262
+margin_top = -42.3476
+margin_right = 201.683
+margin_bottom = 207.652
+rect_scale = Vector2( 0.45, 0.27 )
+texture_normal = ExtResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [connection signal="pressed" from="PlayerCamera/TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="Balaodefala1000/GenderWomanButton" to="." method="_on_GenderWomanButton_pressed"]
+[connection signal="pressed" from="Balaodefala1000/GenderMaleButton" to="." method="_on_GenderMaleButton_pressed"]

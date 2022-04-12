@@ -3,7 +3,7 @@ extends Node
 var health_score = 1000
 var is_muted = false
 
-var nome = ""
+var genderChoice = "m"
 
 # Quantidades de itens
 var cigarro = 0
@@ -19,3 +19,13 @@ var sun = 0
 var sunprotector = 0
 
 var playerCollectVacine = false
+var anel = false
+
+func verifyScore():
+	if health_score <= 0:
+		get_tree().change_scene("res://scenes/scenarios/FinalRuim.tscn")
+
+func toggleMute():
+	var master_sound = AudioServer.get_bus_index("Master")
+	is_muted = !is_muted
+	AudioServer.set_bus_mute(master_sound, GameManager.is_muted)

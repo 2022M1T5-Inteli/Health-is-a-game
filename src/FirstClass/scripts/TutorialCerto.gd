@@ -1,24 +1,7 @@
 extends Node2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-
 func _on_TextureButton_pressed():
-	GameManager.health_score = 1000
-	$Player.position.x = 1900
+	skipTutorial()
 	
 func _physics_process(delta):
 	if $Player.position.x >= 1900 :
@@ -27,12 +10,18 @@ func _physics_process(delta):
 		$PlayerCamera/TextureButton.hide()
 		$Balaodefala1000.show()
 		
-	if Input.is_action_pressed("ui_accept"):
-		GameManager.nome = $Balaodefala1000/LineEdit.text
-		print(GameManager.nome)
-		get_tree().change_scene("res://scenes/scenarios/BabyHouse.tscn")
+	if Input.is_action_pressed("skip"):
+		skipTutorial()
 
-#		if Input.is_action_pressed("Enter"):
-#			get_tree().change_scene("res://scenes/scenarios/BabyHouse.tscn")
-	
+func skipTutorial():
+	GameManager.health_score = 1000
+	$Player.position.x = 1900
 
+func _on_GenderMaleButton_pressed():
+	GameManager.genderChoice = "m"
+	get_tree().change_scene("res://scenes/scenarios/BabyHouse.tscn")	
+
+
+func _on_GenderWomanButton_pressed():
+	GameManager.genderChoice = "f"
+	get_tree().change_scene("res://scenes/scenarios/BabyHouse.tscn")

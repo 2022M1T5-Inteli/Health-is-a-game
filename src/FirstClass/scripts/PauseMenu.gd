@@ -19,13 +19,19 @@ func set_is_paused(value):
 	visible = get_tree().paused
 
 func _on_SoundGame_pressed():
-	var master_sound = AudioServer.get_bus_index("Master")
-	GameManager.is_muted = !GameManager.is_muted
-	AudioServer.set_bus_mute(master_sound, GameManager.is_muted)
+	GameManager.toggleMute()
 	if !GameManager.is_muted:
 		$SoundGame.texture_normal = unmuted_texture
 	else: 
 		$SoundGame.texture_normal = muted_texture
+
+#	var master_sound = AudioServer.get_bus_index("Master")
+#	GameManager.is_muted = !GameManager.is_muted
+#	AudioServer.set_bus_mute(master_sound, GameManager.is_muted)
+#	if !GameManager.is_muted:
+#		$SoundGame.texture_normal = unmuted_texture
+#	else: 
+#		$SoundGame.texture_normal = muted_texture
 func _on_ResumeBtn_pressed():
 	self.is_paused = false
 

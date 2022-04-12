@@ -1,10 +1,14 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://sprites/adultoanimado2.png" type="Texture" id=1]
 [ext_resource path="res://sprites/adultoanimado3.png" type="Texture" id=2]
 [ext_resource path="res://sprites/adultoanimado1.png" type="Texture" id=3]
 [ext_resource path="res://sprites/adultoanimado4.png" type="Texture" id=4]
 [ext_resource path="res://scripts/player.gd" type="Script" id=5]
+[ext_resource path="res://sprites/child_woman3.png" type="Texture" id=6]
+[ext_resource path="res://sprites/child_woman4.png" type="Texture" id=7]
+[ext_resource path="res://sprites/child_woman2.png" type="Texture" id=8]
+[ext_resource path="res://sprites/child_woman1.png" type="Texture" id=9]
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 78, 124.5 )
@@ -12,7 +16,7 @@ extents = Vector2( 78, 124.5 )
 [sub_resource type="Animation" id=4]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("AdultoSprite:frame")
+tracks/0/path = NodePath("SpriteM:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -23,13 +27,25 @@ tracks/0/keys = {
 "update": 0,
 "values": [ 0 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("SpriteF:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1 ]
+}
 
 [sub_resource type="Animation" id=5]
 resource_name = "walk"
 length = 0.9
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("AdultoSprite:frame")
+tracks/0/path = NodePath("SpriteM:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -40,10 +56,30 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 0, 1, 2, 3, 3 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("SpriteF:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5, 0.7, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 1, 2, 3, 0, 0 ]
+}
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 9 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -61,8 +97,14 @@ playback_speed = 1.1
 anims/RESET = SubResource( 4 )
 anims/walk = SubResource( 5 )
 
-[node name="AdultoSprite" type="AnimatedSprite" parent="."]
+[node name="SpriteM" type="AnimatedSprite" parent="."]
 position = Vector2( -1.00002, 3.00001 )
 scale = Vector2( 0.58125, 0.58125 )
 frames = SubResource( 3 )
 speed_scale = 0.9
+
+[node name="SpriteF" type="AnimatedSprite" parent="."]
+position = Vector2( 19, 0 )
+scale = Vector2( 0.604286, 0.604286 )
+frames = SubResource( 6 )
+frame = 1

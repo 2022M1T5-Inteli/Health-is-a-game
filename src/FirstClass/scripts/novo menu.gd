@@ -1,5 +1,7 @@
 extends Node
 
+var unmuted_texture = load("res://sprites/soundIcon (1).png")
+var muted_texture = load("res://sprites/soundIcon (2).png")
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -16,8 +18,6 @@ func _ready():
 func _on_JogarButton_pressed():
 		GameManager.health_score = 1000
 		get_tree().change_scene("res://scenes/TutorialCerto.tscn")
-		
-	
 	
 func _on_SairButton_pressed():
 	get_tree().quit()
@@ -29,10 +29,10 @@ func _on_SairButton_pressed():
 func _process(delta):
 	$BabyFrame01/AnimationPlayer.play("teste")
 	$BabyFrame01.move_local_x(velocidade)
-	
-
 
 func _on_TextureButton_pressed():
-	$AudioStreamPlayer.stop() 
-func _on_TextureButton_pressed_again():
-	$AudioStreamPlayer.play()
+	GameManager.toggleMute()
+	if !GameManager.is_muted:
+		$TextureButton.texture_normal = unmuted_texture
+	else: 
+		$TextureButton.texture_normal = muted_texture

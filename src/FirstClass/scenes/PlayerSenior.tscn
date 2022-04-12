@@ -1,11 +1,14 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://sprites/idoso dividido2.png" type="Texture" id=2]
 [ext_resource path="res://sprites/idoso dividido1.png" type="Texture" id=3]
 [ext_resource path="res://sprites/idoso dividido3.png" type="Texture" id=4]
 [ext_resource path="res://sprites/idoso dividido4.png" type="Texture" id=5]
-
+[ext_resource path="res://sprites/old_woman2.png" type="Texture" id=6]
+[ext_resource path="res://sprites/old_woman1.png" type="Texture" id=7]
+[ext_resource path="res://sprites/old_woman3.png" type="Texture" id=8]
+[ext_resource path="res://sprites/old_woman4.png" type="Texture" id=9]
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
@@ -24,6 +27,18 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../SpriteF:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
@@ -78,22 +93,41 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 0, 1, 2, 3 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("../SpriteF:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3, 0.7, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 1, 2, 3, 0 ]
+}
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 59.5, 138.5 )
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [node name="Player" type="KinematicBody2D"]
 scale = Vector2( 0.91, 0.91 )
 script = ExtResource( 1 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+[node name="SpriteM" type="AnimatedSprite" parent="."]
 position = Vector2( -37, 56 )
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 6 )
-frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("../AnimatedSprite")
+root_node = NodePath("../SpriteM")
 autoplay = "crawl"
 reset_on_save = false
 anims/RESET = SubResource( 1 )
@@ -104,3 +138,9 @@ anims/walk = SubResource( 5 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 25.5, 90.5 )
 shape = SubResource( 4 )
+
+[node name="SpriteF" type="AnimatedSprite" parent="."]
+position = Vector2( 20.9135, 84.1209 )
+scale = Vector2( 0.711813, 0.711813 )
+frames = SubResource( 7 )
+frame = 1

@@ -10,6 +10,7 @@ func _on_Ring_body_entered(body):
 	# if the body name is "Player", it triggers the hide action mentioned above
 	if body.get_name() == "Player":
 		$Ring.hide()
+		GameManager.anel = true
 		# shows the good sign when the player hits the Ring
 		body.play_good_hit()
 		if (GameManager.health_score + points) <= 1000:
