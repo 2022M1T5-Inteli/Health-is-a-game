@@ -4,8 +4,6 @@
 [ext_resource path="res://sprites/pixil-frame-0 (37).png" type="Texture" id=2]
 [ext_resource path="res://sprites/pixil-frame-0 (2).png" type="Texture" id=3]
 
-
-
 [node name="Bar energy" type="TextureRect"]
 margin_right = 184.0
 margin_bottom = 148.0

@@ -4,6 +4,7 @@ var health_score = 1000
 var is_muted = false
 
 var genderChoice = "m"
+var playerLosed = false
 
 # Quantidades de itens
 var cigarro = 0
@@ -22,8 +23,9 @@ var playerCollectVacine = false
 var anel = false
 
 func verifyScore():
-	if health_score <= 0:
+	if health_score <= 0 and playerLosed == false:
 		get_tree().change_scene("res://scenes/scenarios/FinalRuim.tscn")
+		playerLosed = true
 
 func toggleMute():
 	var master_sound = AudioServer.get_bus_index("Master")

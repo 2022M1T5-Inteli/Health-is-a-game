@@ -17,7 +17,7 @@ func _ready():
 #	pass
 func _on_JogarButton_pressed():
 		GameManager.health_score = 1000
-		get_tree().change_scene("res://scenes/TutorialCerto.tscn")
+		get_tree().change_scene("res://scenes/Tutorial.tscn")
 	
 func _on_SairButton_pressed():
 	get_tree().quit()

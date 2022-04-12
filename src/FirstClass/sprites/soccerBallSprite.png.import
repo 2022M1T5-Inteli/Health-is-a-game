@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BabyRoomPart1.png-b9e0745a0b7168fe40c9614a19b84441.stex"
+path="res://.import/soccerBallSprite.png-aa21387d448f3ecbce8c16064555d7f3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BabyRoomPart1.png"
-dest_files=[ "res://.import/BabyRoomPart1.png-b9e0745a0b7168fe40c9614a19b84441.stex" ]
+source_file="res://sprites/soccerBallSprite.png"
+dest_files=[ "res://.import/soccerBallSprite.png-aa21387d448f3ecbce8c16064555d7f3.stex" ]
 
 [params]
 
