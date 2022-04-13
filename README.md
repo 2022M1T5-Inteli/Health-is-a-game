@@ -105,7 +105,7 @@ A cada atualização os detalhes devem ser lançados aqui.
 * 0.2.1 - 04/03/2022
     * MUDANÇA: Atualização de docs (mecânicas básicas do jogo e funções matemáticas que serão utilizadas)
 * 0.2.0 - 18/03/2022
-    * MUDANÇA: mecânicas básicas, som, arte e padrão de qualidade`
+    * MUDANÇA: mecânicas básicas, som, arte e padrão de qualidade.
     * ADD: Adiciona `init()`
 * 0.1.1 - 01/04/2022
     * CONSERTADO: mecânicas básicas e implementação de funções matemáticas. 
