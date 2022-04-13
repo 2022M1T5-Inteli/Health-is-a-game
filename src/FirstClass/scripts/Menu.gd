@@ -11,13 +11,9 @@ var velocidade = 5
 func _ready():
 	$VBoxContainer/JogarButton.grab_focus()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
 func _on_JogarButton_pressed():
 		GameManager.health_score = 1000
-		get_tree().change_scene("res://scenes/Tutorial.tscn")
+		get_tree().change_scene("res://scenes/scenarios/Tutorial.tscn")
 	
 func _on_SairButton_pressed():
 	get_tree().quit()

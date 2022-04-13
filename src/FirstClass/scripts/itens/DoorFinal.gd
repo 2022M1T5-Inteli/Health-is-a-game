@@ -2,7 +2,6 @@ extends Area2D
 
 onready var _animatedSprite = $AnimatedSprite 
 
-export var badEndThreshold = 750
 export var goodEndtargetScenePath = ""
 export var badEndtargetScenePath = ""
 
@@ -13,9 +12,9 @@ func _on_Door_body_entered(body):
 
 
 func _on_AnimatedSprite_animation_finished():
-	if GameManager.health_score <= badEndThreshold:
+	if GameManager.health_score <= GameManager.badEndThreshold:
 		get_tree().change_scene(badEndtargetScenePath)
-	if GameManager.health_score > badEndThreshold:
+	if GameManager.health_score > GameManager.badEndThreshold:
 		if GameManager.anel == true:
 			get_tree().change_scene("res://scenes/scenarios/FinalBomfamilia.tscn")
 		elif GameManager.anel == false:

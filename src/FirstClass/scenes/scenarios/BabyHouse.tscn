@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://scenes/itens/BabyBottle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/itens/Door.tscn" type="PackedScene" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://backgrounds/cenariobebeditavel.png" type="Texture" id=10]
 [ext_resource path="res://backgrounds/cenariocriançaeditavel1.png" type="Texture" id=11]
 [ext_resource path="res://scenes/HitOverlay.tscn" type="PackedScene" id=12]
+[ext_resource path="res://backgrounds/cenariobebeditavelOverlay.png" type="Texture" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9520.25, 37.5 )
@@ -19,8 +20,56 @@ extents = Vector2( 9520.25, 37.5 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 48, 335 )
 
+[sub_resource type="Animation" id=3]
+resource_name = "FadeIn"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("FadeIn:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("../ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("FadeIn:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 8 )
+
+[node name="CenariobebeditavelOverlay" type="Sprite" parent="."]
+position = Vector2( -401.901, 328 )
+scale = Vector2( 3.15774, 3.29 )
+texture = ExtResource( 13 )
 
 [node name="BabyBackground1" type="Sprite" parent="."]
 position = Vector2( 4849, 329 )
@@ -173,6 +222,21 @@ scale = Vector2( 0.2, 0.2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 8652, 245 )
 shape = SubResource( 2 )
+
+[node name="FadeIn" type="ColorRect" parent="."]
+visible = false
+margin_left = -581.0
+margin_top = -92.0
+margin_right = 1523.0
+margin_bottom = 723.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationFadeIn" type="AnimationPlayer" parent="."]
+anims/FadeIn = SubResource( 3 )
+anims/RESET = SubResource( 4 )
 
 [connection signal="on_hit" from="Elements/CandyNode/Candy4" to="Player" method="_on_Candy4_on_hit"]
 [connection signal="on_hit" from="Elements/CandyNode/Candy5" to="Player" method="_on_Candy4_on_hit"]

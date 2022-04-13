@@ -7,6 +7,7 @@ var rng = RandomNumberGenerator.new()
 
 
 func _ready():
+	_play_fade_in()
 	rng.randomize()
 	#Generate Apple between the ranges pre-defined
 	$Elements/AppleNode/Apple.position = Vector2(rng.randi_range(880, 1200), rng.randi_range(250, 500))
@@ -33,3 +34,7 @@ func _ready():
 	$Elements/LollipopNode/Lollipop3.position = Vector2(rng.randi_range(3900, 4240), rng.randi_range(250, 500))
 	$Elements/LollipopNode/Lollipop4.position = Vector2(rng.randi_range(5380, 5720), rng.randi_range(250, 500))
 	$Elements/LollipopNode/Lollipop5.position = Vector2(rng.randi_range(6520, 6860), rng.randi_range(250, 500))
+
+func _play_fade_in():
+	$FadeIn.show()
+	$AnimationFadeIn.play("FadeIn")

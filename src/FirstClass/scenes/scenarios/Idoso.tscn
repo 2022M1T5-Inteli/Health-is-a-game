@@ -80,7 +80,6 @@ z_index = 5
 
 [node name="DoorFinal" parent="." instance=ExtResource( 8 )]
 position = Vector2( 9165, -193 )
-badEndThreshold = 900
 goodEndtargetScenePath = "res://scenes/scenarios/FinalBom.tscn"
 badEndtargetScenePath = "res://scenes/scenarios/FinalRuim.tscn"
 

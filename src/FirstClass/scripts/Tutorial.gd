@@ -19,9 +19,15 @@ func skipTutorial():
 
 func _on_GenderMaleButton_pressed():
 	GameManager.genderChoice = "m"
-	get_tree().change_scene("res://scenes/scenarios/BabyHouse.tscn")	
+	$AnimationPlayer.play("FadeIn")
+#	get_tree().change_scene("res://scenes/scenarios/BabyHouse.tscn")
 
 
 func _on_GenderWomanButton_pressed():
 	GameManager.genderChoice = "f"
+	$AnimationPlayer.play("FadeIn")
+#	get_tree().change_scene("res://scenes/scenarios/BabyHouse.tscn")
+
+
+func _on_AnimationPlayer_animation_finished(anim_name):
 	get_tree().change_scene("res://scenes/scenarios/BabyHouse.tscn")
