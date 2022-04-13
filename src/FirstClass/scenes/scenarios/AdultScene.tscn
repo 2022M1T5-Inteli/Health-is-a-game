@@ -92,7 +92,7 @@ targetScenePath = "res://scenes/scenarios/Idoso.tscn"
 [node name="Virus" type="Node" parent="Elements"]
 
 [node name="Virus" parent="Elements/Virus" instance=ExtResource( 18 )]
-position = Vector2( 4727, 279 )
+position = Vector2( 4825, 276 )
 points = -32
 
 [node name="Ring" type="Node" parent="Elements"]

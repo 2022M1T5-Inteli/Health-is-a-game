@@ -171,7 +171,7 @@ stream = ExtResource( 13 )
 [node name="BadSun" type="Node" parent="Elements"]
 
 [node name="BadSun" parent="Elements/BadSun" instance=ExtResource( 11 )]
-position = Vector2( 994, 257 )
+position = Vector2( 994, 323 )
 points = -12
 
 [node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/BadSun/BadSun"]
@@ -336,7 +336,7 @@ position = Vector2( 1248, 196 )
 [node name="VacineHBC" type="Node" parent="Elements"]
 
 [node name="VacineHBC" parent="Elements/VacineHBC" instance=ExtResource( 18 )]
-position = Vector2( 925, 350 )
+position = Vector2( 1100, 162 )
 
 [node name="Player" parent="." instance=ExtResource( 8 )]
 position = Vector2( 420, 437 )

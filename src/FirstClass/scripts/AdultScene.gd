@@ -17,7 +17,7 @@ func _ready():
 	$Elements/Bike/Bike9.position = Vector2(rng.randi_range(14950, 15190), rng.randi_range(40, 500))
 	
 	$Elements/Water/Water.position = Vector2(rng.randi_range(2100, 2340), rng.randi_range(40, 500))
-	$Elements/Water/Water2.position = Vector2(rng.randi_range(4600, 4840), rng.randi_range(40, 500))
+	$Elements/Water/Water2.position = Vector2(rng.randi_range(4600, 4800), rng.randi_range(40, 500))
 	$Elements/Water/Water3.position = Vector2(rng.randi_range(6250, 6490), rng.randi_range(40, 500))
 	$Elements/Water/Water4.position = Vector2(rng.randi_range(7750, 7990), rng.randi_range(40, 500))
 	$Elements/Water/Water5.position = Vector2(rng.randi_range(9250, 9490), rng.randi_range(40, 500))
