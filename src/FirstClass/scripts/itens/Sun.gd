@@ -11,7 +11,7 @@ func _on_Sun_body_entered(body):
 		GameManager.sun = 1
 		_sun.hide()
 		# shows the good sign when the player hits the Sun
-		body.play_good_hit()
+		body.play_bad_hit()
 		if (GameManager.health_score + points) <= 1000:
 			GameManager.health_score = GameManager.health_score + points
 	$CollectedSoundBad.play()
