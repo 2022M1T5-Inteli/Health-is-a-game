@@ -15,7 +15,7 @@
 ## Descrição
 ![Captura de tela 2022-04-12 104001](https://user-images.githubusercontent.com/82065728/163193201-47789d75-00ac-402b-90f2-65ae7d27e494.jpg)
 
-📜 Um jogo sobre a prevenção do câncer.
+📜 Um jogo sobre a prevenção do câncer e promoção à saúde.
 <p align="center">
   
 
@@ -79,13 +79,9 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 ## 📈 Exemplo de uso
 
-O jogo pode ser utilizado 
+O jogo pode ser utilizado em escolas, com o objetivo de forncer informaçôes de prevenção ao câncer. 
+Além disso, ele pode ser utilizado por crianças e adolescentes que despertarem interesse pelo assunto e pelo game. 
   
-Adicione blocos de códigos e, se necessário, screenshots.
-
-Este modelo pode ser copiado e utilizado à vontade.
-
-Através da cópia/clone/ download do repositório, altere os dados do readme.md e carregue os arquivos de seu projeto.
 
 ## 💻 Configuração para Desenvolvimento
 
