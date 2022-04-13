@@ -15,19 +15,18 @@
 ## Descrição
 ![Captura de tela 2022-04-12 104001](https://user-images.githubusercontent.com/82065728/163193201-47789d75-00ac-402b-90f2-65ae7d27e494.jpg)
 
-📜 Um jogo sobre a prevenção do câncer .
+📜 Um jogo sobre a prevenção do câncer.
 <p align="center">
   
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
-</p>
 
 
 
-💡O jogo aborda a alta de conhecimento sobre prevenção do câncer  e negligência na passagem de informação.
 
-💡Como o jogo é sócio educativo, ele não pertence a um segmento de mercado saturado. Logo, há poucas iniciativas para a construção de um jogo que visa ensinar métodos de prevenção ao câncer, de forma divertida.
+💡O jogo aborda a falta de conhecimento sobre prevenção do câncer e negligência na divulgação de informação.
 
-💡O público está entre adolescentes de 14 a 17 anos que comprovadamente são os maiores vetores de convencimento dentro de casa.
+💡Como o jogo é socioeducativo, ele não pertence a um segmento de mercado saturado. Logo, há poucas iniciativas para a construção de um jogo que visam ensinar métodos de prevenção ao câncer de forma divertida.
+
+💡O público alvo é composto por adolescentes de 14 a 17 anos, que segundo estudos, são os maiores vetores de convencimento dentro de casa.
 <br><br>
 
 ## 🛠 Estrutura de pastas
@@ -64,15 +63,6 @@ Há também 4 pastas que seguem da seguinte forma:
 
 ## 🛠 Instalação
 
-<b>Android:</b>
-
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
 <b>Windows:</b>
 
 Não há instalação! Apenas executável!
@@ -89,8 +79,8 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 ## 📈 Exemplo de uso
 
-Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado.
-
+O jogo pode ser utilizado 
+  
 Adicione blocos de códigos e, se necessário, screenshots.
 
 Este modelo pode ser copiado e utilizado à vontade.
