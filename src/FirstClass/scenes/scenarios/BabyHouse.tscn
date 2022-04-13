@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scenes/itens/BabyBottle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/itens/Door.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://backgrounds/cenariocriançaeditavel1.png" type="Texture" id=11]
 [ext_resource path="res://scenes/HitOverlay.tscn" type="PackedScene" id=12]
 [ext_resource path="res://backgrounds/cenariobebeditavelOverlay.png" type="Texture" id=13]
+[ext_resource path="res://scenes/itens/PauseButton.tscn" type="PackedScene" id=14]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9520.25, 37.5 )
@@ -207,10 +208,14 @@ smoothing_speed = 6.0
 drag_margin_top = 0.8
 drag_margin_bottom = 0.0
 
-[node name="MenuPause" parent="PlayerCamera" instance=ExtResource( 9 )]
+[node name="PauseButton" parent="PlayerCamera" instance=ExtResource( 14 )]
+pause_mode = 2
+position = Vector2( 463, -284 )
+
+[node name="MenuPause" parent="PlayerCamera/PauseButton" instance=ExtResource( 9 )]
 visible = false
-position = Vector2( -313, -176 )
-scale = Vector2( 0.5, 0.5 )
+position = Vector2( -2553.33, 363.333 )
+scale = Vector2( 1.66667, 1.66667 )
 z_index = 5
 
 [node name="Healthbar" parent="PlayerCamera" instance=ExtResource( 4 )]
@@ -229,6 +234,7 @@ margin_left = -581.0
 margin_top = -92.0
 margin_right = 1523.0
 margin_bottom = 723.0
+mouse_filter = 2
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false

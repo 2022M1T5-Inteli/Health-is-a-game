@@ -1,10 +1,9 @@
 extends Node2D
 
-
-export (PackedScene) var Soup
-
+# creates a var to randomize between a range
 var rng = RandomNumberGenerator.new()
 
+# randomly defines the itens positions when the scene is ready
 func _ready():
 	rng.randomize()
 	$Elements/Soup/Soup.position = Vector2(rng.randi_range(700, 1100), rng.randi_range(0, 370))

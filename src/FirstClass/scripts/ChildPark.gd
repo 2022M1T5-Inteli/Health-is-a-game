@@ -1,10 +1,9 @@
 extends Node2D
 
-
-export (PackedScene) var banana
-
+# creates a var to randomize between a range
 var rng = RandomNumberGenerator.new()
 
+# randomly defines the itens positions when the scene is ready
 func _ready():
 	rng.randomize()
 	$Elements/Ball/Ball.position = Vector2(rng.randi_range(1300, 1460), rng.randi_range(450,90))

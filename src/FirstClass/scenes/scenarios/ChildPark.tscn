@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://backgrounds/correcaochaoparquercrianca-export (1)edt.png" type="Texture" id=1]
-[ext_resource path="res://scripts/Pause.gd" type="Script" id=2]
+[ext_resource path="res://scenes/itens/PauseButton.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/itens/Banana.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/itens/Ball.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/itens/Soda.tscn" type="PackedScene" id=5]
@@ -350,10 +350,6 @@ scale = Vector2( 0.7, 0.7 )
 position = Vector2( 8503, -2 )
 targetScenePath = "res://scenes/scenarios/AdolescentCity.tscn"
 
-[node name="Pause" type="Node" parent="."]
-pause_mode = 2
-script = ExtResource( 2 )
-
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( 9156, 76 )
 
@@ -366,14 +362,19 @@ smoothing_speed = 6.0
 drag_margin_top = 0.8
 drag_margin_bottom = 0.0
 
+[node name="PauseButton" parent="PlayerCamera" instance=ExtResource( 2 )]
+pause_mode = 2
+position = Vector2( 349.792, -215.43 )
+scale = Vector2( 0.225188, 0.225188 )
+
+[node name="MenuPause" parent="PlayerCamera/PauseButton" instance=ExtResource( 15 )]
+visible = false
+position = Vector2( -2553.33, 363.333 )
+scale = Vector2( 1.66667, 1.66667 )
+z_index = 5
+
 [node name="Healthbar" parent="PlayerCamera" instance=ExtResource( 12 )]
 position = Vector2( -376.064, -219.183 )
-
-[node name="MenuPause" parent="PlayerCamera" instance=ExtResource( 15 )]
-visible = false
-position = Vector2( -313, -176 )
-scale = Vector2( 0.5, 0.5 )
-z_index = 5
 
 [connection signal="body_entered" from="Elements/GoodSun/GoodSun" to="Elements/GoodSun/GoodSun" method="_on_GoodSun_body_entered"]
 [connection signal="body_entered" from="Elements/GoodSun/GoodSun2" to="Elements/GoodSun/GoodSun2" method="_on_GoodSun_body_entered"]

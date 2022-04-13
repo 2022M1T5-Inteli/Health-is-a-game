@@ -1,13 +1,13 @@
 extends Node2D
 
-
-export (PackedScene) var apple
-
+# creates a var to randomize between a range
 var rng = RandomNumberGenerator.new()
 
-
+# randomly defines the itens positions when the scene is ready
 func _ready():
+	# Calls the fade in animation
 	_play_fade_in()
+	
 	rng.randomize()
 	#Generate Apple between the ranges pre-defined
 	$Elements/AppleNode/Apple.position = Vector2(rng.randi_range(880, 1200), rng.randi_range(250, 500))
@@ -35,6 +35,8 @@ func _ready():
 	$Elements/LollipopNode/Lollipop4.position = Vector2(rng.randi_range(5380, 5720), rng.randi_range(250, 500))
 	$Elements/LollipopNode/Lollipop5.position = Vector2(rng.randi_range(6520, 6860), rng.randi_range(250, 500))
 
+# Shows the FadeIn colored rectangle
+# and plays the color animation 
 func _play_fade_in():
 	$FadeIn.show()
 	$AnimationFadeIn.play("FadeIn")

@@ -44,9 +44,11 @@ func _physics_process(delta: float) -> void:
 	velocity.x = move_speed
 	move_and_slide(velocity, UP)
 
+# plays an animation when a bad item is collected
 func play_bad_hit():
 	$HitOverlay.play_bad_hit()
 
+# plays an animation when a good item is collected
 func play_good_hit():
 	$HitOverlay.play_good_hit()
 
