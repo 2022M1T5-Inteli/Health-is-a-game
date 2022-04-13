@@ -68,7 +68,6 @@ smoothing_speed = 6.0
 
 [node name="Healthbar" parent="PlayerCamera" instance=ExtResource( 1 )]
 position = Vector2( -376.813, -214.679 )
-scale = Vector2( 0.02, 0.02 )
 
 [node name="MenuPause" parent="PlayerCamera" instance=ExtResource( 5 )]
 visible = false

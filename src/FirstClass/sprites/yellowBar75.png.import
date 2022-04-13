@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/emptyHealthbar.png-004e9681da92ff9b4e2c6e976b5a7a4e.stex"
+path="res://.import/yellowBar75.png-fe873e1b9701e927a39a9f092d163811.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/emptyHealthbar.png"
-dest_files=[ "res://.import/emptyHealthbar.png-004e9681da92ff9b4e2c6e976b5a7a4e.stex" ]
+source_file="res://sprites/yellowBar75.png"
+dest_files=[ "res://.import/yellowBar75.png-fe873e1b9701e927a39a9f092d163811.stex" ]
 
 [params]
 

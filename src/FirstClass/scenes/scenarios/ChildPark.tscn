@@ -349,7 +349,6 @@ drag_margin_bottom = 0.0
 
 [node name="Healthbar" parent="PlayerCamera" instance=ExtResource( 12 )]
 position = Vector2( -320.518, -226.689 )
-scale = Vector2( 0.02, 0.02 )
 
 [node name="MenuPause" parent="PlayerCamera" instance=ExtResource( 15 )]
 visible = false
