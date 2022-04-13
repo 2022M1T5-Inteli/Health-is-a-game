@@ -14,6 +14,8 @@ config/name="BSYM"
 run/main_scene="res://scenes/Menu.tscn"
 boot_splash/image="res://logo life is a game.png"
 boot_splash/fullsize=false
+config/icon="res://gameIcon.png"
+config/windows_native_icon="res://gameIcon.ico"
 
 [autoload]
 
