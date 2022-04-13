@@ -11,7 +11,7 @@ func _on_FriedPotatoes_body_entered(body):
 		GameManager.friedpotatoes = 1
 		_FriedPotatoes.hide()
 		# shows the bad sign when the player hits the FriedPotatoes
-		body.play_good_hit()
+		body.play_bad_hit()
 		if (GameManager.health_score + points) <= 1000:
 			GameManager.health_score = GameManager.health_score + points
 	$CollectedSoundBad.play()

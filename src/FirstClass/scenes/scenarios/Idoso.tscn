@@ -17,7 +17,7 @@
 [ext_resource path="res://sprites/Alcohol.gd" type="Script" id=15]
 [ext_resource path="res://sounds/item bom (1).wav" type="AudioStream" id=16]
 [ext_resource path="res://scripts/itens/Soup.gd" type="Script" id=17]
-[ext_resource path="res://scenes/BadPointsOverPlayer.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/HitOverlay.tscn" type="PackedScene" id=18]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 48, 335 )
@@ -50,8 +50,9 @@ shape = SubResource( 1 )
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 431, 211 )
 
-[node name="BadHit" parent="Player" instance=ExtResource( 18 )]
-position = Vector2( -522.232, -487.594 )
+[node name="HitOverlay" parent="Player" instance=ExtResource( 18 )]
+position = Vector2( -213.187, -232.967 )
+scale = Vector2( 0.475, 0.475 )
 
 [node name="StaticBodyChaoSEnior" type="StaticBody2D" parent="."]
 

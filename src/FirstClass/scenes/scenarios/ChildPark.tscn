@@ -18,7 +18,7 @@
 [ext_resource path="res://scripts/ChildPark.gd" type="Script" id=16]
 [ext_resource path="res://scenes/itens/Chocolate.tscn" type="PackedScene" id=17]
 [ext_resource path="res://scenes/itens/VacineHBC.tscn" type="PackedScene" id=18]
-[ext_resource path="res://scenes/BadPointsOverPlayer.tscn" type="PackedScene" id=19]
+[ext_resource path="res://scenes/HitOverlay.tscn" type="PackedScene" id=19]
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 46.5, 335 )
@@ -361,8 +361,9 @@ z_index = 5
 position = Vector2( 420, 437 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="BadHit" parent="Player" instance=ExtResource( 19 )]
-position = Vector2( -522.232, -487.594 )
+[node name="HitOverlay" parent="Player" instance=ExtResource( 19 )]
+position = Vector2( -344, -374 )
+scale = Vector2( 0.7, 0.7 )
 
 [node name="Door" parent="." instance=ExtResource( 9 )]
 position = Vector2( 8503, -2 )

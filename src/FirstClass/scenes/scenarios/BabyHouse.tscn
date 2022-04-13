@@ -11,7 +11,7 @@
 [ext_resource path="res://scenes/PauseMenu.tscn" type="PackedScene" id=9]
 [ext_resource path="res://backgrounds/cenariobebeditavel.png" type="Texture" id=10]
 [ext_resource path="res://backgrounds/cenariocriançaeditavel1.png" type="Texture" id=11]
-[ext_resource path="res://scenes/BadPointsOverPlayer.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/HitOverlay.tscn" type="PackedScene" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9520.25, 37.5 )
@@ -42,7 +42,7 @@ shape = SubResource( 1 )
 position = Vector2( -24, 511 )
 scale = Vector2( 0.375312, 0.375312 )
 
-[node name="BadHit" parent="Player" instance=ExtResource( 12 )]
+[node name="HitOverlay" parent="Player" instance=ExtResource( 12 )]
 position = Vector2( -522.232, -487.594 )
 
 [node name="Elements" type="Node2D" parent="."]

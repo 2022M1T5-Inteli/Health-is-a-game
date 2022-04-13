@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://sprites/adolecente.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Player.gd" type="Script" id=2]
@@ -6,6 +6,18 @@
 [ext_resource path="res://sprites/adolescente_mulher4.png" type="Texture" id=4]
 [ext_resource path="res://sprites/adolescente_mulher2.png" type="Texture" id=5]
 [ext_resource path="res://sprites/adolescente_mulher1.png" type="Texture" id=6]
+[ext_resource path="res://sprites/adolescente_homem1.png" type="Texture" id=7]
+[ext_resource path="res://sprites/adolescente_homem3.png" type="Texture" id=8]
+[ext_resource path="res://sprites/adolescente_homem4.png" type="Texture" id=9]
+[ext_resource path="res://sprites/adolescente_homem2.png" type="Texture" id=10]
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [sub_resource type="Animation" id=3]
 length = 0.001
@@ -45,6 +57,18 @@ tracks/2/keys = {
 "update": 0,
 "values": [ 0 ]
 }
+tracks/3/type = "value"
+tracks/3/path = NodePath("../SpriteM:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
 
 [sub_resource type="Animation" id=4]
 resource_name = "crawl"
@@ -78,7 +102,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=1]
 resource_name = "walk"
-length = 0.8
+length = 1.2
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
@@ -98,10 +122,22 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.4 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 0, 1 ]
+"values": [ 0, 1, 2, 3 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../SpriteM:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
 }
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -116,16 +152,23 @@ animations = [ {
 } ]
 
 [node name="PlayerAdolescente" type="KinematicBody2D"]
+scale = Vector2( 0.8, 0.8 )
 script = ExtResource( 2 )
 
-[node name="SpriteM" type="Sprite" parent="."]
+[node name="SpriteM2" type="Sprite" parent="."]
+visible = false
 position = Vector2( 24.5, 12 )
 scale = Vector2( 0.65, 0.73125 )
 texture = ExtResource( 1 )
 hframes = 4
 
+[node name="SpriteM" type="AnimatedSprite" parent="."]
+position = Vector2( 18.75, 12.5 )
+scale = Vector2( 0.65, 0.73125 )
+frames = SubResource( 7 )
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("../SpriteM")
+root_node = NodePath("../SpriteM2")
 reset_on_save = false
 anims/RESET = SubResource( 3 )
 anims/crawl = SubResource( 4 )

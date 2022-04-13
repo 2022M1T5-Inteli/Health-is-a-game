@@ -44,15 +44,11 @@ func _physics_process(delta: float) -> void:
 	velocity.x = move_speed
 	move_and_slide(velocity, UP)
 
-
-func _on_Candy4_on_hit():
-	$BadHit.play_bad_hit()
-
 func play_bad_hit():
-	$BadHit.play_bad_hit()
+	$HitOverlay.play_bad_hit()
 
 func play_good_hit():
-	$BadHit.play_good_hit()
+	$HitOverlay.play_good_hit()
 
 # changes the visible sprite based on gender choice
 func setGenderSprite():
