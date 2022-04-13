@@ -338,24 +338,6 @@ position = Vector2( 1248, 196 )
 [node name="VacineHBC" parent="Elements/VacineHBC" instance=ExtResource( 18 )]
 position = Vector2( 925, 350 )
 
-[node name="PlayerCamera" type="Camera2D" parent="."]
-position = Vector2( 416, 305 )
-scale = Vector2( 1.33222, 1.33222 )
-current = true
-drag_margin_v_enabled = true
-smoothing_speed = 6.0
-drag_margin_top = 0.8
-drag_margin_bottom = 0.0
-
-[node name="Healthbar" parent="PlayerCamera" instance=ExtResource( 12 )]
-position = Vector2( -320.518, -226.689 )
-
-[node name="MenuPause" parent="PlayerCamera" instance=ExtResource( 15 )]
-visible = false
-position = Vector2( -313, -176 )
-scale = Vector2( 0.5, 0.5 )
-z_index = 5
-
 [node name="Player" parent="." instance=ExtResource( 8 )]
 position = Vector2( 420, 437 )
 scale = Vector2( 0.5, 0.5 )
@@ -374,6 +356,24 @@ script = ExtResource( 2 )
 
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( 9156, 76 )
+
+[node name="PlayerCamera" type="Camera2D" parent="."]
+position = Vector2( 416, 305 )
+scale = Vector2( 1.33222, 1.33222 )
+current = true
+drag_margin_v_enabled = true
+smoothing_speed = 6.0
+drag_margin_top = 0.8
+drag_margin_bottom = 0.0
+
+[node name="Healthbar" parent="PlayerCamera" instance=ExtResource( 12 )]
+position = Vector2( -376.064, -219.183 )
+
+[node name="MenuPause" parent="PlayerCamera" instance=ExtResource( 15 )]
+visible = false
+position = Vector2( -313, -176 )
+scale = Vector2( 0.5, 0.5 )
+z_index = 5
 
 [connection signal="body_entered" from="Elements/GoodSun/GoodSun" to="Elements/GoodSun/GoodSun" method="_on_GoodSun_body_entered"]
 [connection signal="body_entered" from="Elements/GoodSun/GoodSun2" to="Elements/GoodSun/GoodSun2" method="_on_GoodSun_body_entered"]

@@ -166,6 +166,7 @@ z_index = 5
 
 [node name="Healthbar" parent="PlayerCamera" instance=ExtResource( 4 )]
 position = Vector2( -498, -287 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
