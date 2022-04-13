@@ -13,10 +13,11 @@
 ## Integrantes: <a href="https://files.slack.com/files-pri/T02DWH2MXQR-F03B2DKLDSR/logo_life_is_a_game_borda_preta_cores_3.png">Antonio Teixeira</a>, <a href="https://www.linkedin.com/in/carolina-favaro-fricks-1a0423231/">Carolina Fricks</a>, <a href="https://www.linkedin.com/in/emanuel-de-oliveira-costa-45b637185/">Emanuel Costa</a>, <a href="https://www.linkedin.com/in/gabrio-lina-17ba60205/">Gabrio Lina</a>, <a href="https://www.linkedin.com/in/joao-marques-1b64b2232/">João Marques</a>, <a href="https://www.linkedin.com/in/maria-lu%C3%ADsa-maia-14384a212/">Maria Maia</a>, <a href="https://www.linkedin.com/in/pedro-gattai-096678227/">Pedro Gattai</a>,  <a href="http://linkedin.com/in/sophia-tosar-ba3538223">Sophia Tosar</a>.
 
 ## Descrição
+![Captura de tela 2022-04-12 104001](https://user-images.githubusercontent.com/82065728/163193201-47789d75-00ac-402b-90f2-65ae7d27e494.jpg)
 
 📜 Um jogo sobre a prevenção do câncer .
 <p align="center">
-<img src="![Captura de tela 2022-04-12 104001]" alt="NOME DO JOGO" border="0">
+  
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
