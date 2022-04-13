@@ -27,5 +27,5 @@ func _ready():
 	$Elements/Alcohol/Alcohol5.position = Vector2(rng.randi_range(7000 , 7400), rng.randi_range(0, 370))
 	$Elements/Alcohol/Alcohol6.position = Vector2(rng.randi_range(7840 , 8240), rng.randi_range(0, 370))
 	
-	$Elements/BadSun/BadSun.position = Vector2(rng.randi_range(3640 , 4040), rng.randi_range(0, 370))
-	$Elements/BadSun/BadSun2.position = Vector2(rng.randi_range(5740 , 6140), rng.randi_range(0, 370))
+	$Elements/BadSun/BadSun.position = Vector2(rng.randi_range(3640 , 4040), rng.randi_range(0, 259))
+	$Elements/BadSun/BadSun2.position = Vector2(rng.randi_range(5740 , 6140), rng.randi_range(0, 259))

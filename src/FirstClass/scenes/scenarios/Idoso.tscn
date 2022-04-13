@@ -157,7 +157,7 @@ position = Vector2( 852, 161 )
 [node name="BadSun" type="Node" parent="Elements"]
 
 [node name="BadSun" parent="Elements/BadSun" instance=ExtResource( 12 )]
-position = Vector2( 994, 257 )
+position = Vector2( 994, 259 )
 points = -12
 
 [node name="CollectedSunFx" type="AudioStreamPlayer2D" parent="Elements/BadSun/BadSun"]
