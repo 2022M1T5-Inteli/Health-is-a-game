@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scripts/itens/Door.gd" type="Script" id=1]
 [ext_resource path="res://sprites/Doors/animacao_portajogo2.png" type="Texture" id=2]
@@ -8,7 +8,7 @@
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 4 ) ],
 "loop": false,
 "name": "doorOpening",
 "speed": 5.0
@@ -16,6 +16,34 @@ animations = [ {
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 148, 336.5 )
+
+[sub_resource type="Animation" id=6]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "doorOpening"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
 
 [node name="Door" type="Area2D"]
 script = ExtResource( 1 )
@@ -25,12 +53,15 @@ position = Vector2( -1176.96, -329.257 )
 scale = Vector2( 0.920769, 1.00571 )
 frames = SubResource( 3 )
 animation = "doorOpening"
-frame = 3
 offset = Vector2( 1736, 570 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 942, 276.5 )
 shape = SubResource( 4 )
 
+[node name="DoorOpeningAnimation" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 6 )
+anims/doorOpening = SubResource( 5 )
+
 [connection signal="body_entered" from="." to="." method="_on_Door_body_entered"]
-[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="animation_finished" from="DoorOpeningAnimation" to="." method="_on_DoorOpeningAnimation_animation_finished"]

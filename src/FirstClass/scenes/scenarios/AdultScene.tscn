@@ -45,12 +45,8 @@ texture = ExtResource( 2 )
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 21418, 325 )
+position = Vector2( 21415, 290 )
 shape = SubResource( 1 )
-
-[node name="Door" parent="StaticBody2D/CollisionShape2D" instance=ExtResource( 6 )]
-position = Vector2( -1198, -349 )
-targetScenePath = "res://scenes/scenarios/Idoso.tscn"
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 position = Vector2( 14, 14 )
@@ -86,6 +82,10 @@ script = ExtResource( 20 )
 [node name="HitOverlay" parent="Player" instance=ExtResource( 21 )]
 position = Vector2( -195, -275 )
 scale = Vector2( 0.475, 0.475 )
+
+[node name="Door" parent="." instance=ExtResource( 6 )]
+position = Vector2( 20220, -24 )
+targetScenePath = "res://scenes/scenarios/Idoso.tscn"
 
 [node name="Elements" type="Node" parent="."]
 

@@ -1,12 +1,15 @@
 extends Area2D
 
-onready var _animatedSprite = $AnimatedSprite 
+# Scene to be changed to after the animation is played
 export var targetScenePath = "."
 
+# Triggers the opening door animation when the "Player"
+# hits the Area2D area
 func _on_Door_body_entered(body):
 	if body.get_name() == "Player":
-		_animatedSprite.play("doorOpening")
+		$DoorOpeningAnimation.play("doorOpening")	
 
-
-func _on_AnimatedSprite_animation_finished():
+# Changes the current scene to the target scene
+# after the animation is played
+func _on_DoorOpeningAnimation_animation_finished(anim_name):
 	get_tree().change_scene(targetScenePath)
