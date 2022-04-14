@@ -14,3 +14,7 @@ func _on_Cigarette_body_entered(body):
 		if (GameManager.health_score + points) <= 1000:
 			GameManager.health_score = GameManager.health_score + points
 	$CollectedSoundBad.play()
+
+
+func _on_Beer_body_entered(body):
+	pass # Replace with function body.

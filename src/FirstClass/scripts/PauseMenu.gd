@@ -33,7 +33,7 @@ func _on_ResumeBtn_pressed():
 # Restarts the game
 func _on_RestartGameBtn_pressed():
 	GameManager.health_score = 1000
-	get_tree().change_scene(("res://scenes/scenarios/BabyHouse.tscn"))
+	get_tree().change_scene(("res://scenes/scenarios/Tutorial.tscn"))
 	set_is_paused(false)
 
 # Changes the game scene to main menu

@@ -1,9 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://scripts/itens/SolBom.gd" type="Script" id=1]
+[ext_resource path="res://scripts/itens/Soup.gd" type="Script" id=1]
 [ext_resource path="res://sprites/Sopa-0002.png" type="Texture" id=2]
 [ext_resource path="res://sounds/item bom (1).wav" type="AudioStream" id=3]
-
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 86, 74.8393 )
@@ -27,4 +26,4 @@ position = Vector2( -15, 4 )
 stream = ExtResource( 3 )
 volume_db = 15.0
 
-[connection signal="body_entered" from="." to="." method="_on_Saladdao_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_Soup_body_entered"]

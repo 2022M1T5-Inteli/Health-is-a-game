@@ -26,4 +26,4 @@ position = Vector2( 0, -2 )
 stream = ExtResource( 3 )
 volume_db = 15.0
 
-[connection signal="body_entered" from="." to="." method="_on_Cigarro_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_Cigarette_body_entered"]
