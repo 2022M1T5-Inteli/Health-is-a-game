@@ -23,4 +23,4 @@ texture = ExtResource( 2 )
 [node name="CollectedSoundGood" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
 
-[connection signal="body_entered" from="." to="." method="_on_SolBom_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_GoodSun_body_entered"]

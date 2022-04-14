@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://scripts/itens/Cigarro.gd" type="Script" id=1]
+[ext_resource path="res://scripts/itens/Cerveja.gd" type="Script" id=1]
 [ext_resource path="res://sprites/cervejinha.png" type="Texture" id=2]
 [ext_resource path="res://sounds/item ruim (1).ogg" type="AudioStream" id=3]
 
@@ -26,4 +26,4 @@ position = Vector2( 4, -3 )
 scale = Vector2( 2.74227, 2.74227 )
 texture = ExtResource( 2 )
 
-[connection signal="body_entered" from="." to="." method="_on_Cigarro_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_Beer_body_entered"]

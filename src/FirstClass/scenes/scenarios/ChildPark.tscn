@@ -35,6 +35,7 @@ scale = Vector2( 0.765572, 0.7625 )
 texture = ExtResource( 1 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( -231, 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 9570, 282 )
@@ -347,7 +348,7 @@ position = Vector2( -344, -374 )
 scale = Vector2( 0.7, 0.7 )
 
 [node name="Door" parent="." instance=ExtResource( 9 )]
-position = Vector2( 8503, -2 )
+position = Vector2( 8272, 2 )
 targetScenePath = "res://scenes/scenarios/AdolescentCity.tscn"
 
 [node name="Position2D" type="Position2D" parent="."]

@@ -11,6 +11,7 @@ script = ExtResource( 3 )
 [node name="PauseTextureButton" type="TextureButton" parent="."]
 margin_right = 130.0
 margin_bottom = 130.0
+focus_mode = 0
 texture_normal = ExtResource( 2 )
 texture_hover = ExtResource( 1 )
 __meta__ = {
