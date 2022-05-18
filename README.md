@@ -1,5 +1,3 @@
-# Before Symptoms
-
 # Inteli - Instituto de Tecnologia e Liderança 
 
 <p align="center">
@@ -10,7 +8,15 @@
 
 ## Before Symptoms
 
-## Integrantes: <a href="https://files.slack.com/files-pri/T02DWH2MXQR-F03B2DKLDSR/logo_life_is_a_game_borda_preta_cores_3.png">Antonio Teixeira</a>, <a href="https://www.linkedin.com/in/carolina-favaro-fricks-1a0423231/">Carolina Fricks</a>, <a href="https://www.linkedin.com/in/emanuel-de-oliveira-costa-45b637185/">Emanuel Costa</a>, <a href="https://www.linkedin.com/in/gabrio-lina-17ba60205/">Gabrio Lina</a>, <a href="https://www.linkedin.com/in/joao-marques-1b64b2232/">João Marques</a>, <a href="https://www.linkedin.com/in/maria-lu%C3%ADsa-maia-14384a212/">Maria Maia</a>, <a href="https://www.linkedin.com/in/pedro-gattai-096678227/">Pedro Gattai</a>,  <a href="http://linkedin.com/in/sophia-tosar-ba3538223">Sophia Tosar</a>.
+## Integrantes: 
+- <a href="https://files.slack.com/files-pri/T02DWH2MXQR-F03B2DKLDSR/logo_life_is_a_game_borda_preta_cores_3.png">Antonio Teixeira</a>
+- <a href="https://www.linkedin.com/in/carolina-favaro-fricks-1a0423231/">Carolina Fricks</a>
+- <a href="https://www.linkedin.com/in/emanuel-de-oliveira-costa-45b637185/">Emanuel Costa</a>
+- <a href="https://www.linkedin.com/in/gabrio-lina-17ba60205/">Gabrio Lina</a>
+- <a href="https://www.linkedin.com/in/joao-marques-1b64b2232/">João Marques</a>
+- <a href="https://www.linkedin.com/in/maria-lu%C3%ADsa-maia-14384a212/">Maria Maia</a>
+- <a href="https://www.linkedin.com/in/pedro-gattai-096678227/">Pedro Gattai</a>
+- <a href="http://linkedin.com/in/sophia-tosar-ba3538223">Sophia Tosar</a>.
 
 ## Descrição
 ![Captura de tela 2022-04-12 104001](https://user-images.githubusercontent.com/82065728/163193201-47789d75-00ac-402b-90f2-65ae7d27e494.jpg)
@@ -31,51 +37,49 @@
 
 ## 🛠 Estrutura de pastas
 
--Raiz<br>
+- Raiz<br>
 |<br>
-|-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|GDD.docx ou Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
-|-->imagens<br>
-|-->src<br>
-|readme.md<br>
-|license.txt<br>
+|--> documentos<br>
+  &emsp;|--> documentos antigos<br>
+  &emsp;|--> Modelo GDD - BSYM (V25).pdf<br>
+|--> executáveis<br>
+  &emsp;|--> Windows<br>
+  &emsp;|--> HTML<br>
+|--> imagens<br>
+|--> src<br>
+  &emsp;|--> FirstClass<br>
+| readme.md<br>
+| license.txt<br>
 
-A pasta raiz contem dois arquivos que devem ser alterados:
+A pasta raiz contém um arquivo principal:
 
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
+- <b>readme.md</b>, que consiste em um guia geral sobre o projeto.
 
-<b>license.txt</b>: Arquivo de licença do projeto, para que qualquer um possa entender até que ponto podem utilizar seu projeto. Aconselhável utilizar a licença Creative Commons Attribution 4.0 International.
+E, também, 4 subpastas que se organizam da seguinte forma:
 
-Há também 4 pastas que seguem da seguinte forma:
+- <b>documentos</b>, ondem encontram-se todos os documentos relacionados ao projeto, sobretudo o Game Design Document (GDD), com uma subpasta <b>antigos</b> que armazena versões anteriores dos mesmos.
 
-<b>documentos</b>: Aqui estarão todos os documentos do projeto, mas principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma pasta <b>antigos</b> onde estarão todas as versões antigas da documentação.
+- <b>executáveis</b>, ondem encontram-se todos os executáveis do jogo, prontos para rodar, com 2 pastas: uma para binários windows e uma para a web.
 
-<b>executáveis</b>: Aqui estarão todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>
+- <b>imagens</b>, ondem encontram-se algumas imagens relacionadas ao jogo, sistema e logos, prontos para serem utilizados e visualizados.
 
-<b>imagens</b>: Algumas imagens do jogo/sistema e logos prontos para serem utilizados e visualizados.
-
-<b>src</b>: Nesta pasta irá todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
+- <b>src</b>, onde encontra-se todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
 
 ## 🛠 Instalação
 
 <b>Windows:</b>
 
-Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
+Não há instalação, apenas executável. Baixe os arquivos disponíveis em https://github.com/2022M1T5/Projeto1/tree/main/execut%C3%A1veis/Windows e execute "health_is_a_game.exe" como qualquer outro programa.
 
 <b>HTML:</b>
 
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
+Não há instalação! Baixe os arquivos disponíveis em https://github.com/2022M1T5/Projeto1/tree/main/execut%C3%A1veis/HTML e execute-o como uma página da web (através de algum navegador).
+
+```sh
+Dependendo de suas configurações de firewall, talvez seja necessário
+instaurar um web service como xampp ou wampp para que o jogo rode lo-
+calmente.
+```
 
 ## 📈 Exemplo de uso
 
@@ -83,19 +87,22 @@ O jogo pode ser utilizado em escolas, com o objetivo de forncer informaçôes de
 Além disso, ele pode ser utilizado por crianças e adolescentes que despertarem interesse pelo assunto e pelo game. 
   
 
-## 💻 Configuração para Desenvolvimento
-
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-Para executar o game é necessário fazer o deploy das versões em windows e html juntamente com a versão APK.
+## 💻 Configuração para desenvolvimento
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://godotengine.org/download">GODOT</a>
+-<a href="https://godotengine.org/download"> Godot</a>
 
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
+Instruções para a configuração do ambiente de desenvolvimento:
+```
+
+1) Clone o repositório.
+2) Abra a engine de desenvolvimento (godot).
+3) No gerenciador de projetos inicial, clique no botão "importar" e, em seguida, no botão "navegar".
+4) Navegue até o repositório clonado e abra a pasta "src".
+5) Selecione o arquivo "project.godot" e em seguida clique no botão "abrir".
+6) Pronto. O seu ambiente de desenvolvimento está configurado.
+
 ```
 
 ## 🗃 Histórico de lançamentos
